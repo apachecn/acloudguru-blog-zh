@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Good Tech Things</title>
+    <link rel="stylesheet" href="https://www.goodtechthings.com/assets/built/screen.css?v=a957b8d4de">
+
+    <style>
+    .share-block {
+        margin-top: 8rem;
+    }
+    .share-block span {
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+    .share-block a {
+        display: inline-block;
+        transition: all 0.3s;
+        margin: 0 0.25rem;
+    }
+    .share-block a:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+    <meta name="description" content="A resource hub of technical comics, infographics, flowcharts, and other stuff devs like." />
+    <link rel="icon" href="https://www.goodtechthings.com/content/images/size/w256h256/2022/12/Untitled_Artwork-214-1.png" type="image/png" />
+    <link rel="canonical" href="https://www.goodtechthings.com/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="https://www.goodtechthings.com/page/2/" />
+    
+    <meta property="og:site_name" content="Good Tech Things" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Good Tech Things" />
+    <meta property="og:description" content="A resource hub of technical comics, infographics, flowcharts, and other stuff devs like." />
+    <meta property="og:url" content="https://www.goodtechthings.com/" />
+    <meta property="og:image" content="https://www.goodtechthings.com/content/images/2022/12/Untitled_Artwork-218-2.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/goodtechthings" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Good Tech Things" />
+    <meta name="twitter:description" content="A resource hub of technical comics, infographics, flowcharts, and other stuff devs like." />
+    <meta name="twitter:url" content="https://www.goodtechthings.com/" />
+    <meta name="twitter:image" content="https://www.goodtechthings.com/content/images/2022/12/Untitled_Artwork-218-1.png" />
+    <meta name="twitter:site" content="@goodtechthings" />
+    <meta property="og:image:width" content="1552" />
+    <meta property="og:image:height" content="891" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Tech Things",
+        "url": "https://www.goodtechthings.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.goodtechthings.com/content/images/size/w256h256/2022/12/Untitled_Artwork-214-1.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "url": "https://www.goodtechthings.com/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.goodtechthings.com/"
+    },
+    "description": "A resource hub of technical comics, infographics, flowcharts, and other stuff devs like."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.37" />
+    <link rel="alternate" type="application/rss+xml" title="Good Tech Things" href="https://www.goodtechthings.com/rss/" />
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="fefccc302d7ff11015f4a611f8" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://good-tech-things.ghost.io/" crossorigin="anonymous"></script>
+    <link href="https://www.goodtechthings.com/webmentions/receive/" rel="webmention" />
+    <script defer src="/public/cards.min.js?v=a957b8d4de"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=a957b8d4de">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2EFNGXZME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W2EFNGXZME');
+</script><style>:root {--ghost-accent-color: #35bfef;}</style>
+</head>
+
+<body class="home-template is-head-left-logo">
+<div class="site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://www.goodtechthings.com">
+                            Good Tech Things
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-about"><a href="https://www.goodtechthings.com/about/">About</a></li>
+    <li class="nav-newsletter"><a href="https://newsletter.goodtechthings.com/">Newsletter</a></li>
+    <li class="nav-videos"><a href="https://www.youtube.com/@goodtechthings/playlists">Videos</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        
+<main class="site-main">
+
+    <div class="post-feed gh-feed">
+        <div class="grid-item grid-sizer"></div>
+            <div class="grid-item">
+<figure class="post tag-software-architecture tag-software-development tag-it tag-enterprise tag-engineering-management tag-caption-this">
+
+    <a class="post-link" href="/engineering-jeopardy/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/02/Engineering_Jeopardy.png 300w,
+                    /content/images/size/w750/2023/02/Engineering_Jeopardy.png 750w,
+                    /content/images/size/w1140/2023/02/Engineering_Jeopardy.png 1140w,
+                    /content/images/size/w1920/2023/02/Engineering_Jeopardy.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/02/Engineering_Jeopardy.png"
+            alt="Engineering Jeopardy"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/02/Engineering_Jeopardy.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">Engineering Jeopardy</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/software-architecture/">software architecture</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-02-24">Feb 24, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/engineering-jeopardy/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-ai tag-sdlc tag-automation tag-infrastructure tag-enterprise tag-ci-cd tag-programming tag-software-development tag-software-architecture tag-saas">
+
+    <a class="post-link" href="/pile-of-complexity/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/02/Pile_Of_Complexity-1.png 300w,
+                    /content/images/size/w750/2023/02/Pile_Of_Complexity-1.png 750w,
+                    /content/images/size/w1140/2023/02/Pile_Of_Complexity-1.png 1140w,
+                    /content/images/size/w1920/2023/02/Pile_Of_Complexity-1.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/02/Pile_Of_Complexity-1.png"
+            alt="AIOps"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/02/Pile_Of_Complexity-1.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">AIOps</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/ai/">ai</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-02-21">Feb 21, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/pile-of-complexity/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-metrics tag-observability tag-ops tag-devops tag-devs-at-work tag-engineering-management tag-enterprise tag-it tag-programming tag-software-development tag-sdlc">
+
+    <a class="post-link" href="/vanity-metrics/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/02/Vanity_Metrics-1.png 300w,
+                    /content/images/size/w750/2023/02/Vanity_Metrics-1.png 750w,
+                    /content/images/size/w1140/2023/02/Vanity_Metrics-1.png 1140w,
+                    /content/images/size/w1920/2023/02/Vanity_Metrics-1.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/02/Vanity_Metrics-1.png"
+            alt="Vanity Metrics"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/02/Vanity_Metrics-1.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">Vanity Metrics</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/metrics/">metrics</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-02-05">Feb 5, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/vanity-metrics/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-ai tag-data-centers tag-infrastructure tag-charts">
+
+    <a class="post-link" href="/gpus/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/GPUs.png 300w,
+                    /content/images/size/w750/2023/01/GPUs.png 750w,
+                    /content/images/size/w1140/2023/01/GPUs.png 1140w,
+                    /content/images/size/w1920/2023/01/GPUs.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/GPUs.png"
+            alt="GPUs"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/GPUs.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">GPUs</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/ai/">ai</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-31">Jan 31, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/gpus/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-cloud tag-compute tag-dba tag-enterprise tag-finops tag-infrastructure tag-it tag-itdm tag-ops tag-strategy tag-data-centers">
+
+    <a class="post-link" href="/capacity-planning/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/Capacity_Planning_small.png 300w,
+                    /content/images/size/w750/2023/01/Capacity_Planning_small.png 750w,
+                    /content/images/size/w1140/2023/01/Capacity_Planning_small.png 1140w,
+                    /content/images/size/w1920/2023/01/Capacity_Planning_small.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/Capacity_Planning_small.png"
+            alt="Capacity Planning"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/Capacity_Planning_small.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">Capacity Planning</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/cloud/">cloud</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-24">Jan 24, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/capacity-planning/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-sdlc tag-security tag-software-development tag-iac tag-ops">
+
+    <a class="post-link" href="/false-flag/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/False_Flag.png 300w,
+                    /content/images/size/w750/2023/01/False_Flag.png 750w,
+                    /content/images/size/w1140/2023/01/False_Flag.png 1140w,
+                    /content/images/size/w1920/2023/01/False_Flag.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/False_Flag.png"
+            alt="False Flag"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/False_Flag.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">False Flag</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/sdlc/">sdlc</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-22">Jan 22, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/false-flag/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-programming tag-web-development tag-security tag-charts tag-flowcharts">
+
+    <a class="post-link" href="/cors/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/CORS.png 300w,
+                    /content/images/size/w750/2023/01/CORS.png 750w,
+                    /content/images/size/w1140/2023/01/CORS.png 1140w,
+                    /content/images/size/w1920/2023/01/CORS.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/CORS.png"
+            alt="CORS"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/CORS.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">CORS</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/programming/">programming</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-17">Jan 17, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/cors/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-agile tag-devs-at-work tag-engineering-management tag-ai">
+
+    <a class="post-link" href="/a-strange-game/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/A_Strange_Game-1.png 300w,
+                    /content/images/size/w750/2023/01/A_Strange_Game-1.png 750w,
+                    /content/images/size/w1140/2023/01/A_Strange_Game-1.png 1140w,
+                    /content/images/size/w1920/2023/01/A_Strange_Game-1.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/A_Strange_Game-1.png"
+            alt="A Strange Game"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/A_Strange_Game-1.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">A Strange Game</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/agile/">agile</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-13">Jan 13, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/a-strange-game/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-microservices tag-cloud-native tag-infrastructure tag-networking tag-software-architecture tag-saas tag-programming tag-cloud-architecture">
+
+    <a class="post-link" href="/marco-polo/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/Marco_Polo.png 300w,
+                    /content/images/size/w750/2023/01/Marco_Polo.png 750w,
+                    /content/images/size/w1140/2023/01/Marco_Polo.png 1140w,
+                    /content/images/size/w1920/2023/01/Marco_Polo.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/Marco_Polo.png"
+            alt="Marco Polo"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/Marco_Polo.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">Marco Polo</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/microservices/">microservices</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-09">Jan 9, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/marco-polo/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+            <div class="grid-item">
+<figure class="post tag-cloud tag-cloud-architecture tag-databases tag-data tag-data-engineering tag-networking">
+
+    <a class="post-link" href="/every-cloud-architecture/">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w300/2023/01/Every_Cloud_Architecture-1.png 300w,
+                    /content/images/size/w750/2023/01/Every_Cloud_Architecture-1.png 750w,
+                    /content/images/size/w1140/2023/01/Every_Cloud_Architecture-1.png 1140w,
+                    /content/images/size/w1920/2023/01/Every_Cloud_Architecture-1.png 1920w"
+            sizes="(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)"
+            src="/content/images/size/w300/2023/01/Every_Cloud_Architecture-1.png"
+            alt="Every Cloud Architecture"
+        >
+    </a>
+
+    <a class="post-lightbox" href="/content/images/2023/01/Every_Cloud_Architecture-1.png">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
+</svg>    </a>
+
+    <figcaption class="post-caption">
+        <h2 class="post-caption-title">Every Cloud Architecture</h2>
+        <div class="post-caption-meta">
+                <span class="post-caption-meta-item post-caption-meta-tag">
+                    <a href="/tag/cloud/">cloud</a>
+                </span>
+            <span class="post-caption-meta-item post-caption-meta-date">
+                <time datetime="2023-01-08">Jan 8, 2023</time>
+            </span>
+            <span class="post-caption-meta-item post-caption-meta-link">
+                <a href="/every-cloud-architecture/">View project</a>
+            </span>
+        </div>
+    </figcaption>
+
+</figure>
+</div>
+    </div>
+
+</main>
+    </div>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="gh-copyright">
+                Good Tech Things © 2023
+            </div>
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-twitter"><a href="https://twitter.com/goodtechthings">Twitter</a></li>
+    <li class="nav-rss"><a href="https://www.goodtechthings.com/rss/">RSS</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-powered-by">
+                <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="https://www.goodtechthings.com/assets/built/main.min.js?v=a957b8d4de"></script>
+
+
+
+</body>
+</html>
