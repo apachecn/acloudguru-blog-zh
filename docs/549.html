@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>CDK vs Terraform vs CloudFormation | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>CDK vs Terraform vs Cloud formation |云专家</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws#0001-01-01">https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p>CDK vs地形vs云层——哪个更好？了解AWS上这些基础设施代码(IaC)工具的更多信息，并找出最适合您的工具。</p><p>我已经与Amazon Web Services合作多年，虽然随着时间的推移，云已经发生了很大的变化，但有一点是始终如一的:<strong>基础设施即代码(IaC)是AWS健康实施的核心支柱。</strong></p><p>对于任何比玩具云应用更大的东西，IaC都是赌注。你很难找到一个管理任何规模的人认为让人们在控制台上点击是最佳途径。</p><p>这些天来，我发现从我的所有应用程序甚至是IaC工具的概念验证开始更快。一次又一次，我发现在几周或几个月后再回到项目上，很快就能从熟悉的基线和环境中理解事情是如何运作的。我不需要在我的脑海中从头开始重建我的想法。</p><p>当然，“如何”接近IaC是AWS工程师自己版本的老“制表符对空格”的争论。</p><p>那么，AWS中有哪些IaC工具可供您使用，您如何在它们之间进行选择？请继续阅读我们对AWS CloudFormation、AWS Cloud Development Kit和Terraform的总结和比较。</p><hr class="wp-block-separator"/><p class="has-text-align-center" id="h-your-keys-to-a-better-career"><strong>通往更好职业的钥匙</strong></p><p class="has-text-align-center"><a href="https://acloudguru.com/pricing">立即开始ACG </a>通过AWS、Microsoft Azure、Google Cloud等领域的课程和实际动手实验室来改变你的职业生涯。</p><hr class="wp-block-separator"/><h2 id="h-aws-cloudformation">AWS云阵</h2><p><a href="https://aws.amazon.com/cloudformation/" target="_blank" rel="noreferrer noopener"> AWS CloudFormation </a>是AWS的原始IaC工具，于2011年发布。我对它描述和管理基础设施的能力产生了尊敬、厌恶、喜爱和敬畏。CloudFormation最初只在JSON中提供，但我们在2016年得到了一个tabs vs spaces的帮助，实际上与<a href="https://www.trek10.com/blog/cloudformation-yaml-and-why-its-awesome" target="_blank" rel="noreferrer noopener">本地CFN YAML支持有关。</a></p><p>CloudFormation是构建、管理、更改和销毁基础架构中资源的最安全方式之一。它提供了健壮的资源状态管理，现在它可以在您运行部署之前告诉您将要发生什么。</p><p>让我们来看看让CloudFormation变得令人愉快和高效的一些优秀特性。</p><h3 id="h-cloudformation-macros-and-transforms"><strong>云形成宏和变换</strong></h3><p>AWS CloudFormation的强大功能之一是<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-macro.html" target="_blank" rel="noreferrer noopener">宏</a>和<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html" target="_blank" rel="noreferrer noopener">转换</a>，这带来了全新的功能，可以添加您自己认为有价值的功能。</p><p>想象一下，能够提供自以为是的IAM策略生成器或S3资源宏——无论您想做什么，宏都可以帮您实现。请注意。虽然功能强大，但最终可能会踏入危险的领域，因为有效地构建自己的特定领域语言(DSL)变得很容易。您没有使用CloudFormation来管理您的资源，而是将CloudFormation作为一个糟糕的DSL编译器来使用，您将不得不照看它。</p><h3 id="h-resource-providers"><strong>资源提供者</strong></h3><p>有一段时间，我们只有<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html" target="_blank" rel="noreferrer noopener">个定制资源</a>来供应和管理AWS CloudFormation本身不支持的资源。这现在很大程度上被<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html">资源提供者</a>所取代，它允许你创建私有或公开的提供者，将第三方和不受支持的资源管理到你的堆栈中。例如，<a href="https://www.datadoghq.com/blog/monitoring-as-code-with-datadog-and-cloudformation/" target="_blank" rel="noreferrer noopener"> Datadog </a>是一款流行的监控工具，可以在您的堆栈中使用，以提供和管理监控，而无需一些带外流程。</p><div class="wp-container-640f2ad832733 wp-block-group"><div class="wp-block-group__inner-container"><p>在我最近使用AWS CloudFormation的大部分工作中，我默认使用AWS无服务器应用程序模型，或<a href="https://aws.amazon.com/serverless/sam/" target="_blank" rel="noreferrer noopener"> SAM </a>。SAM是CloudFormation的一个超集，通过一些方便的转换，您可以更少地输入和连接各种资源和权限。把它想象成一个经过深思熟虑和“管理”的宏。如果您正在使用AWS Lambda或事件驱动计算，并且希望提升您的YAML争论水平，请从SAM开始。</p></div></div><h2 id="h-aws-cloud-development-kit-cdk">AWS云开发套件(CDK)</h2><p><a href="https://aws.amazon.com/cdk/" target="_blank" rel="noreferrer noopener"> AWS云开发套件</a>(CDK)2019年发布。使用熟悉的编程语言并提供了TypeScript、Python、Java和。NET中，开发人员可以使用与他们的堆栈的其余部分相同的代码来管理他们的基础设施。</p><p>然而，CDK并非没有自动气象站的云系。事实上，CDK合成了云的形成。通过采用CDK，您仍然可以利用云形成的所有状态管理和固有的好处(和缺点)。</p><p>一个小题外话:我想强调的是，有些人认为CloudFormation是AWS的“汇编语言”,主要是因为有很多工具“编译”成CloudFormation。我认为这是一个危险的比较。这可能会导致一种解释，即像任何高级汇编语言一样，您不需要真正理解低级指令集如何有效地利用高级结构。根据我的经验，在云形成的情况下，这显然是不真实的。即使对它有一个初步的了解，也能在像CDK这样的高级用法中做出更好的决定。</p><p>最后，我认为CDK是开发人员开始构建云原生应用程序的最舒适和最自然的切入点。</p><p>让我们来看看AWS CDK的一些主要功能。</p><h3 id="h-constructs"><strong>构造</strong></h3><p>CDK最强大的功能之一——我相信AWS CloudFormation一直在努力提供——是真正可共享和可重用模块的想法。CDK引入了<a href="https://docs.aws.amazon.com/cdk/latest/guide/constructs.html" target="_blank" rel="noreferrer noopener">结构</a>的概念。实际上，构造提供了一切，从您希望在项目中重用的一些特定默认设置的简单包装，到复杂的多资源编排和<a href="https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-types.html" target="_blank" rel="noreferrer noopener">资源提供者的包装</a>。这些构造的分发方法依赖于本机。</p><p>CDK构造的另一个重要部分是一个叫做<a href="https://github.com/aws/jsii" target="_blank" rel="noreferrer noopener"> jsii </a>的东西。对项目进行报价；“jsii允许任何语言的代码自然地与JavaScript类交互。正是这项技术让AWS云开发套件能够从单一代码库交付多语言库！”。如果您用TypeScript编写构造，那么跨其他核心CDK语言分发和利用这些构造是相当简单的——这进一步鼓励了模块的共享。</p><p>我可以用一种最优雅的方式来说明CDK的体验有多好，那就是并排展示亚马逊州语的用法对比。</p><p>首先，它在AWS CloudFormation Native ASL中是什么样子的:</p><pre class="wp-block-preformatted">{
+  "DeliveryStepFunctionStateMachine": {
+    "Type": "AWS::StepFunctions::StateMachine",
+    "Properties": {
+      "RoleArn": {
+        "Fn::GetAtt": ["DeliveryStepFunctionStateMachineRoleC6479370", "Arn"]
+      },
+      "DefinitionString": {
+        "Fn::Join": [
+          "",
+          [
+            "{\"StartAt\":\"MapperTask\",\"States\":{\"MapperTask\":{\"Next\":\"SetStatusTo-pending\",\"Retry\":[{\"ErrorEquals\":[\"States.ALL\"],\"MaxAttempts\":10}],\"Parameters\":{\"FunctionName\":\"",
+            {
+              "Ref": "DeliveryStepFunctionMapper"
+            },
+            "\",\"Payload.$\":\"$\"},\"OutputPath\":\"$.Payload\",\"Type\":\"Task\",\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::lambda:invoke\"},\"SetStatusTo-pending\":{\"Next\":\"retry seconds\",\"Type\":\"Task\",\"ResultPath\":null,\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::dynamodb:updateItem\",\"Parameters\":{\"Key\":{\"pk\":{\"S.$\":\"$.pk\"},\"sk\":{\"S.$\":\"$.sk\"}},\"TableName\":\"",
+            {
+              "Ref": "PersistenceDDBTable"
+            },
+            "\",\"ExpressionAttributeNames\":{\"#status\":\"status\"},\"ExpressionAttributeValues\":{\":status\":{\"S\":\"pending\"}},\"ReturnValues\":\"ALL_NEW\",\"UpdateExpression\":\"SET #status = :status\"}},\"retry seconds\":{\"Type\":\"Wait\",\"SecondsPath\":\"$.retrySeconds\",\"Next\":\"SetStatusTo-in-progress\"},\"SetStatusTo-in-progress\":{\"Next\":\"DeliverTransactionTask\",\"Type\":\"Task\",\"ResultPath\":null,\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::dynamodb:updateItem\",\"Parameters\":{\"Key\":{\"pk\":{\"S.$\":\"$.pk\"},\"sk\":{\"S.$\":\"$.sk\"}},\"TableName\":\"",
+            {
+              "Ref": "PersistenceDDBTable"
+            },
+            "\",\"ExpressionAttributeNames\":{\"#status\":\"status\"},\"ExpressionAttributeValues\":{\":status\":{\"S\":\"in-progress\"}},\"ReturnValues\":\"ALL_NEW\",\"UpdateExpression\":\"SET #status = :status\"}},\"DeliverTransactionTask\":{\"Next\":\"Delivery success?\",\"Retry\":[{\"ErrorEquals\":[\"States.ALL\"],\"MaxAttempts\":10}],\"Parameters\":{\"FunctionName\":\"",
+            {
+              "Ref": "DeliveryStepFunctionDeliverTransaction"
+            },
+            "\",\"Payload.$\":\"$\"},\"OutputPath\":\"$.Payload\",\"Type\":\"Task\",\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::lambda:invoke\"},\"Delivery success?\":{\"Type\":\"Choice\",\"Choices\":[{\"Variable\":\"$.status\",\"StringEquals\":\"complete\",\"Next\":\"SetStatusTo-complete\"},{\"Variable\":\"$.status\",\"StringEquals\":\"failed\",\"Next\":\"SetStatusTo-failed\"}],\"Default\":\"SetStatusTo-pending\"},\"SetStatusTo-complete\":{\"End\":true,\"Type\":\"Task\",\"ResultPath\":null,\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::dynamodb:updateItem\",\"Parameters\":{\"Key\":{\"pk\":{\"S.$\":\"$.pk\"},\"sk\":{\"S.$\":\"$.sk\"}},\"TableName\":\"",
+            {
+              "Ref": "PersistenceDDBTable"
+            },
+            "\",\"ExpressionAttributeNames\":{\"#status\":\"status\"},\"ExpressionAttributeValues\":{\":status\":{\"S\":\"complete\"}},\"ReturnValues\":\"ALL_NEW\",\"UpdateExpression\":\"SET #status = :status\"}},\"SetStatusTo-failed\":{\"End\":true,\"Type\":\"Task\",\"ResultPath\":null,\"Resource\":\"arn:",
+            {
+              "Ref": "AWS::Partition"
+            },
+            ":states:::dynamodb:updateItem\",\"Parameters\":{\"Key\":{\"pk\":{\"S.$\":\"$.pk\"},\"sk\":{\"S.$\":\"$.sk\"}},\"TableName\":\"",
+            {
+              "Ref": "PersistenceDDBTable"
+            },
+            "\",\"ExpressionAttributeNames\":{\"#status\":\"status\"},\"ExpressionAttributeValues\":{\":status\":{\"S\":\"failed\"}},\"ReturnValues\":\"ALL_NEW\",\"UpdateExpression\":\"SET #status = :status\"}}}}"
+          ]
+        ]
+      }
+    }
+  }
+}</pre><p>然后是AWS CDK(利用一些现有的结构来为我编辑Amazon DynamoDB记录)。</p><pre class="wp-block-preformatted">const STATUS = "$.status"
+const RETRY_SECONDS = "$.retrySeconds"
+const PENDING = "pending"
+const PROGRESS = "in-progress"
+const FAILED = "failed"
+const COMPLETE = "complete"
+
+const setPending = stepFunction.setStatus(this, props.table, PENDING);
+const setProgress = stepFunction.setStatus(this, props.table, PROGRESS);
+const setSuccess = stepFunction.setStatus(this, props.table, COMPLETE);
+const setFailed = stepFunction.setStatus(this, props.table, FAILED);
+const waitForNSeconds = this.waitTask("retry seconds", RETRY_SECONDS);
+
+const definition = this.mapperTask()
+  .next(setPending)
+  .next(waitForNSeconds)
+  .next(setProgress)
+  .next(this.deliverTransactionTask())
+  .next(
+    new sfn.Choice(this, "Delivery success?")
+      .when(sfn.Condition.stringEquals(STATUS, COMPLETE), setComplete)
+      .when(sfn.Condition.stringEquals(STATUS, FAILED), setFailed)
+      .otherwise(setPending)
+  );</pre><p>如果您必须阅读第二段代码才能理解第一段代码在做什么，我完全理解。当然，没有什么能阻止CloudFormation采用和支持更优雅的DSL。事实上，<a href="https://aws.amazon.com/serverless/sam/" target="_blank" rel="noreferrer noopener"> AWS SAM </a>正是在这方面的一次尝试，其重点是无服务器开发者体验。</p><p>鉴于当前CDK社区的发展势头和AWS不断增长的投资，我希望看到越来越多的团队从CDK开始，并愉快地继续将其作为基础设施管理的主要工具。</p><h2 id="h-terraform-on-aws">AWS上的Terraform</h2><p>Terraform 于2014年推出，目标是能够将基础设施编排为代码。它最初<a href="https://github.com/hashicorp/terraform/commit/d6d5a97ec9cd08658e015ca83b34da3795e199ad" target="_blank" rel="noreferrer noopener">的目标是AWS </a>，但是已经发展到能够管理一个<a href="https://registry.terraform.io" target="_blank" rel="noreferrer noopener">大型模块生态系统。</a>事实上，多提供商支持能力是该技术的主要卖点之一。</p><p>Terraform推出了自己的DSL，叫做<a href="https://github.com/hashicorp/hcl" target="_blank" rel="noreferrer noopener"> Hashicorp配置语言</a> (HCL)。从表面上看，它感觉像是一个更人性化的JSON。如果你有受虐狂的一面，那么Terraform本身也支持JSON。</p><hr class="wp-block-separator"/><p class="has-text-align-center"><strong> <a href="https://acloudguru.com/blog/engineering/the-ultimate-terraform-cheatsheet" target="_blank" rel="noreferrer noopener">获取Terraform备忘单</a> </strong> <br/> <em>查看排名前十的Terraform命令，并在我们的<a href="https://acloudguru.com/blog/engineering/the-ultimate-terraform-cheatsheet" target="_blank" rel="noreferrer noopener"> Terraform备忘单</a>中获得您需要的所有基本命令的完整摘要。</em></p><hr class="wp-block-separator"/><h2 id="h-how-is-cloudformation-different-from-terraform">云的形成和地形有什么不同？</h2><p>作为代码的AWS基础设施只是花哨的状态管理。Terraform和AWS CloudFormation的最大区别在于它实际上是如何与基础设施本身进行交互的。有了CloudFormation，你可以向它提供你的目标状态的表示，它将在你的基础设施上执行所有操作，让你在平台内自然地到达那里。同样，Terraform采用您的目标状态的表示，<a href="https://www.terraform.io/docs/commands/plan.html" target="_blank" rel="noreferrer noopener">构造一个API调用计划</a>,直接调用您的AWS基础设施以达到该状态。</p><h3>为什么选择Terraform而不是CloudFormation？</h3><p>在一个完美的世界里，这两种方法都完美无缺。但这是我们正在谈论的云。正如沃纳·威格尔喜欢提醒我们的那样，每件事都会失败。</p><p>直到最近，Terraform在能够从进程外更新资源的人那里恢复方面还是很出色的。它能够解决不一致问题，并刷新基础架构的正确状态，即使有人“只是为了测试某些东西”而手动编辑了该安全组。AWS CloudFormation在这些不一致的状态中挣扎，但是<a href="https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html">漂移检测</a>的引入试图解决一些令人头痛的问题。</p><p>Terraform还提供了一个更优雅的故事，即<a href="https://www.terraform.io/docs/import/index.html" target="_blank" rel="noreferrer noopener">导入</a>非托管资源，或者来自其他栈的资源。CloudFormation提供了这一功能，但仅针对支持漂移检测的资源子集。</p><p>除了这些好处，AWS上的Terraform确实是“一次学习，利用大多数地方”的一个真正的选择。不管你对多云和混合云的感觉如何，对你自己或你的团队进行单一技术培训的吸引力是诱人的，这种技术可以从许多不同的可能目标的知识转移中受益。</p><h2 id="h-how-is-cdk-different-to-cloudformation-and-terraform">CDK与云的形成和地形有什么不同？</h2><p>为地形 (CDKTF)引入<a href="https://www.terraform.io/cdktf" target="_blank" rel="noreferrer noopener"> CDK有效地允许开发者编写CDK，在引擎盖下，目标是地形而不是云形成。这是我们在云世界中最接近拥有我们的蛋糕并吃掉它的方式，因为你可以想象一个CDK应用程序使用CloudFormation作为你的AWS嵌套堆栈目标，使用Terraform作为外部提供者堆栈目标。</a></p><h2 id="h-cdk-vs-terraform-vs-cloudformation-which-is-better">CDK vs陆地vs云形成:哪个更好？</h2><p>那么，应该选择哪种工具呢？鉴于存在大量的选择和业务需求，在一篇1600字的文章中强加一个放之四海而皆准的观点是不负责任的。相反，在考虑你的选择时，我会用一系列的问题来问你自己。</p><figure class="wp-block-table"><table><tbody><tr><td>我是否在开发一个<strong>简单的、几乎没有服务器的解决方案</strong>并且具有最小的依赖性？</td><td>自动气象站云形成(特别是自动气象站SAM)很有可能</td></tr><tr><td>我是否拥有最佳实践和流程编排的<strong>自上而下的分布</strong>？</td><td>AWS CDK或Terraform</td></tr><tr><td>我想完全留在AWS生态系统中吗？</td><td>自动气象站云形成或自动气象站CDK</td></tr><tr><td>我需要协调AWS生态系统之外的<strong>资源吗？</strong></td><td>地形或地形的CDK(CDKTF)</td></tr><tr><td>我是否想要一个<strong>多提供商实用程序</strong>，特别是针对多/混合云知识转移？</td><td>将（行星）地球化（以适合人类居住）</td></tr></tbody></table><figcaption>Choosing the right IaC tool on AWS</figcaption></figure><p>唯一真正错误的答案是阻止你建造任何东西的答案。</p><p>IaC空间正在增长，每个人都有自己的观点和事情应该如何工作。我认为竞争是健康的，在某些情况下，竞争迫使供应商自己提高了竞争力。以下是IaC领域中的一些其他可用工具。</p><figure class="wp-block-table"><table><tbody><tr><td>AWS Amplify CLI </td><td>用于简化无服务器web和移动开发的CLI工具链。如果你主要是一个前端开发人员，或者只是想尽快上手，那就别再找了。Amplify CLI和框架管理幕后的所有复杂性，帮助您构建和部署实时web和移动应用程序。</td></tr><tr><td><a href="https://www.pulumi.com/" target="_blank" rel="noreferrer noopener">电池组</a></td><td>如果Terraform和CDK团队一起重新构思，我觉得它会有点像Pulumi。</td></tr><tr><td><a href="https://github.com/cloudtools/troposphere" target="_blank" rel="noreferrer noopener">对流层</a></td><td>对流层库允许通过编写Python代码来描述AWS资源，从而更容易地创建<a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html" target="_blank" rel="noreferrer noopener"> AWS CloudFormation JSON </a>。对流层还包括通过Heat对<a href="http://docs.openstack.org/developer/heat/template_guide/openstack.html" target="_blank" rel="noreferrer noopener"> OpenStack资源</a>的一些基本支持。</td></tr><tr><td>英格拉夫</td><td>InGraph是用于AWS CloudFormation的开源和声明性基础设施图形DSL。关键特性是能够创建可组合的基础设施组件，同时保留AWS CloudFormation语言的严格语义。</td></tr><tr><td><a href="https://www.serverless.com/" target="_blank" rel="noreferrer noopener">无服务器框架</a></td><td>零摩擦无服务器开发。轻松构建可在低成本的新一代云基础架构上自动扩展的应用。</td></tr></tbody></table></figure><p><a href="https://trek10.com"> <em> Trek10 </em> </a> <em>是专注于云原生和无服务器应用的AWS首要咨询合作伙伴。</em></p></div></div>    
+</body>
+</html>

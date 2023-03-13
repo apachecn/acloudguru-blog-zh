@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>AWS Amplify and Multiple Serverless Environments | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>AWS放大和多个无服务器环境|云专家</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/multiple-serverless-environments-with-aws-amplify#0001-01-01">https://acloudguru.com/blog/engineering/multiple-serverless-environments-with-aws-amplify#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><h2 id="h-production-workflows-for-teams">团队的生产工作流程</h2><p id="a263">自从8月份发布了<a href="https://acloudguru.com/blog/engineering/create-a-serverless-python-api-with-aws-amplify-and-flask"> AWS Amplify </a> CLI以来，最受欢迎的功能之一就是处理多团队&amp;多环境的能力。</p><p id="9bd8">在最新发布的AWS Amplify工具链中，当使用AWS Amplify开发应用程序时，现在有了处理多种环境和团队的一流支持。</p><h3 id="7360">放大控制台</h3><p id="966e">最近另一个大的发布是<a href="https://acloudguru.com/blog/engineering/how-to-deploy-a-custom-domain-with-the-amplify-console"> Amplify控制台，这是一个为移动网络应用提供的持续交付和托管服务</a>。Amplify控制台与我们在本帖&amp;中将要讨论的多环境功能密切相关，我们将学习如何在团队的集中工作流程中利用多个Amplify AWS环境。</p><blockquote class="wp-block-quote"><p><mark>Amplify控制台还具有持续部署、轻松定制域+免费HTTPS、多环境支持功能分支部署、&amp;允许您在单个部署工作流程中管理前端&amp;无服务器后端等功能。</mark></p><p>要了解更多关于Amplify控制台的信息，请点击<a href="https://aws.amazon.com/amplify/console/" target="_blank" rel="noreferrer noopener">这里</a>。</p></blockquote><h3 id="f531">测试它</h3><p id="8181">使用以下命令安装Amplify CLI :</p><pre class="wp-block-code"><code>npm install -g @aws-amplify/cli</code></pre><p id="40e6"><em>如果这是您第一次使用AWS Amplify CLI，请查看</em> <a href="https://www.youtube.com/watch?v=fWbM5DLh25U" target="_blank" rel="noreferrer noopener"> <em>这段</em> </a> <em>视频，了解安装后如何配置它。</em></p><h2 id="0b0f">使用新的AWS环境功能</h2><p id="22f6">CLI中现在有了一个新命令，即<strong> env </strong>命令:</p><pre class="wp-block-code"><code>amplify env</code></pre><p id="2240">运行此命令时，您将获得一个在AWS环境中工作的可用选项列表:</p><ul><li><strong>同步— </strong>将您的环境与当前云环境同步。这将允许您下载您已经在其中工作的环境的较新版本</li><li><strong>检出</strong> <strong> &lt;环境名&gt; </strong> —将您的环境移动到命令中指定的环境</li><li><strong>列表</strong> —显示您的Amplify项目中所有环境的列表</li><li><strong> get </strong> —显示命令中指定的环境的详细信息</li><li><strong>添加</strong> —将一个已经存在的Amplify项目堆栈添加到您的本地后端</li><li><strong>移除</strong> —从Amplify项目中移除一个环境</li></ul><p id="6f12">要在现有的AWS Amplify项目中创建一个新的AWS环境，您可以运行<code>amplify init</code>命令&amp;您现在可以选择在当前工作项目中初始化一个新的环境。</p><h4 id="bc41">接下来，让我们学习如何在两种不同的场景中使用多个AWS环境:</h4><ol><li><strong>使用多个本地放大环境</strong></li><li><strong>在集中式工作流程中使用Amplify控制台与多个Amplify环境合作/与团队合作</strong></li></ol><h2 id="fefd">处理多个本地放大环境</h2><p id="550d">让我们先来看看如何创建和管理多个本地放大器环境。</p><p id="f1f2">在这个例子中，我们将看到如何添加和测试新功能，而不影响我们原来的/主要的放大器项目。当新特性准备好了，我们将把它合并到我们的主放大环境中&amp;删除特性环境。</p><p id="66cc">我们将使用以下工作流程来演示这一点:</p><ol><li>创建一个新的放大项目。主放大器环境将被称为<strong>开发</strong>。</li><li>向主环境添加新功能(身份验证)</li><li>推动主Amplify环境在我们的AWS客户中创建认证服务</li><li>创建新的放大环境，以创建和测试新功能。在这个新环境中，我们将添加并测试一个<a href="https://acloudguru.com/blog/engineering/8-steps-to-building-your-own-serverless-graphql-api-using-aws-amplify"> AWS AppSync GraphQL API </a>。这个新的放大环境将被称为<strong>蜂房</strong>。</li><li>一旦我们测试了这个新特性并知道它按照我们想要的方式工作，我们就会将它合并到我们现有的<strong> dev </strong>环境中。</li></ol><p id="1a48">为了以与框架无关的方式演示这个工作流，我们将在一个空目录中创建一个新的Amplify项目&amp;遍历上面的所有步骤。</p><h3 id="38b6">初始化一个新的放大项目</h3><pre class="wp-block-code"><code>mkdir blanktest
+cd blanktest
+amplify init</code></pre><blockquote class="wp-block-quote"><p>出现提示时，将环境命名为<strong>dev</strong>T2 】,出于本演示的目的，您可以随意选择所有其他选项的默认值。</p></blockquote><p id="ea35">接下来，在新环境中，使用以下命令添加身份验证服务:</p><pre class="wp-block-code"><code>amplify add auth</code></pre><blockquote class="wp-block-quote"><p>出现提示时，如果您想使用默认的身份验证和安全配置，请选择“是”。</p></blockquote><p id="553c">现在，我们将通过运行push命令在我们的帐户中创建服务:</p><pre class="wp-block-code"><code>amplify push</code></pre><ul><li>您确定要继续吗？<strong> Y </strong></li></ul><p id="4bf8">既然我们已经成功地将身份验证服务添加到我们的开发环境中，那么让我们看看如何创建一个新的特性-api环境来创建和测试AWS AppSync GraphQL API。</p><h3 id="120c">创造新的放大环境</h3><p id="8e16">为了创建新环境，我们将使用<code>init</code>命令:</p><pre class="wp-block-code"><code>amplify env add</code></pre><ul><li>您想使用现有环境吗？普通</li><li>输入环境的名称:apifeature</li></ul><p id="1818">现在，新环境已经创建。如果我们想要查看所有当前环境，我们可以运行以下命令来列出它们:</p><pre class="wp-block-code"><code>amplify env list
+| Environments |
+| ------------ |
+| dev          |
+| *apifeature  |</code></pre><blockquote class="wp-block-quote"><p>我们当前使用的环境现在应该显示在列表中，旁边有一个星号。</p></blockquote><p id="bc18">现在我们已经初始化了新环境，我们需要在我们的帐户中创建应用程序堆栈，这样我们就可以开始测试了。为此，请运行push命令:</p><pre class="wp-block-code"><code>amplify push</code></pre><p>现在我们已经创建了一个新环境，我们将添加新功能:</p><pre class="wp-block-code"><code>amplify add api</code></pre><blockquote class="wp-block-quote"><p>当提示输入API的类型时，选择GraphQL &amp;为这个演示的其余选项选择缺省值。</p></blockquote><p id="dc7c">完成上述步骤后，我们将运行amplify push在我们的帐户中创建GraphQL API:</p><pre class="wp-block-code"><code>amplify push</code></pre><ul><li>您确定要继续吗？<strong> Y </strong></li><li>是否要为新创建的GraphQL API生成代码？<strong> N </strong></li></ul><p id="8dca">成功创建服务后，我们可以运行status命令来查看项目的当前状态:</p><pre class="wp-block-code"><code>amplify status
+Current Environment: apifeature
+| Category | Resource name | Operation | Provider plugin   |
+| -------- | ------------- | --------- | ----------------- |
+| Auth     | cognitoauth   | No Change | awscloudformation |
+| Api      | blanktest     | No Change | awscloudformation |</code></pre><blockquote class="wp-block-quote"><p>如果我们访问<a href="https://console.aws.amazon.com/appsync/home" target="_blank" rel="noreferrer noopener"> AWS AppSync控制台</a>，我们现在应该看到添加了<strong>API feature</strong>(blank test-API feature)的新AWS AppSync API。</p></blockquote><h3 id="bc1b">将新特性合并到开发环境中</h3><p id="680d">现在，我们如何将这个新功能引入到我们原来的开发环境中呢？这很简单。我们需要检查原始的开发环境&amp;我们现在将看到这个特性的副本，以及已经为我们设置的所有配置。</p><pre class="wp-block-code"><code>amplify env checkout dev
+amplify status
+Current Environment: dev
+| Category | Resource name | Operation | Provider plugin   |
+| -------- | ------------- | --------- | ----------------- |
+| Api      | blanktest     | Create    | awscloudformation |
+| Auth     | cognitoauth   | No Change | awscloudformation |</code></pre><p>我们现在在项目中看到了API类别。我们还看到API对应的操作目前是<strong>创建</strong>。这意味着虽然AppSync API的配置已经准备就绪，但是实际的服务还没有在我们的帐户中创建。为此，我们需要运行<code>push</code>:</p><pre class="wp-block-code"><code>amplify push</code></pre><p id="849b">现在，新的AppSync GraphQL API已经创建好了&amp;它现在应该会出现在我们的<a href="https://console.aws.amazon.com/appsync/home" target="_blank" rel="noreferrer noopener">仪表板</a>中。</p><p id="86d1">要快速演示此工作流程，请观看以下视频:</p><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><p class="wp-block-embed__wrapper">删除AWS环境</p></figure><p>既然我们已经成功地将我们的特性合并到我们的主环境中，我们如何清理我们在测试环境中创建的资源呢？这很简单，我们只需运行以下命令:</p><h3 id="b6a1">您还想从云中删除环境的所有资源吗？<strong> Y </strong></h3><p id="dc99">remove命令将为您删除该环境中的所有内容(IAM角色、Cognito服务、AWS AppSync API和DynamoDB表)。</p><pre class="wp-block-code"><code>amplify env remove apifeature</code></pre><ul><li><strong>多重放大团队环境</strong></li></ul><p id="08a1">既然我们知道了如何在本地管理多个环境，那么我们如何在面向git的工作流中管理多个环境&amp;与团队一起？</p><h2 id="3743">在团队中处理Amplify项目有两种主要方式:</h2><p id="bcd3">团队成员在他们自己的沙盒环境中工作(推荐)</p><h3 id="38bf">团队成员共享同一个开发后端来工作</h3><ol><li>我们要看的例子(1)是团队成员如何在他们自己的沙盒环境中工作，然后将更改合并到开发环境中以测试一些更改，然后在测试完成后进行控制。</li><li>首先，我们希望有两个独立的git分支:master和dev。我们还希望有两个独立的放大器环境，与这些环境相对应。</li></ol><p id="5fab">设置主环境和开发环境</p><p id="5c18">要设置主环境和开发环境，我们将继续并初始化它们:</p><h2 id="5208">一旦我们在Git中设置了“主”分支，我们将在您的Amplify项目中设置一个“开发”环境(这将基于您的“主”环境):</h2><p id="5437">这将为云中的项目设置另一个环境。后端配置和资源现在是从“主”环境克隆的。运行<code>amplify push</code>为您的新环境(dev)提供所有AWS资源。</p><pre class="wp-block-code"><code>$ amplify env add
+? Enter a name for the environment master
+// Provide AWS Profile info
+// Add amplify categories using `amplify add &lt;category&gt;`
+$ git init
+$ git add &lt;all project related files&gt;
+$ git commit -m &lt;commit-message&gt;
+$ git remote add origin git@github.com:&lt;repo-name&gt;
+$ git push origin master</code></pre><p>现在将更改推送到“主”分支(<em>)当运行<code>git status</code>命令时，您将只看到对team-provider-info.json文件</em>的更改。这个文件包含了所有项目环境的累积堆栈信息，当您想要在一个团队中共享相同的后端时，这些信息非常有用。在这之后，让我们创建一个新的git分支——与我们刚刚创建的新环境相对应的“dev”。</p><pre class="wp-block-code"><code>$ amplify init
+? Do you want to use an existing environment? No
+? Enter a name for the environment dev
+// Provide AWS Profile info</code></pre><p id="63ab">在团队中共享项目</p><p id="f76c">现在，我们在云中有了两个独立的环境(master &amp; dev ),并且在git上有了相应的Git分支和我们的amplify后端基础设施代码。</p><pre class="wp-block-code"><code>$ git add .
+$ git commit -m "creating master amplify environment"
+$ git push origin master
+$ git checkout -b dev
+$ git push origin dev</code></pre><h2 id="29ae">假设一个团队成员想要在同一个Amplify项目上工作，向它添加一些特性，然后将更改推送到开发环境来测试一些更改。他们将执行以下步骤:</h2><p id="0596">接下来，假设团队成员想要将这些变更转移到开发和主环境/分支:</p><p id="8ad2">在测试了开发阶段的一切工作正常之后，您现在可以将开发合并到主git分支:</p><pre class="wp-block-code"><code>$ git clone &lt;git-repo&gt;
+$ cd &lt;project-dir&gt;
+$ git checkout -b mysandbox
+$ amplify init
+? Do you want to use an existing environment? No
+? Enter a name for the environment mysandbox
+// Rest of init steps
+// Add/update any backend configurations using amplify add/update &lt;category&gt;
+$ amplify push
+$ git push -u origin mysandbox</code></pre><p>其他工作流程</p><pre class="wp-block-code"><code>$ git checkout dev
+$ amplify init
+? Do you want to use an existing environment? true
+? Choose the environment you would like to use: 
+❯ dev 
+ master
+$ git merge mysandbox
+$ amplify push
+$ git push -u origin dev</code></pre><p>还有其他工作流，包括允许团队成员共享同一个开发后端&amp;甚至共享团队之外的项目。</p><pre class="wp-block-code"><code>$ git checkout master
+$ amplify init
+? Do you want to use an existing environment? true
+? Choose the environment you would like to use: 
+ dev 
+❯ master
+$ git merge dev
+$ amplify push
+$ git push -u origin master</code></pre><h3 id="f589">要了解有关这些其他工作流的更多信息，请查看此处列出的<a href="https://aws-amplify.github.io/docs/cli/multienv#setting-up-master-and-dev-environments" target="_blank" rel="noreferrer noopener">文档。</a></h3><p id="d013">结论</p><p id="94c7">在Amplify CLI发布之后，最受欢迎的特性之一是能够创建多个AWS环境并与团队共享，因此我对这个新版本感到非常兴奋。</p><h2 id="9a62">AWS Amplify CLI和客户端库都是开源的&amp;我们鼓励讨论、问题、拉请求和功能请求。如果你有兴趣参与这个项目，请点击这里查看回复。</h2><p id="3392">要了解更多关于AWS Amplify的信息，请点击此处查看文档<a rel="noreferrer noopener" href="https://aws-amplify.github.io/" target="_blank"/>。</p><p id="8092">获得更好职业所需的技能。</p><p id="ddad">掌握现代技术技能，获得认证，提升您的职业生涯。无论您是新手还是经验丰富的专业人士，您都可以通过实践来学习，并在ACG的帮助下推进您的云计算职业生涯。</p><hr class="wp-block-separator is-style-wide"/><h2 class="has-text-align-center" id="h-get-the-skills-you-need-for-a-better-career">Get the skills you need for a better career.</h2><p class="has-text-align-center">Master modern tech skills, get certified, and level up your career. Whether you’re starting out or a seasoned pro, you can learn by doing and advance your career in cloud with ACG.</p><hr class="wp-block-separator is-style-wide"/></div></div>    
+</body>
+</html>

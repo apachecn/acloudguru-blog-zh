@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>5 common Python pitfalls for data preparation | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>数据准备的5个常见Python陷阱|云专家</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/5-common-python-pitfalls-for-data-preparation#0001-01-01">https://acloudguru.com/blog/engineering/5-common-python-pitfalls-for-data-preparation#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p>Python是一种强大的数据准备语言，但是人们可能会遇到一些常见的错误或陷阱。在这篇博文中，我将讨论人们在使用Python进行数据准备时遇到的五个最常见的问题。</p><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><p class="wp-block-embed__wrapper"> </p></figure><h2 id="h-1-considering-missing-values-nan-as-false">1.将缺少的值(` NaN `)视为false。</h2><p>False、None和0(任何数值类型)的计算结果都为False。</p><p>这组对象和值被称为“falsy ”,其计算结果为false。NaN或missing值不为false，因此将<em> not </em>评估为false。这可能会导致许多操作的混乱和意外行为。</p><h2 id="h-2-attempting-to-compare-missing-values">2.尝试比较缺失值</h2><p>看起来很简单，<code>NaN == NaN</code>将返回true。这两个值“看起来”一样。</p><p>然而，由于不可能知道两个丢失的值是否相同，所以该操作将总是返回false。</p><h2 id="h-3-thinking-that-all-only-returns-true-when-all-elements-are-true">3.认为all()只有在所有元素都为真的情况下才返回真。</h2><p>如果iterable的所有元素都为真(或者iterable为空)，则<code>all()</code>方法返回真。</p><p>不要把它想成“如果iterable的所有元素都为真，则返回真”，而是“如果iterable中没有假元素，则返回真。”</p><p>当iterable为空时，其中不能有false元素，这意味着<code>all([]</code>的计算结果为True。</p><hr class="wp-block-separator"/><h2 class="has-text-align-center" id="h-your-keys-to-a-better-career">通往更好职业的钥匙</h2><p class="has-text-align-center"><a href="https://acloudguru.com/pricing">从ACG开始</a>通过AWS、Microsoft Azure、Google Cloud等领域的课程和实际动手实验室改变你的职业生涯。</p><hr class="wp-block-separator"/><h2 id="h-4-converting-to-bool-values">4.转换为布尔值</h2><p>Pandas遵循numpy惯例，当您试图将某个东西转换为bool时会引发一个错误。当使用布尔运算and、or或not时，在if或or中会发生这种情况。</p><p>不清楚结果应该是什么。因为不是零长所以应该是真的吗？假是因为有假值？</p><p>现在还不清楚，所以相反，熊猫养了一只<code>ValueError</code></p><p><code>ValueError: The truth value of a Series is ambiguous. </code></p><p><code>Use a.empty, a.bool() a.item(),a.any() or a.all().</code></p><h2 id="h-5-understanding-the-results-of-the-isin-operation">5.了解isin()操作的结果。</h2><p><meta charset="utf-8"/><code>isin()</code>操作返回一个布尔序列，显示序列中的每个元素是否都包含在传递的值序列中。</p><pre class="wp-block-code"><code> s = pd.Series(['dog', 'cat', 'fish'])
+&gt;&gt;&gt; s.isin(['bird'])
+0    False
+1    False
+2    False
+dtype: bool</code></pre><p>请注意,“鸟”在该系列中不存在。</p><pre class="wp-block-code"><code>&gt;&gt;&gt; s.isin(['bird', 'cat'])
+0    False
+1     True
+2    False
+dtype: bool</code></pre><p>注意“cat”确实存在于序列的第二个值中。</p><h2 id="h-learn-more-about-using-python-for-data-preparation">了解更多关于使用Python进行数据准备的信息</h2><p>Python是一种功能强大的语言，但是在缺少值和布尔值的情况下会产生混淆。请记住，缺少的值被认为是错误的，不能进行比较。</p><p>当使用<code>all()</code>方法时，记住当iterable中没有false值时，它返回true。如果所有值都丢失了，就像在空数组的情况下，<code>all()</code>也返回true，因为丢失的值不被认为是false。</p><p>如果您在尝试转换为bool值时收到一个<code>ValueError</code>,请务必采纳有用的建议并使用建议的方法之一。</p><p>想了解更多关于使用Python进行数据准备的信息吗？查看我们的Python 课程的<a href="https://acloud.guru/overview/data-preparation-for-python">数据准备(导入和清理)。</a></p></div></div>    
+</body>
+</html>

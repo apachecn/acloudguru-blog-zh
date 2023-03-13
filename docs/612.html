@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>How to use AWS Step Functions to Process Jobs | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>如何使用AWS Step函数处理作业</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/processing-an-arbitrary-number-of-jobs-with-aws-step-functions#0001-01-01">https://acloudguru.com/blog/engineering/processing-an-arbitrary-number-of-jobs-with-aws-step-functions#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p>AWS Step Functions基于任务和状态机的概念，使用基于JSON的<a href="https://states-language.net/spec.html" target="_blank" rel="noreferrer noopener"> Amazon States语言</a>来定义工作流。在本文中，我们将探索如何使用AWS步骤函数建立工作流，以迭代任意数量的复杂任务。</p><p id="h-the-sample-project-uses-the-iterator-pattern-to-process-a-dynamic-list-of-jobs">示例项目使用迭代器模式来处理作业的动态列表。</p><blockquote class="wp-block-quote"><p><strong> <em>更新:</em>亚马逊已经自</strong> <a href="https://aws.amazon.com/blogs/aws/new-step-functions-support-for-dynamic-parallelism/" target="_blank" rel="noreferrer noopener"> <strong>推出支持动态并行</strong> </a></p></blockquote><p id="aeb5">在标记为的<a href="https://marked.ai/" target="_blank" rel="noreferrer noopener">处，我们使用带有AWS步骤函数的<em>迭代器模式</em>来智能处理会议录音。一旦音频文件被处理，参与者就可以访问和搜索对话。</a></p><p id="29ca">对于每个会议，要处理的文件数量取决于一系列因素—通话人数、导致受影响人员部分录音的连接中断、某人因不同原因不得不离开通话并在稍后返回。无论如何，后处理工作流应该同样好地处理所有场景。</p><p id="e96e"><strong>TL；DR </strong>处理一个任务列表，总是在列表中的第一个任务上执行任务，将任务标记为完成，并移动到数组的末尾，重复执行，直到所有任务都完成。GitHub 上的<a href="https://github.com/christianklotz/aws-step-functions-iterate-sample" target="_blank" rel="noreferrer noopener">提供了完整的样本项目。</a></p><p>AWS步骤功能允许您将多个AWS服务协调到无服务器工作流中，以便您可以快速构建和更新应用程序。<a href="https://acloudguru.com/blog/engineering/how-the-saga-pattern-manages-failures-with-aws-lambda-and-step-functions">使用步骤函数</a>，您可以设计和运行工作流，将AWS Lambda和Amazon ECS等服务整合到功能丰富的应用程序中。工作流由一系列步骤组成，一个步骤的输出作为下一个步骤的输入。</p><h3 id="5e14">迭代次数</h3><p id="5faf">AWS文档中描述的<a href="https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-create-iterate-pattern-section.html" target="_blank" rel="noreferrer noopener">迭代器模式在为每次迭代工作的步骤不执行任何特定的</a><a href="https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-input-output-processing.html" target="_blank" rel="noreferrer noopener">输入和输出处理</a>时工作得非常好。</p><p id="86da">但是我们如何处理执行处理和就地修改状态机数据的迭代呢？让我们想象一个工作流，它在执行时将一系列作业作为输入。</p><pre class="wp-block-code"><code>{
+  "jobs": [{
+    "name": "First job"
+  }, {
+    "name": "Second job"
+  }]
+}</code></pre><p>每个作业应该由两个任务处理，将结果添加到状态机数据中，最终产生以下输出:</p><pre class="wp-block-code"><code>{
+  "jobs": [{
+    "name": "First job",
+    "firstResult": "success",
+    "secondResult": "success"
+  }, {
+    "name": "Second job",
+    "firstResult": "success",
+    "secondResult": "success"
+  }]
+}</code></pre><p id="4705">关键的一点是，在处理工作流时，为每个单独的作业设置了<code>firstResult</code>和<code>secondResult</code>。</p><p id="bf34"><strong> <em>注:</em> </strong> <em>亚马逊一般建议尽量保持状态机数据小，在S3、DynamoDB或其他地方存储较大的对象，使用工作流内的引用。</em></p><h3 id="h-limitations-with-amazon-state-language">亚马逊州语言的限制</h3><p id="4812">由于Amazon States语言的限制，不可能使用完整的<a href="https://github.com/json-path/JsonPath" target="_blank" rel="noreferrer noopener"> JsonPath </a>语法来选择或查询jobs数组。相反，我们可以只在数组的第一项上执行任务，在处理完成后将作业标记为done，并将其移动到数组的末尾。</p><p id="d130">为了确定工作流是否已经结束，每个迭代都以另一个步骤结束，该步骤检查队列中的下一个作业(总是数组中的第一个项目)是否已经被标记为完成。这导致了下面完整的工作流定义。</p><div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" src="../Images/c26cf358dd1655231d9c8971a198e7bb.png" alt="a complete workflow definition " class="wp-image-42207" data-original-src="https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/12/1_yZ85Nr_MBU1ARj_lW9D6Xg.png"/><figcaption>The workflow runs until all jobs are done</figcaption></figure></div><pre class="wp-block-code"><code>{
+  "Comment": "Processes an arbitrary list of jobs.",
+  "StartAt": "ProcessFirstPass",
+  "States": {
+    "ProcessFirstPass": {
+      "Type": "Pass",
+      "Result": "success",
+      "ResultPath": "$.jobs[0].firstResult",
+      "Next": "ProcessSecondPass"
+    },
+    "ProcessSecondPass": {
+      "Type": "Pass",
+      "Result": "success",
+      "ResultPath": "$.jobs[0].secondResult",
+      "Next": "MarkAsDone"
+    },
+    "MarkAsDone": {
+      "Type": "Pass",
+      "ResultPath": "$.jobs[0].done",
+      "Result": true,
+      "Next": "MoveToEnd"
+    },
+    "MoveToEnd": {
+      "Type": "Task",
+      "Comment": "Moves the currently processed job to the end of the array",
+      "InputPath": "$.jobs",
+      "ResultPath": "$.jobs",
+      "Resource": "${ProcessMoveToEnd.Arn}",
+      "Next": "AllDone"
+    },
+    "AllDone": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.jobs[0].done",
+          "BooleanEquals": true,
+          "Next": "Done"
+        }
+      ],
+      "Default": "ProcessFirstPass"
+    },
+    "Done": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}</code></pre><p id="cfa4">步骤<code>ProcessFirstPass</code>和<code>ProcessSecondPass</code>都可以是Lambda函数或活动。在这个例子中，一个<code>Pass</code>状态足以演示这个流程。</p><p id="b8de">将数组中的第一项移动到末尾的函数是作为Lambda函数实现的<a href="https://acloudguru.com/blog/engineering/running-webpack-on-aws-lambda">。我选择了Go——但是如果你更喜欢Node.js或Python，从技术上来说，你可以在你的CloudFormation模板</a>中提供源代码甚至<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html" target="_blank" rel="noreferrer noopener">作为内联文本。</a></p><pre class="wp-block-code"><code>package main
+import (
+  "github.com/aws/aws-lambda-go/lambda"
+)
+func handler(list []interface{}) ([]interface{}, error) {
+  if len(list) == 0 {
+    return list, nil
+  }
+  return append(list[1:], list[0]), nil
+}
+func main() {
+  lambda.Start(handler)
+}</code></pre><p>拼图的最后一块是工作流本身的执行:</p><pre class="wp-block-code"><code>aws stepfunctions start-execution \
+  --state-machine-arn &lt;STATE_MACHINE_ARN&gt;
+  --input "{\"jobs\": [{\"input\": \"First job\"}, {\"input\": \"Second job\"}]}"</code></pre><p>但是这会导致运行时错误，因为检查任务完成情况的<code>Choice</code>步骤需要设置<code>done</code>属性。</p><pre class="wp-block-code"><code>{
+  "error": "States.Runtime",
+  "cause": "An error occurred while executing the state 'AllDone' (entered at the event id #13). Invalid path '$.jobs[0].done': The choice state’s condition path references an invalid value."
+}</code></pre><p>为了正确开始执行，为所有作业提供默认值<code>false</code>。</p><pre class="wp-block-code"><code>aws stepfunctions start-execution \
+  --state-machine-arn &lt;STATE_MACHINE_ARN&gt;
+  --input "{\"jobs\": [{\"input\": \"First job\", \"done\": false}, {\"input\": \"Second job\", \"done\": false}]}"</code></pre><div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" src="../Images/947a626cb337dba67ce722a262e83b04.png" alt="Visual workflow with step functions" class="wp-image-42206" data-original-src="https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/12/1_xvunYCzNA1E2YuT-l1SX8w.png"/><figcaption>🎉🎉🎉</figcaption></figure></div><pre class="wp-block-code"><code>{
+  "startDate": 1534268042.564, 
+  "executionArn": "arn:[...]:83a1d843–0a60–45b7–8e6b-3be8077cfd09"
+}</code></pre><h3 id="da57">循序渐进的方法</h3><p id="25f4">这个例子展示了如何使用AWS步骤函数处理作业的动态列表。值得指出的是，本文概述的方法没有利用并行性，而是顺序处理所有作业。要获得完整的工作版本，请参见GitHub上的示例项目。查看这篇关于动态并行特性的文章，该特性被添加到阶跃函数中。</p><p id="a72b">我希望听到您对这种方法的反馈，或者您自己对AWS Step函数的体验。请在下面留下您的评论或在Twitter<a href="https://twitter.com/christianklotz" target="_blank" rel="noreferrer noopener"><strong>@</strong>christianklotz</a>上与我联系。</p><hr class="wp-block-separator"/><h2 class="has-text-align-center" id="h-get-the-skills-you-need-for-a-better-career">获得更好职业所需的技能。</h2><p class="has-text-align-center">掌握现代技术技能，获得认证，提升您的职业生涯。无论您是新手还是经验丰富的专业人士，您都可以通过实践来学习，并在ACG的帮助下推进您的云计算职业生涯。</p><hr class="wp-block-separator"/></div></div>    
+</body>
+</html>

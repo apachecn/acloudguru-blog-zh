@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Guide to Use and Declare Terraform Outputs - Inputs | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>使用和声明Terraform输出-输入指南|云专家</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/how-to-use-terraform-inputs-and-outputs#0001-01-01">https://acloudguru.com/blog/engineering/how-to-use-terraform-inputs-and-outputs#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p>Terraform是一个非常强大和高效的工具，用于在您的环境中部署和管理基础架构。有了这么多的提供者和模块，没有什么是Terraform做不到的。</p><p>Terraform的最大吸引力在于，您可以使用相同的配置在多个环境中创建资源，或者随着基础架构的增长和变得更加复杂，使用变量的需求也会增长。实现这一点的方法是使用输入和输出变量。</p><p>在这篇文章中，我们将探讨什么是变量，以及如何在你的地形配置中使用它们。</p><h2 id="h-what-are-terraform-output-variables">什么是Terraform <strong>输出变量</strong>？</h2><p>将输出变量视为Terraform模块的返回值。输出变量有几种用途。以下是一些例子:</p><ul><li>我们可以使用输出向父模块公开子模块资源属性的子集。</li><li>在运行<code>terraform apply</code>之后，我们可以在CLI输出中使用输出来打印根模块的值。</li><li>如果使用远程状态，其他配置可以通过<code>terraform_remote_state</code>数据源访问根模块的输出</li></ul><p>这些只是我们为什么要使用输出变量的几个例子。要声明输出值，必须在输出块中声明它们，如下例所示。</p><pre class="wp-block-code"><code>
+output "instance_ip_addr" {
+  value = aws_instance.server.private_ip
+}
+</code></pre><p>声明输出变量时，有三个可选参数可供使用。</p><ul><li><strong>描述</strong>–您可以使用此参数描述每个值的用途。</li></ul><pre class="wp-block-code"><code>
+output "instance_ip_addr" {
+  value       = aws_instance.server.private_ip
+  description = "The private IP address of the main server instance."
+}	
+</code></pre><ul><li><strong>敏感</strong>–使用该选项时，Terraform将隐藏<code>terraform plan</code>和<code>terraform apply</code>命令输出中标记为敏感的值。</li></ul><pre class="wp-block-code"><code>
+output "db_password" {
+  value       = aws_db_instance.db.password
+  description = "The password for logging in to the database."
+  sensitive   = true
+}	
+</code></pre><ul><li><strong>Depends _ on</strong>–当父模块访问其子模块之一导出的输出值时，该选项非常有用。该输出值的依赖性允许Terraform正确地确定在其他模块中定义的资源之间的依赖性。</li></ul><pre class="wp-block-code"><code>
+output "instance_ip_addr" {
+  value       = aws_instance.server.private_ip
+  description = "The private IP address of the main server instance."
+
+  depends_on = [
+    # Security group rule must be created before this IP address could
+    # actually be used, otherwise the services will be unreachable.
+    aws_security_group_rule.local_access,
+  ]
+}
+</code></pre><p>在构建配置时，输出变量非常有用。尤其是当任何部署基础设施或基础设施中的资源的人需要特殊的指令或登录信息时。让我们来总结一下使用变量的第三种方式。</p><h2 id="h-how-to-use-local-variables"><strong>如何使用局部变量</strong></h2><p>局部变量为表达式指定一个名称，这样它就可以在一个模块中多次使用而不会重复。如果您熟悉大多数编程语言，局部变量就像函数的临时局部变量。下面是一个如何声明局部变量的例子。</p><pre class="wp-block-code"><code>
+locals {
+  # Common tags to be assigned to all resources
+  common_tags = {
+    Service = local.service_name
+    Owner   = local.owner
+  }
+}
+</code></pre><p>然后，您可以通过在配置的资源块中引用类似于so : <code>tags = local.common_tags</code>的表达式来调用局部变量。局部值只能在声明它的模块内的表达式中访问。</p><p>你可能会问，我什么时候使用局部变量！局部变量有助于避免在一个配置中多次重复相同的值或表达式。但是，如果它们被过度使用，它们还会隐藏实际使用的值，使配置很难被未来的配置参与者阅读。建议适量使用。</p><h2 id="h-what-are-terraform-input-variables"><strong>什么是Terraform输入变量？</strong></h2><p>我们已经谈了很多输出变量，但现在让我们谈谈输入变量及其用途。</p><p>输入变量是将参数应用于Terraform配置的主要方式。它允许在不改变Terraform模块自己的源代码的情况下定制配置的各个方面，并允许在不同的配置之间共享模块。</p><p>您可以在配置的根模块中声明变量。您可以使用CLI选项和环境变量来设置它们。如果您熟悉大多数编程语言，Terraform模块可以与函数定义相媲美:</p><ul><li>输入变量类似于函数参数。</li><li>输出值类似于函数返回值。</li><li>局部值类似于函数的临时局部变量。</li></ul><hr class="wp-block-separator"/><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/079f543cc60333160171f62053f9585d.png" alt="Terraform Cheatsheet" class="wp-image-42278" srcset="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_1700/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg 1700w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_300/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg 300w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_1024/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg 1024w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_768/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg 768w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_1536/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg 1536w" sizes="(max-width: 1700px) 100vw, 1700px" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/Terraforming_BlogHeader.jpg"/></figure><p class="has-text-align-center"><em>需要更多地形技巧？查看我们的<a href="https://acloudguru.com/blog/engineering/the-ultimate-terraform-cheatsheet" target="_blank" rel="noreferrer noopener">终极地形命令备忘单</a>。</em></p><hr class="wp-block-separator"/><h2 id="h-how-do-we-declare-an-input-variable">我们如何声明一个输入变量？</h2><p>需要在地形配置中使用<code>variable block</code>声明输入变量。下面的例子是一个<code>variable block</code>的样子:</p><pre class="wp-block-code"><code>
+variable "image" {
+  type = string
+}
+
+variable "availability_zone_names" {
+  type = list(string)
+  default = ["us-east-1]
+}
+</code></pre><p>在这个例子中，我们声明了两个变量。变量名称后的标签是该变量的名称。这需要在声明的所有其他变量中是唯一的。</p><p>如果你想添加另一个图像变量，你需要做类似于<code>image_0</code>和<code>image_1 </code>这样的事情。</p><p>接下来，您将定义类型，在第一个例子中是<code>string</code>类型约束。下一个变量是定义可用性区域。你可以在这里看到<code>list(string</code>中的类型，如果没有定义<code>us-east-1</code>则有一个默认值。这样做的目的是，如果变量没有提供值，那么它将使用默认值。</p><p>以下是可以使用的可选参数和类型约束的列表:</p><p><strong>自变量:</strong></p><ul><li><code>default</code>–默认值，使变量可选。</li><li><code>type</code>–指定变量可接受的值类型。</li><li><code>description</code>–指定输入变量的文档。</li><li><code>validation</code>–定义验证规则，通常除了类型约束之外。</li><li><code>sensitive</code>–当变量在配置中使用时，这将限制Terraform UI输出。</li></ul><p><strong>类型约束</strong></p><p><strong>可用于类型约束的类型构造函数</strong></p><ul><li><code>list(&lt;TYPE&gt;)</code></li><li><code>set(&lt;TYPE&gt;)</code></li><li><code>map(&lt;TYPE&gt;)</code></li><li><code>object({&lt;ATTR_NAME&gt; = &lt;TYPE&gt;, … })</code></li><li><code>tuple([&lt;TYPE&gt;, …])</code></li></ul><p>在变量块中，type参数允许您限制作为变量值接受的值。如果不设置约束，则类型参数将接受任何值。类型约束是可选的，但鼓励使用。类型约束允许Terraform在解决问题时返回有用的错误消息。</p><p class="has-text-align-center"><em> <a href="https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws" target="_blank" rel="noreferrer noopener">云状、地形或CDK？查看我们在AWS上的IaC指南。</a>T3】</em></p><h3 id="h-using-a-variable"><strong>使用变量</strong></h3><p>可通过使用<code>var.&lt;variable_name&gt;</code>从terraform模块块内访问变量值。下面我们有一个例子来证明这一点。</p><pre class="wp-block-code"><code>
+resource "aws_instance" "example" {
+  instance_type = "t2.micro"
+  ami           = var.image_id
+}
+</code></pre><p>变量值只能在声明它的模块内的表达式中访问。</p><h2 id="h-the-many-ways-to-assign-variables-in-terraform"><strong>在Terraform中分配变量的多种方式</strong></h2><p>我们已经复习了一些关于输入变量的基础知识。现在让我们看几个如何声明变量的例子。</p><p>下面的例子说明了如何从命令行声明变量。</p><pre class="wp-block-code"><code>
+$ terraform apply -var="image_id=ami-abc123"
+$ terraform apply -var='image_id_list=["ami-abc123","ami-def456"]' -var="instance_type=t2.micro"
+$ terraform apply -var='image_id_map={"us-east-1":"ami-abc123","us-east-2":"ami-def456"}'
+</code></pre><p>这里你可以看到我们通过<code>-var</code>选项向<code>terraform apply</code>命令提供变量来指定我们的变量。如果我们有多个变量，我们可以创建一个扩展名为<code>.tfvars</code>或<code>.tfvars.json</code>的变量文件，然后在命令行中指定该文件，如下例所示。</p><pre class="wp-block-code"><code>
+$ terraform apply -var-file="testing.tfvars"
+</code></pre><p>变量定义文件使用与其余Terraform配置文件相同的语法。</p><p>我们也可以使用环境变量来设置Terraform中的变量。你可以像下面的例子一样简单的导出你的变量。</p><pre class="wp-block-code"><code>
+$ export TF_VAR_image_id=ami-abc123
+</code></pre><h3 id="h-there-is-an-order-to-things"><strong>事情是有顺序的！</strong></h3><p>在声明变量时，您需要知道变量定义的优先级。Terraform以特定的顺序加载变量。顺序如下:</p><ul><li>环境变量</li><li><code>terraform.tfvars</code>文件(如果存在)</li><li><code>terraform.tfvars.json</code>文件(如果存在)</li><li>任何<code>*.auto.tfvars</code>或<code>*.auto.tfvars.json</code>文件(如果存在)</li><li>命令行上的任何<code>-var</code>和<code>-var-file</code>选项。</li></ul><p>这将有助于构建一些较大的配置文件，或者尝试使用一个配置将基础架构部署到多个云环境。</p><p>这是一堂关于什么是输入、输出和局部变量以及如何在Terraform中使用它们的速成课。它们在构建你的地形配置时非常有用，并且会在你开始构建更复杂的，我指的是有趣的地形配置时帮助你。玩得开心点，我的Terraform gurus，让我们继续一次在Terraform block上建造未来吧！</p><hr class="wp-block-separator"/><figure class="wp-block-image size-large"><a href="https://get.acloudguru.com/kubernetes-azure-hashicorp-way-webinar"><img loading="lazy" src="../Images/622e5ae10860dc793cb426955ac8abc6.png" alt="Taylor Dolezal" class="wp-image-45201" srcset="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_960/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/Resources_KubernetesAzureHashiCorp.jpg 960w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_300/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/Resources_KubernetesAzureHashiCorp.jpg 300w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_768/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/Resources_KubernetesAzureHashiCorp.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/Resources_KubernetesAzureHashiCorp.jpg"/></a></figure><p class="has-text-align-center"><a href="https://get.acloudguru.com/kubernetes-azure-hashicorp-way-webinar" target="_blank" rel="noreferrer noopener"> <strong> WATCH: Kubernetes + Azure，哈希公司之道</strong> <br/> </a>有没有想过创建一种标准化的方法来部署您的应用程序，以及如何安全地这样做？在Azure上使用HashiCorp堆栈是一个很好的起点！观看此<a href="https://get.acloudguru.com/kubernetes-azure-hashicorp-way-webinar">免费点播网络研讨会</a>，HashiCorp的Taylor Dolezal将介绍使用地形、拱顶和航路点的潜力。</p><hr class="wp-block-separator"/><p class="has-text-align-center">想要提升你的地形技能吗？查看我们的<a href="https://acloudguru.com/course/hashicorp-certified-terraform-associate" target="_blank" rel="noreferrer noopener"> HashiCorp认证Terraform助理课程</a>。</p><hr class="wp-block-separator"/><div class="schema-faq wp-block-yoast-faq-block"><div class="schema-faq-section" id="faq-question-1620833592030"><strong class="schema-faq-question">What are Terraform <strong>Output Variables</strong>?</strong><p class="schema-faq-answer">将输出变量视为Terraform模块的返回值。输出变量有几种用途。<a href="https://acloudguru.com/blog/engineering/how-to-use-terraform-inputs-and-outputs">在这里看例子！</a></p></div><div class="schema-faq-section" id="faq-question-1620833712989"><strong class="schema-faq-question">How to use local variables in terraform?</strong><p class="schema-faq-answer">局部变量为表达式指定一个名称，这样它就可以在一个模块中多次使用而不会重复。如果您熟悉大多数编程语言，局部变量就像函数的临时局部变量。</p></div><div class="schema-faq-section" id="faq-question-1620833829754"><strong class="schema-faq-question"><strong>What are Terraform Input Variables?</strong></strong><p class="schema-faq-answer">输入变量是将参数应用于Terraform配置的主要方式。它允许在不改变Terraform模块自己的源代码的情况下定制配置的各个方面，并允许在不同的配置之间共享模块。</p></div><div class="schema-faq-section" id="faq-question-1620833917227"><strong class="schema-faq-question">How to declare variables in Terraform?</strong><p class="schema-faq-answer">您可以通过-var选项来指定我们的变量，从而为terraform apply命令提供变量。如果我们有多个变量，我们可以用。tfvars或. tfvars.json文件扩展名，然后在命令行上指定该文件。</p></div></div><h2 class="has-text-align-center" id="h-get-the-skills-needed-for-a-better-career">获得更好职业所需的技能。</h2><p class="has-text-align-center">掌握现代技术技能，获得认证，提升您的职业生涯。查看我们当前的<a href="https://acloudguru.com/blog/news/whats-free-at-acg-may-2021" target="_blank" rel="noreferrer noopener">免费课程</a>或<a href="https://acloudguru.com/pricing">获得7天免费试用</a>。无论您是新手还是经验丰富的专业人士，您都可以在ACG的帮助下推进您的云计算职业生涯。</p></div></div>    
+</body>
+</html>

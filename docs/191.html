@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>Azure Cosmos DB APIs: Use cases and trade-offs | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Azure Cosmos DB APIs:用例与权衡</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/azure-cosmos-db-apis-use-cases-and-trade-offs#0001-01-01">https://acloudguru.com/blog/engineering/azure-cosmos-db-apis-use-cases-and-trade-offs#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p id="h-azure-cosmos-db-is-a-fully-managed-elastically-scalable-and-globally-distributed-database-with-a-multi-model-approach-it-provides-you-the-ability-to-use-document-key-value-wide-column-or-graph-based-data-here-are-some-of-its-key-benefits">Azure Cosmos DB 是一个完全托管的、可弹性伸缩的、全球分布式数据库，采用多模型方法。它提供了大量的<a href="https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=data-12713-abhishgu#key-benefits" target="_blank" rel="noreferrer noopener">好处</a>，并让您能够使用文档、键值、宽列或基于图形的数据。</p><p id="h-azure-cosmos-db-is-a-fully-managed-elastically-scalable-and-globally-distributed-database-with-a-multi-model-approach-it-provides-you-the-ability-to-use-document-key-value-wide-column-or-graph-based-data-here-are-some-of-its-key-benefits">但是有这么多API选项——每个选项都有优缺点，这取决于您的用例及需求——您如何选择适合您的选项呢？</p><p>在本文中，我们将深入研究多模型功能，并探索可用于存储和访问数据的选项。希望它能帮助您做出明智的决定，哪种API是您的正确选择。</p><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><p class="wp-block-embed__wrapper"> </p></figure><h2 id="h-picking-the-right-azure-cosmos-db-api">挑选合适的<strong> Azure Cosmos DB API </strong></h2><p>Azure Cosmos DB中有五种不同的API可用:</p><ul><li><strong>核心(SQL) API </strong>:提供NoSQL文档存储的灵活性，结合SQL的查询功能。</li><li><strong> <a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> MongoDB API </a> </strong>:支持MongoDB wire协议，这样现有的MongoDB客户端可以继续使用Azure Cosmos DB，就像它们运行在一个实际的MongoDB数据库上一样。</li><li><strong> <a href="https://docs.microsoft.com/azure/cosmos-db/cassandra-introduction?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> Cassandra API </a> </strong>:支持Cassandra wire协议，这样现有的符合CQLv4的Apache驱动程序可以继续与Azure Cosmos DB一起工作，就像它们是在实际的Cassandra数据库上运行一样。</li><li><strong> <a href="https://docs.microsoft.com/azure/cosmos-db/graph-introduction?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> Gremlin API </a> </strong>:用Apache TinkerPop(一个图形计算框架)和Gremlin查询语言支持图形数据。</li><li><strong> <a href="https://docs.microsoft.com/azure/cosmos-db/table-introduction?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> Table API </a> </strong>:为针对Azure Table存储编写的应用提供高级功能。</li></ul><hr class="wp-block-separator"/><p class="has-text-align-center"><em>和ACG的<strong> <a href="https://acloudguru.com/course/azure-cosmos-db-deep-dive" target="_blank" rel="noreferrer noopener">一起探索蔚蓝宇宙DB <em>蔚蓝宇宙DB深潜</em></a> </strong> </em>。无论你是NoSQL的新手，还是仅仅对微软提供的东西感兴趣，这个课程都将帮助你最大限度地利用Azure Cosmos DB。</p><hr class="wp-block-separator"/><h2 id="h-common-scenarios-for-using-azure-cosmos-db"><strong>使用Azure Cosmos DB的常见场景</strong></h2><p>在深入研究之前，让我们看看Azure Cosmos DB的一些常见应用场景。这绝不是一份详尽的清单。</p><ul><li><strong>现代游戏服务</strong>需要提供定制和个性化的内容，如游戏内统计数据、社交媒体整合和高分排行榜。作为一个完全托管的产品，Azure Cosmos DB需要最少的设置和管理，以允许快速迭代，并缩短上市时间。</li></ul><ul><li><strong>电子商务平台</strong>和零售应用程序存储目录数据，并用于订单处理管道中的事件采购。</li></ul><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/56bb1a8387186ca642ac7be70ee4f287.png" alt="" class="wp-image-45952" srcset="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_1270/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/azure-cosmos-db-blog-ecommerce.png 1270w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_300/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/azure-cosmos-db-blog-ecommerce.png 300w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_1024/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/azure-cosmos-db-blog-ecommerce.png 1024w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_768/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/azure-cosmos-db-blog-ecommerce.png 768w" sizes="(max-width: 1270px) 100vw, 1270px" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/azure-cosmos-db-blog-ecommerce.png"/></figure><ul><li>提供个性化体验的应用程序可能非常复杂。他们需要能够有效地检索用户特定的设置，以快速呈现UI元素和体验。</li></ul><h2 id="h-which-api-to-use-and-when">使用哪种API，何时使用？</h2><p>没有完美的公式！有时，选择是明确的，但是其他场景可能需要一些分析。</p><p>要考虑的一个相当明显的问题是，是否存在通过wire协议使用任何受支持的API的现有应用程序(即Cassandra和MongoDB)？如果答案是肯定的，您应该考虑使用特定的Azure Cosmos DB API，因为这将减少您的迁移任务，并充分利用您团队中以前的经验。</p><p>如果您希望模式发生很大变化，您可能希望利用文档数据库，使Core (SQL)成为一个不错的选择(尽管也应该考虑MongoDB API)。</p><p>如果您的数据模型由实体之间的关系和相关元数据组成，那么您最好使用Azure Cosmos DB Gremlin API中的图形支持。</p><p>如果你目前使用的是Azure Table Storage，那么核心(SQL) API会是一个更好的选择。它提供了更丰富的查询体验，改进了表API的索引。如果你不想重写你的应用程序，考虑将<a href="https://docs.microsoft.com/azure/cosmos-db/table-api-faq?WT.mc_id=data-12713-abhishgu#table-api-vs-table-storage" target="_blank" rel="noreferrer noopener">迁移到Azure Cosmos DB Table API </a>。</p><p>让我们看看每个API并应用其中的一些。</p><h2 id="h-core-sql-api-best-of-both-worlds">核心(SQL) API:两全其美</h2><p>核心(SQL) API是默认的Azure Cosmos DB API。您可以使用<a href="https://docs.microsoft.com/azure/cosmos-db/modeling-data?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> JSON文档存储数据来表示您的数据</a>，但是有几种方法可以检索它:</p><ul><li><a href="https://docs.microsoft.com/azure/cosmos-db/sql-query-getting-started?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> SQL查询</a>:使用结构化查询语言(SQL)作为JSON查询语言编写查询</li><li>点读取:在单个条目ID和分区键上进行键/值样式的查找(这些比SQL查询更便宜、更快)</li></ul><p>对于许多应用程序来说，半结构化数据模型可以提供他们需要的灵活性。例如，具有大量产品类别的电子商务设置。您将需要添加新的产品类别和支持操作(搜索，排序等。)跨多个产品属性。您可以用关系数据库对此进行建模，但是不断发展的产品类别可能需要停机来更新表模式、查询和数据库。</p><p>使用Core (SQL ),引入新产品类别就像为新产品添加文档一样简单，无需更改模式或停机。Azure Cosmos DB MongoDB API也适合这些需求，但是Core (SQL) API具有优势，因为它在灵活的数据模型之上支持类似SQL的查询。</p><p>考虑一个博客平台的例子，用户可以创建帖子，喜欢这些帖子并添加评论。</p><p>您可以这样描述帖子:</p><pre class="wp-block-code"><code>{
+     "id": "",
+     "type": "post",
+     "postId": "",
+     "userId": "",
+     "userUsername": "",
+     "title": "",
+     "content": "",
+     "commentCount": ,
+     "likeCount": ,
+     "creationDate": ""
+ }</code></pre><p>以及评论和赞:</p><pre class="wp-block-code"><code>{
+     "id": "",
+     "type": "comment",
+     "postId": "",
+     "userId": "",
+     "userUsername": "",
+     "content": "",
+     "creationDate": ""
+ }</code></pre><pre class="wp-block-code"><code>{
+     "id": "",
+     "type": "like",
+     "postId": "",
+     "userId": "",
+     "userUsername": "",
+     "creationDate": ""
+ }</code></pre><p>要处理赞和评论，您可以使用一个<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs" target="_blank" rel="noreferrer noopener">存储过程</a>:</p><pre class="wp-block-code"><code>function createComment(postId, comment) {
+  var collection = getContext().getCollection();
+
+  collection.readDocument(
+    `${collection.getAltLink()}/docs/${postId}`,
+    function (err, post) {
+      if (err) throw err;
+
+      post.commentCount++;
+      collection.replaceDocument(
+        post._self,
+        post,
+        function (err) {
+          if (err) throw err;
+
+          comment.postId = postId;
+          collection.createDocument(
+            collection.getSelfLink(),
+            comment
+          );
+        }
+      );
+    })
+}
+</code></pre><p><em>如果想了解更多，参考</em> <a href="https://docs.microsoft.com/azure/cosmos-db/sql-query-working-with-json?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> <em>在Azure Cosmos DB中使用JSON</em></a><em>。</em></p><h2 id="h-migrate-from-an-existing-mongodb-instance">从现有的MongoDB实例迁移</h2><p>Azure Cosmos DB为MongoDB 实现了<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-feature-support-36" target="_blank" rel="noreferrer noopener"> wire协议，该协议允许与原生MongoDB客户端SDK、驱动程序和工具透明兼容。这意味着任何理解这个协议版本的MongoDB客户端驱动程序(以及像Studio 3T </a>这样的<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-feature-support-36" target="_blank" rel="noreferrer noopener">现有工具)都应该能够本地连接到Cosmos DB。</a></p><p>例如，假设您有一个现有的MongoDB数据库作为采购订单处理应用程序的数据存储，以不同的格式捕获失败和部分订单、履行数据和运输状态。由于数据量不断增加，您希望迁移到可扩展的基于云的解决方案，并继续使用MongoDB。为MongoDB使用Azure Cosmos DB的API非常有意义。但是，您希望对现有应用程序进行最少的代码更改，并在尽可能短的停机时间内迁移当前数据。</p><p>借助<a href="https://acloudguru.com/course/using-microsoft-azure-database-services"> Azure Database </a>迁移服务，您可以执行<em>在线</em>(最短停机时间)<a href="https://acloudguru.com/blog/business/what-is-cloud-migration" target="_blank" rel="noreferrer noopener">迁移</a>，并根据您的需求灵活扩展为您的Cosmos数据库调配的吞吐量和存储，并且只需为您需要的吞吐量和存储付费。这导致了显著的成本节约。</p><p class="has-text-align-center"><em>参考</em> <a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-pre-migration?WT.mc_id=data-12713-abhishgu"> <em>前</em> </a> <em>和</em> <a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-post-migration?WT.mc_id=data-12713-abhishgu"> <em>后</em> </a> <em>指南。</em></p><p>一旦迁移了数据，您就可以继续使用现有的应用程序。下面是一个使用<a href="https://docs.mongodb.com/ecosystem/drivers/csharp/"> MongoDB的例子。网络驱动</a>:</p><p>初始化客户端:</p><pre class="wp-block-code"><code>MongoClientSettings settings = new MongoClientSettings();
+settings.Server = new MongoServerAddress(host, 10255);
+settings.UseSsl = true;
+settings.SslSettings = new SslSettings();
+settings.SslSettings.EnabledSslProtocols = SslProtocols.Tls12;
+
+MongoIdentity identity = new MongoInternalIdentity(dbName, userName);
+MongoIdentityEvidence evidence = new PasswordEvidence(password);
+
+settings.Credential = new MongoCredential("SCRAM-SHA-1", identity, evidence);
+
+MongoClient client = new MongoClient(settings);
+</code></pre><p>检索数据库和集合:</p><pre class="wp-block-code"><code>private string dbName = "Tasks";
+private string collectionName = "TasksList";
+
+var database = client.GetDatabase(dbName);
+var todoTaskCollection = database.GetCollection&lt;MyTask&gt;(collectionName);
+</code></pre><p>将任务插入集合:</p><pre class="wp-block-code"><code>public void CreateTask(MyTask task)
+ {
+     var collection = GetTasksCollectionForEdit();
+     try
+     {
+         collection.InsertOne(task);
+     }
+     catch (MongoCommandException ex)
+     {
+         string msg = ex.Message;
+     }
+ }
+</code></pre><p>检索所有任务:</p><pre class="wp-block-code"><code>collection.Find(new BsonDocument()).ToList();</code></pre><p>您还应该仔细考虑如何将<a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-consistency?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> MongoDB写/读问题映射到Azure Cosmos一致性级别</a>、<a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-indexing?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener">管理索引</a>，并利用<a href="https://docs.microsoft.com/azure/cosmos-db/mongodb-change-streams?tabs=javascript&amp;WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener">变更提要支持</a>。</p><p>请注意，如果不需要重用现有代码和从现有MongoDB数据库导入数据，那么核心(SQL) API将是一个合适的选择。</p><h2 id="h-handle-real-time-data-with-cassandra">用Cassandra处理实时数据</h2><p>如果您的应用程序需要处理大量的实时数据，Apache Cassandra是一个理想的选择。使用Azure Cosmos DB Cassandra API，您可以使用符合CQ v4的现有Apache驱动程序，并且在大多数情况下，您应该能够通过更改连接字符串，从使用Apache Cassandra切换到使用Azure Cosmos DB的Cassandra API。也可以继续使用基于Cassandra的工具，比如<code>cqlsh</code>。</p><p>对于高级分析用例，你应该将Azure Cosmos DB Cassandra API与Apache Spark结合起来。你可以使用熟悉的<a href="https://mvnrepository.com/artifact/com.datastax.spark/spark-cassandra-connector" target="_blank" rel="noreferrer noopener">Spark connector for Cassandra</a>来连接Azure Cosmos DB Cassandra API。此外，您还需要来自Azure Cosmos DB的<a href="https://search.maven.org/artifact/com.microsoft.azure.cosmosdb/azure-cosmos-cassandra-spark-helper/1.0.0/jar" target="_blank" rel="noreferrer noopener">Azure-Cosmos-Cassandra-spark-helper</a>helper库，用于定制连接工厂和重试策略等功能。</p><p class="has-text-align-center"><em>可以从</em><a href="https://docs.microsoft.com/azure/cosmos-db/cassandra-spark-databricks?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"><em>Azure data bricks</em></a><em>以及</em> <a href="https://docs.microsoft.com/azure/cosmos-db/cassandra-spark-hdinsight?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> <em> Spark on YARN使用HDInsight </em> </a>访问Azure Cosmos DB Cassandra API</p><p>要连接到Cosmos DB，您可以像这样使用Scala API:</p><pre class="wp-block-code"><code>import org.apache.spark.sql.cassandra._
+import com.datastax.spark.connector._
+import com.datastax.spark.connector.cql.CassandraConnector
+import com.microsoft.azure.cosmosdb.cassandra
+
+spark.conf.set("spark.cassandra.connection.host","YOUR_ACCOUNT_NAME.cassandra.cosmosdb.azure.com")
+spark.conf.set("spark.cassandra.connection.port","10350")
+spark.conf.set("spark.cassandra.connection.ssl.enabled","true")
+spark.conf.set("spark.cassandra.auth.username","YOUR_ACCOUNT_NAME")
+spark.conf.set("spark.cassandra.auth.password","YOUR_ACCOUNT_KEY")
+spark.conf.set("spark.cassandra.connection.factory", "com.microsoft.azure.cosmosdb.cassandra.CosmosDbConnectionFactory")
+
+spark.conf.set("spark.cassandra.output.batch.size.rows", "1")
+spark.conf.set("spark.cassandra.connection.connections_per_executor_max", "10")
+spark.conf.set("spark.cassandra.output.concurrent.writes", "1000")
+spark.conf.set("spark.cassandra.concurrent.reads", "512")
+spark.conf.set("spark.cassandra.output.batch.grouping.buffer.size", "1000")
+spark.conf.set("spark.cassandra.connection.keep_alive_ms", "600000000")
+</code></pre><p>您可以执行聚合，如平均值、最小值/最大值、总和等。：</p><pre class="wp-block-code"><code>spark
+  .read
+  .cassandraFormat("books", "books_ks", "")
+  .load()
+  .select("book_price")
+  .agg(avg("book_price"))
+  .show
+
+spark
+  .read
+  .cassandraFormat("books", "books_ks", "")
+  .load()
+  .select("book_id","book_price")
+  .agg(min("book_price"))
+  .show
+
+spark
+  .read
+  .cassandraFormat("books", "books_ks", "")
+  .load()
+  .select("book_price")
+  .agg(sum("book_price"))
+  .show
+</code></pre><h2 id="h-connect-everything-using-the-gremlin-graph-api">使用Gremlin (Graph) API连接一切</h2><p>作为个性化客户体验的一部分，您的应用程序可能需要在网站上提供产品推荐。例如，“购买了产品X的人也购买了产品y。”您的用例可能还需要预测客户行为，或者将人们与具有相似兴趣的人联系起来。</p><p><a href="https://docs.microsoft.com/azure/cosmos-db/gremlin-support?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> Azure Cosmos DB支持Apache Tinkerpop的图遍历语言</a>(即Gremlin)。有许多用例会产生与缺乏灵活性和关系方法相关的常见问题。例如，管理互联社交网络、<a href="https://acloudguru.com/blog/engineering/location-based-search-results-with-dynamodb-and-geohash">地理空间使用案例</a>，例如在一个区域内查找感兴趣的位置或定位两个位置之间的最短/最佳路线，或者将物联网设备之间的网络和连接建模为图表，以便更好地了解您的设备和资产的状态。除此之外，您可以继续享受所有Azure Cosmos DB APIs共有的功能，如全球分布、存储和吞吐量的弹性扩展、自动索引和查询以及可调的一致性级别。</p><p>例如，您可以使用以下命令将产品的三个顶点和相关采购的两条边添加到图形中:</p><pre class="wp-block-code"><code>g.addV('product').property('productName', 'Industrial Saw').property('description', 'Cuts through anything').property('quantity', 261)
+g.addV('product').property('productName', 'Belt Sander').property('description', 'Smoothes rough edges').property('quantity', 312)
+g.addV('product').property('productName', 'Cordless Drill').property('description', 'Bores holes').property('quantity', 647)
+
+g.V().hasLabel('product').has('productName', 'Industrial Saw').addE('boughtWith').to(g.V().hasLabel('product').has('productName', 'Belt Sander'))
+g.V().hasLabel('product').has('productName', 'Industrial Saw').addE('boughtWith').to(g.V().hasLabel('product').has('productName', 'Cordless Drill'))
+</code></pre><p>然后，您可以查询随“工业锯”一起购买的其他产品:</p><pre class="wp-block-code"><code>g.V().hasLabel('product').has('productName', 'Industrial Saw').outE('boughtWith')</code></pre><p>下面是结果的样子:</p><pre class="wp-block-code"><code>[
+  {
+    "id": "6c69fba7-2f76-421f-a24e-92d4b8295d67",
+    "label": "boughtWith",
+    "type": "edge",
+    "inVLabel": "product",
+    "outVLabel": "product",
+    "inV": "faaf0997-f5d8-4d01-a527-ae29534ac234",
+    "outV": "a9b13b8f-258f-4148-99c0-f71b30918146"
+  },
+  {
+    "id": "946e81a9-8cfa-4303-a999-9be3d67176d5",
+    "label": "boughtWith",
+    "type": "edge",
+    "inVLabel": "product",
+    "outVLabel": "product",
+    "inV": "82e1556e-f038-4d7a-a02a-f780a2b7215c",
+    "outV": "a9b13b8f-258f-4148-99c0-f71b30918146"
+  }
+]
+</code></pre><p>除了传统的客户端，你可以使用图形<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/bulk-executor-overview" target="_blank" rel="noreferrer noopener">批量执行程序。NET库</a>在Azure Cosmos DB Gremlin API中执行批量操作。与使用Gremlin客户端相比，使用此功能将提高数据迁移效率。传统上，使用Gremlin插入数据将要求应用程序在需要验证、评估、然后执行以创建数据的时候发送一个查询。批量执行器库将处理应用程序中的验证，并为每个网络请求一次发送多个图形对象。</p><p>以下是如何创建顶点和边的示例:</p><pre class="wp-block-code"><code>IBulkExecutor graphbulkExecutor = new GraphBulkExecutor(documentClient, targetCollection);
+
+BulkImportResponse vResponse = null;
+BulkImportResponse eResponse = null;
+
+try
+{
+    vResponse = await graphbulkExecutor.BulkImportAsync(
+            Utils.GenerateVertices(numberOfDocumentsToGenerate),
+            enableUpsert: true,
+            disableAutomaticIdGeneration: true,
+            maxConcurrencyPerPartitionKeyRange: null,
+            maxInMemorySortingBatchSize: null,
+            cancellationToken: token);
+
+    eResponse = await graphbulkExecutor.BulkImportAsync(
+            Utils.GenerateEdges(numberOfDocumentsToGenerate),
+            enableUpsert: true,
+            disableAutomaticIdGeneration: true,
+            maxConcurrencyPerPartitionKeyRange: null,
+            maxInMemorySortingBatchSize: null,
+            cancellationToken: token);
+}
+catch (DocumentClientException de)
+{
+    Trace.TraceError("Document client exception: {0}", de);
+}
+catch (Exception e)
+{
+    Trace.TraceError("Exception: {0}", e);
+}
+</code></pre><p>虽然可以使用核心(SQL) API作为JSON文档来建模和存储这些数据，但是它不适合需要确定实体(例如产品)之间关系的查询。</p><p class="has-text-align-center"><em>您可能想要探索Azure Cosmos DB Gremlin API的</em> <a href="https://docs.microsoft.com/azure/cosmos-db/graph-modeling?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> <em>图形数据建模</em> </a> <em>以及</em> <a href="https://docs.microsoft.com/azure/cosmos-db/graph-partitioning?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener"> <em>数据分区</em> </a> <em>。</em></p><p>如果你已经有了为Azure Table storage编写的应用程序，它们可以通过使用Table API迁移到Azure Cosmos DB，而不需要修改代码，并利用高级功能。</p><p>将数据库从Azure Table存储迁移到低吞吐量的Azure Cosmos DB可以在延迟(一位数毫秒的读写)、吞吐量、全局分布、全面的SLA以及成本方面带来很多好处(您可以使用<a href="https://docs.microsoft.com/azure/cosmos-db/serverless?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener">基于消耗的</a>或<a href="https://docs.microsoft.com/azure/cosmos-db/set-throughput?WT.mc_id=data-12713-abhishgu" target="_blank" rel="noreferrer noopener">供应容量</a>模式)。将表数据存储在Cosmos DB中会自动对所有属性进行索引<em>(没有索引管理开销),而表存储只允许对分区和行键进行索引。</em></p><p>Table API具有可用于的客户端SDK。例如，对于Java客户端，使用连接字符串来存储表端点和凭证:</p><pre class="wp-block-code"><code>public static final String storageConnectionString =
+    "DefaultEndpointsProtocol=https;" + 
+    "AccountName=your_cosmosdb_account;" + 
+    "AccountKey=your_account_key;" + 
+    "TableEndpoint=https://your_endpoint;" ;
+</code></pre><p>..并执行CRUD(创建、读取、更新、删除)操作，如下所示:</p><pre class="wp-block-code"><code>try
+{
+    CloudStorageAccount storageAccount =
+        CloudStorageAccount.parse(storageConnectionString);
+
+    CloudTableClient tableClient = storageAccount.createCloudTableClient();
+
+    CloudTable cloudTable = tableClient.getTableReference("customers");
+    cloudTable.createIfNotExists();
+
+    for (String table : tableClient.listTables())
+    {
+        System.out.println(table);
+    }
+
+    CustomerEntity customer = ....;
+    TableOperation insert = TableOperation.insertOrReplace(customer);
+    cloudTable.execute(insert);
+
+    TableOperation retrieve =
+        TableOperation.retrieve("Smith", "Jeff", CustomerEntity.class);
+    CustomerEntity result =
+        cloudTable.execute(retrieve).getResultAsType();
+
+    TableOperation del = TableOperation.delete(jeff);
+    cloudTable.execute(del);
+}
+</code></pre><p class="has-text-align-center"><em>参考</em> <a href="https://docs.microsoft.com/azure/cosmos-db/table-api-faq?WT.mc_id=data-12713-abhishgu"> <em>表API哪里和Azure表存储行为不一样？</em> </a> <em>了解详情。</em></p><p>Azure Cosmos DB在API方面提供了很多选项和灵活性，每个选项都有优缺点，具体取决于您的用例和需求。</p><ul><li>虽然核心(SQL)非常通用，并且适用于广泛的场景，但是如果您的数据能够更好地用关系来表示，那么Gremlin (graph) API是一个合适的选择。</li><li>如果您有使用Cassandra或MongoDB的现有应用程序，那么将它们迁移到各自的Azure Cosmos DB APIs提供了一条阻力最小且具有额外好处的路径。</li><li>如果您想从Azure表存储中迁移，并且不想重构您的应用程序以使用核心(SQL) API，请记住，您可以选择Azure Cosmos DB表API，它可以提供与表存储的API兼容性以及诸如保证高可用性、自动二级索引等功能！</li></ul><hr class="wp-block-separator is-style-wide"/><h2 class="has-text-align-center" id="h-is-it-time-to-level-up-your-career">是时候提升你的职业生涯了吗？</h2><p class="has-text-align-center">我们的神奇8号球说。。。“回头再问？”呃。虽然你不能指望算命玩具，但<em>是</em>一个确定无疑的赌注，即<a href="https://acloudguru.com/solutions/individuals">开发云技能</a>可以获得巨大回报。ACG可以帮助你掌握微软Azure技能，推进你的云事业。</p><hr class="wp-block-separator is-style-wide"/><h4 id="h-about-the-author">关于作者</h4><p>Abhishek Gupta是微软的高级开发人员。你可以在<a href="https://twitter.com/abhi_tweeter" target="_blank" rel="noreferrer noopener"> Twitter </a>上关注他，在<a href="https://in.linkedin.com/in/abhirockzz" target="_blank" rel="noreferrer noopener"> LinkedIn </a>上联系他，或者关注他的<a href="https://in.linkedin.com/in/abhirockzz" target="_blank" rel="noreferrer noopener">博客</a>。</p></div></div>    
+</body>
+</html>

@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>How to create CRUD applications with Azure Functions and MongoDB | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>如何用Azure函数和MongoDB |一个云专家创建CRUD应用程序</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/how-to-create-crud-applications-with-azure-functions-and-mongodb#0001-01-01">https://acloudguru.com/blog/engineering/how-to-create-crud-applications-with-azure-functions-and-mongodb#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p id="h-in-this-article-we-will-be-learning-how-we-can-make-a-crud-application-with-azure-functions-and-integrated-with-mongodb-and-node-js">在本文中，我们将学习如何使用Azure函数创建一个与MongoDB和Node.js集成的CRUD应用程序</p><p>你可以在一堆编程语言中用Azure函数开发无服务器应用:<a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>【c#】</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-node?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>JavaScript</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-fsharp?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>F #</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-fsharp?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>Java</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-powershell?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>PowerShell</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-python?WT.mc_id=javascript-12357-gllemos" target="_blank" rel="noreferrer noopener"><strong>Python</strong></a><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-node?WT.mc_id=javascript-12357-gllemos"><strong>TypeScript</strong></a>然而，在这篇文章中，我们将关注JavaScript。我们开始吧！</p><figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><p class="wp-block-embed__wrapper"> </p></figure><p/><p>Azure Functions核心工具 将允许我们从终端或命令提示符在我们的机器上本地开发和测试功能。以下是我用来解决这一挑战的程序和软件包的链接:</p><p>下面假设机器上安装了Node.js的X版本。</p><pre class="wp-block-code"><code>npm install -g azure-functions-core-tools</code></pre><pre class="wp-block-code"><code>brew tap azure/functions
+brew install azure-functions-core-tools
+</code></pre><ul><li><strong>带APT的Linux(Ubuntu/Debian)</strong></li></ul><pre class="wp-block-code"><code>curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+</code></pre><p>有关如何正确安装Azure Functions核心工具的更多信息，请访问此处的链接<a href="https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=javascript-12357-gllemos"/>。</p><p>要验证Azure Functions Core Tools是否已正确安装在您的计算机上，请在终端上检查func命令:</p><pre class="wp-block-code"><code>&gt; func</code></pre><p>如果按照下面的<a href="https://gifyu.com/image/hYvM" target="_blank" rel="noreferrer noopener"> GIF </a>发生，那是因为软件包安装成功了！</p><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/85d83c3ad9b77045373f86a175a07381.png" alt="" class="wp-image-45124" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/gif-serverless-07.gif"/></figure><p>太好了。现在我们可以创建自己的函数了。为此，在您的机器上创建一个本地文件夹—让我们开始吧！</p><h2 id="h-2-begin-creating-your-new-application">2.开始创建您的新应用程序</h2><p>现在我们已经安装了这个包，让我们创建一个新的应用程序。为此，只需按照下面的<a href="https://gifyu.com/image/hYqP" target="_blank" rel="noreferrer noopener"> GIF </a>步骤即可。</p><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/faabc4a8b99667676fcf59d6244aa7df.png" alt="" class="wp-image-45126" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/gif-serverless-08.gif"/></figure><p>注意，当我们打开Visual Studio代码时，需要点击出现在右下角的<code><strong>YES</strong></code>按钮来启用项目中的一些重要文件。</p><h2 id="h-3-create-the-mongodb-connection">3.创建MongoDB连接</h2><p>现在让我们对新创建的项目进行一些必要的更改。这样，我们将在我们的项目中本地安装MongoDB。输入命令:</p><pre class="wp-block-code"><code>npm install mongodb</code></pre><p>当我们在项目中安装MongoDB时，注意到在<code><strong>package.json</strong></code>文件中有变化。该文件将如下所示:</p><pre class="wp-block-code"><code>{
+  "name": "crud-serverless-mongodb",
+  "version": "1.0.0",
+  "description": "Challenge-4 25 days of serverless",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "",
+  "dependencies": {
+    "mongodb": "^3.3.2"
+  }
+}
+</code></pre><p>现在让我们创建一个名为<code><strong>shared</strong></code>的文件夹，并在其中创建一个文件:<code><strong>mongo.js</strong></code>。现在，项目结构如下图所示:</p><pre class="wp-block-code"><code>/**
+ * Arquivo: mongo.js
+ * Data: 01/25/2021
+ * Descrição: file responsible for handling the database connection locally
+ * Author: Glaucia Lemos – (Twitter: @glaucia_lemos86)
+ */
+
+const { MongoClient } = require("mongodb");
+
+const config = {
+  url: "mongodb://localhost:27017/crud-serverless-mongodb",
+  dbName: "crud-serverless-mongodb"
+};
+
+async function createConnection() {
+  const connection = await MongoClient.connect(config.url, {
+    useNewUrlParser: true
+  });
+  const db = connection.db(config.dbName);
+  return {
+    connection,
+    db
+  };
+}
+
+module.exports = createConnection;
+</code></pre><p>在这里，我们正在创建到MongoDB的本地连接！</p><p>让我们也改变一下<code><strong>local.settings.json</strong></code>文件。这个文件负责“存储”所有我们不希望在提交到GitHub时暴露的密钥。注意这个文件在<code><strong>.gitignore</strong></code> <strong>的文件列表中。</strong></p><p>打开<code><strong>local.settings.json</strong></code>文件并进行一些更改:</p><ul><li><strong>文件:local.settings.json </strong></li></ul><pre class="wp-block-code"><code>{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "{AzureWebJobsStorage}"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
+</code></pre><p>在上面的代码中可以看到，我们已经启用了<code>CORS</code>。因为没有它，我们无法执行CRUD操作！如果你想对CORS有更多的了解，我推荐你阅读<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noreferrer noopener">这里的</a>。</p><p>太好了！第一步已经完成了。现在让我们在Azure函数中创建我们的CRUD！</p><hr class="wp-block-separator"/><p class="has-text-align-center"><a href="https://get.acloudguru.com/nosql-for-grownups-dynamodb-webinar"> <strong>成年人的NoSQL:dynamo db单表建模w/里克·霍利汉</strong> <br/> </a> DynamoDB可以作为传统关系数据库的可伸缩、经济高效的替代品。。。如果正确使用的话！在<a href="https://get.acloudguru.com/nosql-for-grownups-dynamodb-webinar">这个免费的点播网络研讨会</a>中，AWS的高级实践经理、单表DynamoDB设计的发明者里克·霍利汉展示了他在DynamoDB中建模复杂数据访问模式的技巧。</p><hr class="wp-block-separator"/><h2 id="h-4-function-createdish">4.功能-“创建菜肴”</h2><p>要创建新函数，只需键入以下命令:</p><pre class="wp-block-code"><code>func new</code></pre><p>当你输入这个命令时，它会给你几个Azure Functions提供给我们的模板选项。让我们选择<strong> HttpTrigger </strong>模板。</p><p>请注意，创建了一个<strong> CreateDish </strong>文件夹和两个文件:</p><ul><li><strong> function.json </strong>:这里我们将定义路由和端点方法。</li><li><strong> index.json </strong>:这里我们将开发端点逻辑。</li></ul><p>让我们开始改变这些文件。从function.json开始</p><ul><li><strong>文件:CreateDish/function.json </strong></li></ul><pre class="wp-block-code"><code>{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"],
+      "route": "dishes"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
+</code></pre><p>现在让我们更改index.js文件:</p><ul><li><strong>文件:CreateDish/index.js </strong></li></ul><pre class="wp-block-code"><code>/**
+ * File: CreateDish/index.js
+ * Description: file responsible for creating a new 'Dish'
+ * Date: 01/25/2021
+ * Author: Glaucia Lemos (Twitter: @glaucia_lemos86)
+ */
+
+const createMongoClient = require('../shared/mongo');
+
+module.exports = async function (context, req) {
+  const dish= req.body || {}
+
+  if (dish) {
+    context.res = {
+      status: 400,
+      body: 'Dish data is required! '
+    }
+  }
+
+  const { db, connection } = await createMongoClient()
+
+  const Dishes = db.collection('dishes')
+
+  try {
+    const dishes = await Dishes.insert(dish)
+    connection.close()
+
+    context.res = {
+      status: 201,
+      body: dishes.ops[0]
+    }
+  } catch (error) {
+    context.res = {
+      status: 500,
+      body: 'Error creating a new Dish'
+    }
+  }
+}
+</code></pre><p>这里我们定义了<code>Post</code>路线，并为:<code><strong>Create a New Dish</strong></code>开发了逻辑。</p><p>让我们运行这个端点！要运行，只需键入命令:</p><pre class="wp-block-code"><code>func host start</code></pre><p>它将列出我们创建的端点！看下面的<a href="https://gifyu.com/image/hYI5" target="_blank" rel="noreferrer noopener"> GIF </a>。</p><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/8c4cfd1fe1d8082616cfee225198033d.png" alt="" class="wp-image-45135" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/02/gif-serverless-11.gif"/></figure><p>它为我们列出了以下端点:<code><strong>[POST] </strong></code><a href="http://localhost:7071/api/dishes" target="_blank" rel="noreferrer noopener"><strong>http://localhost:7071/API/disks</strong></a></p><h2 id="h-5-function-getalldishes">5.功能-“获取所有菜肴”</h2><p>这和我们上面做的是一样的。让我们用命令创建一个新函数:<strong> func new </strong>，包含函数名为<strong>getall disks</strong>并更改文件:<strong> function.json </strong>和<strong> index.js </strong></p><ul><li><strong>getall disks/function . JSON</strong></li></ul><pre class="wp-block-code"><code>{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"],
+      "route": "dishes"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
+</code></pre><pre class="wp-block-code"><code>/**
+ * File: GetAllDishes/index.js
+ * Description: file responsible for list all 'Dishes'
+ * Data: 01/25/2021
+ * Author: Glaucia Lemos (Twitter: @glaucia_lemos86)
+ */
+
+const createMongoClient = require('../shared/mongo')
+
+module.exports = async context =&gt; {
+  const { db, connection } = await createMongoClient()
+
+  const Dishes = db.collection('dishes')
+  const res = await Dishes.find({})
+  const body = await res.toArray()
+
+  connection.close()
+
+  context.res = {
+    status: 200,
+    body
+  }
+}
+</code></pre><h2 id="h-6-function-getdishbyid">6.函数-“GetDishById”</h2><p>现在已经很清楚用Azure函数创建CRUD有多简单了，我将开始加速创建过程，并告诉您<code><strong>function.json</strong></code>和<code><strong>index.js</strong></code>文件中发生了什么变化:</p><ul><li><strong>GetDishById/function . JSON</strong></li></ul><pre class="wp-block-code"><code>  {
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"],
+      "route": "dishes/{id}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
+</code></pre><pre class="wp-block-code"><code>// @ts-nocheck
+/**
+ * File: GetDishById/index.js
+ * Description: file responsible for get a 'Dish' by Id
+ * Data: 01/25/2021
+ * Author: Glaucia Lemos (@glaucia_lemos86)
+ */
+
+const { ObjectID } = require('mongodb')
+const createMongoClient = require('../shared/mongo')
+
+module.exports = async function (context, req) {
+  const { id } = req.params
+
+  if (!id) {
+    context.res = {
+      status: 400,
+      body: 'Please enter the correct Dish Id number!'
+    }
+
+    return
+  }
+
+  const { db, connection } = await createMongoClient()
+
+  const Dishes = db.collection('dishes')
+
+  try {
+    const body = await Dishes.findOne({ _id: ObjectID(id) })
+
+    connection.close()
+    context.res = {
+      status: 200,
+      body
+    }
+  } catch (error) {
+    context.res = {
+      status: 500,
+      body: 'Error listing Dish by Id.'
+    }
+  }
+}
+</code></pre><h2 id="h-7-function-updatedishbyid">7.函数-“UpdateDishById”</h2><ul><li><strong>UpdateDishById/function . JSON</strong></li></ul><pre class="wp-block-code"><code>{
+  "bindings": [{
+          "authLevel": "anonymous",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": ["put"],
+          "route": "dishes/{id}"
+      },
+      {
+          "type": "http",
+          "direction": "out",
+          "name": "res"
+      }
+  ]
+}
+</code></pre><pre class="wp-block-code"><code>// @ts-nocheck
+/**
+ * File: UpdateDishById/index.js
+ * Description: file responsible for update a 'Dish' by Id
+ * Data: 01/25/2021
+ * Author: Glaucia Lemos (@glaucia_lemos86)
+ */
+
+const { ObjectID } = require('mongodb')
+const createMongoClient = require('../shared/mongo')
+
+module.exports = async function (context, req) {
+  const { id } = req.params
+  const dish = req.body || {}
+
+  if (!id || !dish) {
+    context.res = {
+      status: 400,
+      body: 'Fields are required'
+    }
+
+    return
+  }
+
+  const { db, connection } = await createMongoClient()
+  const Dishes = db.collection('dishes')
+
+  try {
+    const dishes = await Dishes.findOneAndUpdate(
+      { _id: ObjectID(id) },
+      { $set: dish }
+    )
+
+    connection.close()
+
+    context.res = {
+      status: 200,
+      body: dishes
+    }
+  } catch (error) {
+    context.res = {
+      status: 500,
+      body: 'Error updating a Dish'
+    }
+  }
+}
+</code></pre><h2 id="h-8-function-deletedishbyid">8.函数-'DeleteDishById '</h2><p>在' DeleteBishById代码上方:</p><ul><li><strong>DeleteDishById/function . JSON</strong></li></ul><pre class="wp-block-code"><code>{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["delete"],
+      "route": "dishes/{id}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
+</code></pre><pre class="wp-block-code"><code>// @ts-nocheck
+/**
+ * File: DeleteDishById/index.js
+ * Description: file responsible for delete a 'Dish' by Id
+ * Data: 01/25/2021
+ * Author: Glaucia Lemos (Twitter: @glaucia_lemos86)
+ */
+
+const { ObjectID } = require('mongodb')
+const createMongoClient = require('../shared/mongo')
+
+module.exports = async function (context, req) {
+  const { id } = req.params
+
+  if (!id) {
+    context.res = {
+      status: 400,
+      body: 'The fields are required!'
+    }
+
+    return
+  }
+
+  const { db, connection } = await createMongoClient()
+
+  const Dishes = db.collection('dishes')
+
+  try {
+    await Dishes.findOneAndDelete({ _id: ObjectID(id) })
+    connection.close()
+    context.res = {
+      status: 204,
+      body: 'Dish deleted successfully!'
+    }
+  } catch (error) {
+    context.res = {
+      status: 500,
+      body: 'Error Deleting Dish' + id
+    }
+  }
+}
+</code></pre><p>我们的食物准备好了！让我们测试所有端点！要测试，打开Postman，可以下载<a href="https://www.getpostman.com/" target="_blank" rel="noreferrer noopener"><strong>Postman——这里</strong> </a>并包含json请求。请参见下面的示例:</p><pre class="wp-block-code"><code>{
+  "name": "Amanda",
+  "dish": "garlicky green beans",
+  "vegetarian": true,
+  "vegan": false,
+  "allergens": "nuts (almonds)"
+}
+</code></pre><ul><li>新建一道菜:<strong>【POST】http://localhost:7071/API/disks/</strong></li><li>列出所有菜品:<strong>【GET】http://localhost:7071/API/disks/</strong></li><li>按Id列出菜品:<strong>【GET】http://localhost:7071/API/disks/{ Id }</strong></li><li>按Id更新菜:<strong>【PUT】http://localhost:7071/API/disks/{ Id }</strong></li><li>按Id删除菜:<strong>【删除】http://localhost:7071/API/disks/{ Id }</strong></li></ul><h2 id="h-learn-more-about-azure-fundamentals">了解有关Azure基础知识的更多信息</h2><p>如果你想了解更多关于Azure函数的知识，微软提供免费课程和电子书来帮助你了解更多关于无服务器和Azure函数的知识:</p><p>而如果你想了解更多其他科技新闻，Azure和JavaScript / Node。Js，一定要在Twitter上关注我！<a href="https://twitter.com/glaucia_lemos86"/></p></div></div>    
+</body>
+</html>

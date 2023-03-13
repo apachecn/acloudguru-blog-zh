@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>You should always use DynamoDB global tables now | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>你现在应该一直使用DynamoDB全局表</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/you-should-always-use-dynamodb-global-tables-now#0001-01-01">https://acloudguru.com/blog/engineering/you-should-always-use-dynamodb-global-tables-now#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p id="why-you-should-always-use-cloudformation-s-new-dynamodb-globaltable-resource">这是NoSQL世界听到的推文:</p><p>我等待这一天已经很久了(我们这些知道的人知道这是一段很长的时间)。</p><p>新的<code>AWS::DynamoDB::GlobalTable</code> CloudFormation资源最终提供了DynamoDB的全局表功能，作为一种可配置的IaC资源，而不使用Lambda函数支持的定制资源来实现自动化。在我工作的地方，我选择不投资定制资源，而是将全局副本的配置留给使用这种模式的服务的手动步骤。</p><p>我是说，这不是你经常会碰到的事情。站立时创建副本，扩张时创建副本。手动步骤并不那么痛苦，而且投资一个定制的资源来做这件事也不会有很大的投资回报。</p><p>但是现在我们已经完全支持CloudFormation来创建和配置我们的全局表，我有一些想法。</p><hr class="wp-block-separator"/><p class="has-text-align-center"><em>云NoSQL面对面:我们<a href="https://acloudguru.com/blog/engineering/comparing-cloud-nosql-databases-dynamodb-vs-cosmos-db-vs-cloud-datastore-and-bigtable">比较了DynamoDB、Azure Cosmos DB和GCP的云数据存储和Bigtable </a>的价格、功能等。</em></p><hr class="wp-block-separator"/><h2 id="h-how-cloudformation-supports-dynamodb-global-tables">CloudFormation如何支持DynamoDB全局表</h2><p>首先，我想说的是，这是一个全新的资源，而不是现有资源的扩展，这让我非常失望。</p><p>让我们看一下这两种资源的基本单表表示:</p><pre class="wp-block-code"><code>MyTable:
+  Type: AWS::DynamoDB::Table
+  Properties:
+    BillingMode: PAY_PER_REQUEST
+    AttributeDefinitions:
+      - AttributeName: pk
+        AttributeType: S
+      - AttributeName: sk
+        AttributeType: S
+      - AttributeName: gsi1pk
+        AttributeType: S
+      - AttributeName: gsi1sk
+        AttributeType: S
+    KeySchema:
+      - AttributeName: pk
+        KeyType: HASH
+      - AttributeName: sk
+        KeyType: RANGE
+    GlobalSecondaryIndexes:
+      - IndexName: GSI1
+        KeySchema:
+          - AttributeName: gsi1pk
+            KeyType: HASH
+          - AttributeName: gsi1sk
+            KeyType: RANGE
+        Projection:
+          ProjectionType: ALL</code></pre><pre class="wp-block-code"><code>MyGlobalTable:
+  Type: AWS::DynamoDB::GlobalTable
+  Properties:
+    BillingMode: PAY_PER_REQUEST
+    AttributeDefinitions:
+      - AttributeName: pk
+        AttributeType: S
+      - AttributeName: sk
+        AttributeType: S
+      - AttributeName: gsi1pk
+        AttributeType: S
+      - AttributeName: gsi1sk
+        AttributeType: S
+    KeySchema:
+      - AttributeName: pk
+        KeyType: HASH
+      - AttributeName: sk
+        KeyType: RANGE
+    GlobalSecondaryIndexes:
+      - IndexName: GSI1
+        KeySchema:
+          - AttributeName: gsi1pk
+            KeyType: HASH
+          - AttributeName: gsi1sk
+            KeyType: RANGE
+        Projection:
+          ProjectionType: ALL
+    Replicas:
+      - Region: !Ref AWS::Region</code></pre><p>发现区别了吗？新的<code>Replicas</code>属性有一个有趣的规则:<em>“列表必须包含至少一个元素，即定义全局表的堆栈部署的区域。”</em>所以，无论如何，我们需要填充它，在我上面的模板片段中，我选择使用AWS region伪参数。</p><p>事实上，围绕新的全局表资源有很多规则(请记住，我是从CloudFormation文档中复制和粘贴的):</p><ul><li>您不能通过在模板中更改类型来将类型为<code>AWS::DynamoDB::Table</code>的资源转换为类型为<code>AWS::DynamoDB::GlobalTable</code>的资源。<strong>这样做可能会导致DynamoDB表被删除。</strong></li></ul><p>这是一个耻辱…在最后补上这个。</p><ul><li>使用调配计费模式时，CloudFormation将在您的每个复制副本上创建自动扩展策略，以控制其写入容量。您必须使用<code>WriteProvisionedThroughputSettings</code>属性配置此策略。CloudFormation将确保所有复制副本具有相同的写容量自动扩展属性。您不能直接为全局表的写容量指定值。</li><li>如果您的表使用调配的容量，您必须直接在<code>AWS::DynamoDB::GlobalTable</code>资源中配置自动扩展。您不应该在任何表副本或全局二级索引上配置额外的自动伸缩策略，无论是通过API还是通过<code>AWS::ApplicationAutoScaling::ScalableTarget</code>或<code>AWS::ApplicationAutoScaling::ScalingPolicy</code>。这样做可能会导致意外行为，并且不受支持。</li></ul><p><em>TL；DR </em>这里是CloudFormation将管理您的复制副本的所有容量配置。这不应该是意料之外的，也是受欢迎的。</p><ul><li>在AWS CloudFormation中，每个全局表由单个区域中的单个堆栈控制，而不管副本的数量。当您部署模板时，CloudFormation将在单个堆栈操作中创建/更新所有副本。不应在多个区域部署相同的AWS::DynamoDB::GlobalTable资源。这样做会导致错误，并且不受支持。如果在多个区域中部署应用程序模板，可以使用条件仅在单个区域中创建资源。或者，您可以选择在独立于应用程序堆栈的堆栈中定义AWS::DynamoDB::GlobalTable资源，并确保它只部署到一个区域。</li></ul><p>最后一部分，<em>“…在与应用程序分开的堆栈中定义您的资源……”</em>如果您一直在使用最新版本的全局表构建多区域DynamoDB支持的应用程序，我认为这是最佳实践。</p><p>假设有人在遵循这种做法，我觉得AWS可以允许将<code>AWS::DynamoDB::Table</code>资源转换为<code>AWS::DynamoDB::GlobalTable</code>的路径，并采用它发现的所有副本。那会是一条快乐的领养之路。相反，我们只能通过数据库迁移来实现这一目标。</p><hr class="wp-block-separator"/><p class="has-text-align-center"><em>深挖DynamoDB？云专家的<a href="https://acloudguru.com/course/amazon-dynamodb-deep-dive"> DynamoDB深潜课程</a>永远免费。</em></p><hr class="wp-block-separator"/><h2 id="h-working-with-tables-in-multiple-aws-regions">在多个AWS区域中使用表格</h2><p>现在，让我们深入了解一下围绕该<code>Replicas</code>属性的一些行为。</p><ul><li>该列表必须包含至少一个元素，即定义全局表的堆栈部署的区域。例如，如果您在部署到us-east-1的堆栈中定义您的表，那么您必须在<code>Replicas</code>中有一个区域为us-east-1的条目。</li><li>您可以创建一个最多包含两个副本的新全局表。创建表后，可以添加或移除副本，但每次更新时只能添加或移除一个副本。</li></ul><p>嗯…如果我们在开始定义一个包含两个以上区域的表，会是什么样子？我们得到这个错误:</p><p>提供的请求无效:创建全局表时，最多只能声明2个副本</p><p>哦。如果我们在更新时一次添加多个区域会怎么样？</p><p>提供的请求无效:在每次更新操作中，您只能添加或删除一个副本</p><p>双oof！！这是GSI的更新了一遍！至少在那里，我们可以在创建时定义它们，直到达到总限制。</p><p>这使得从一开始就推出针对3个以上地区的全球服务变得困难。您需要首先在两个区域中部署带有副本的表的模板，然后执行增量更新，添加每个额外的区域，直到您达到目标。这意味着最终结果模板<em> <strong>不能作为一个新的栈单独部署。</strong> </em>你必须回到起点，或者引入一堆条件语句来控制你要扩张到的区域(不要@我CDK用户——我听到了)。</p><p>添加或删除复制副本还附带一条注释:</p><ul><li>对于空表，添加副本可能需要几分钟，对于大表，可能需要几个小时。如果您想要添加或删除一个副本，我们建议提交一个仅包含该更改的<code>UpdateStack</code>操作。</li></ul><p>这更倾向于在自己的栈中定义DynamoDB表的最佳实践。在扩展应用程序之前，首先<em>扩展到数据层的新区域！</em></p><h2 id="h-when-to-use-dynamodb-global-tables-in-cloudformation">何时在CloudFormation中使用DynamoDB全局表</h2><p>我花了整篇文章来梳理所有这些警告，以及我对AWS为什么不只是扩展原始资源的感叹，您可能会想:为什么这篇文章的标题说您应该总是使用新的？</p><figure class="wp-block-image size-large"><img loading="lazy" src="../Images/ecef33f761bafc5f40aba1e56c0e7b42.png" alt="" class="wp-image-50544" srcset="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_500/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/05/5a0o3f.jpg 500w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_268/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/05/5a0o3f.jpg 268w, https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_380/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/05/5a0o3f.jpg 380w" sizes="(max-width: 500px) 100vw, 500px" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/05/5a0o3f.jpg"/></figure><p>在功能上，当您部署CloudFormation堆栈时，这两种类型的资源以完全相同的方式运行。如果你正在构建一个只会出现在一个区域的应用，好吧，我承认你可能没有理由总是默认使用<code>AWS::DynamoDB::GlobalTable</code>。但是，如果你正在开发一个计划扩展到多个地区的应用程序，或者想留有余地这样做，你应该只是使用它，并在以后减轻多地区扩展的负担。关键是，即使你从来没有打开它，选项也是存在的！</p><p>当然，如果您正在构建一个由DynamoDB支持的多区域应用程序，这是显而易见的。</p><p>感谢CloudFormation团队最终以代码形式向我们提供了全球表格！</p><hr class="wp-block-separator"/><p>准备好享受DynamoDB带来的更多乐趣了吗？<a href="https://acloudguru.com/blog/engineering/building-aggregations-with-dynamodb-streams">通过Forrest brace al</a>演示如何使用DynamoDB流构建可扩展的聚合。</p><figure class="wp-block-image"><a href="https://acloudguru.com/blog/engineering/building-aggregations-with-dynamodb-streams"><img loading="lazy" src="../Images/9483e1bd980985554e2535b8afb101ba.png" alt="" data-original-src="https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/08/DynamoDB_BlogHeader-1.jpg"/></a></figure></div></div>    
+</body>
+</html>

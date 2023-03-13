@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>How to integrate your workload with Slack using Amazon EventBridge API Destinations | A Cloud Guru</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>如何使用Amazon event bridge API Destinations将您的工作负载与Slack相集成</h1>
+<blockquote>原文：<a href="https://acloudguru.com/blog/engineering/how-to-integrate-your-workload-with-slack-using-amazon-eventbridge-api-destinations#0001-01-01">https://acloudguru.com/blog/engineering/how-to-integrate-your-workload-with-slack-using-amazon-eventbridge-api-destinations#0001-01-01</a></blockquote><div><div class="elementor-widget-container"><p>API使您的应用程序能够发出请求、传递数据和使用第三方服务的功能。随着在<a href="https://aws.amazon.com/eventbridge/" target="_blank" rel="noreferrer noopener"> Amazon EventBridge </a>中API目的地的推出，您现在可以直接从AWS中的事件调用外部API。这使得将您的应用程序与软件即服务(SaaS)提供商(如<a href="https://www.zendesk.com/" target="_blank" rel="noreferrer noopener"> Zendesk </a>或<a href="https://www.pagerduty.com/" target="_blank" rel="noreferrer noopener"> PagerDuty </a>)集成更加容易，或者将数据发送到任何公开REST API端点的服务。</p><p>当系统状态发生变化或您的工作负载发生变化时，就会发生事件。它可能是存储在<a href="https://acloudguru.com/course/s3-masterclass" target="_blank" rel="noreferrer noopener"> S3 </a>中的新对象，来自控制台的新登录，或者是在您的电子商务应用程序中处理的支付。事件是一个JSON结构，它包含了所发生事件的细节，并且有许多事件是由AWS服务自动生成的。</p><p>对于<a href="https://acloudguru.com/course/serverless-concepts" target="_blank" rel="noreferrer noopener">无服务器</a>开发人员来说，API Destinations使得构建微服务变得更加简单，这些微服务可以响应工作负载内部或AWS服务生成的事件。这种集成取代了定制代码，有助于管理机密和API密钥，并自动处理下游请求的排队和节流。</p><p>通过将AWS事件与外部服务相连接，您可以:</p><ul><li>当审批工作流在<a href="https://aws.amazon.com/step-functions/" target="_blank" rel="noreferrer noopener"> AWS步骤功能</a>中完成时，通过Stripe发放信用卡退款。</li><li>自动打开GitHub问题以响应<a href="https://aws.amazon.com/codestar/" target="_blank" rel="noreferrer noopener"> AWS CodeStar </a>中的构建失败。</li><li>当Amazon DynamoDB 表中的数据发生变化时，在Contentful中创建新的产品页面。</li></ul><p>在这篇博文中，我将展示如何与Slack进行集成。这会导致基于您的AWS帐户中的事件的消息发布到Slack通道。</p><p>这个示例使用<a href="https://aws.amazon.com/serverless/sam/" target="_blank" rel="noreferrer noopener"> AWS无服务器应用程序模型</a> (AWS SAM)将解决方案部署到您的AWS帐户。您可以使用这里介绍的代码来构建与服务的类似集成，如<a href="https://github.com/" target="_blank" rel="noreferrer noopener"> GitHub </a>、<a href="https://stripe.com/"> Str </a> <a href="https://stripe.com/" target="_blank" rel="noreferrer noopener"> i </a> <a href="https://stripe.com/"> pe </a>和<a href="https://www.contentful.com/" target="_blank" rel="noreferrer noopener"> Contentful </a>。</p><h2 id="h-overview">概观</h2><p>在示例应用程序中，您为Slack配置API目的地，并配置EventBridge规则来路由特定事件。架构看起来是这样的:</p><ol type="1"><li>AWS服务和自定义应用程序生成事件。这些都用JSON表示。</li><li>一个<a href="https://aws.amazon.com/eventbridge/" target="_blank" rel="noreferrer noopener"> Amazon EventBridge </a>事件总线接收事件。</li><li>规则评估事件是否匹配指定的模式。这些模式也用JSON表示，可以匹配传入事件的属性。匹配<em> Slack </em>规则的事件被转发到API Destinations目标。</li><li><a href="https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ApiDestination.html" target="_blank" rel="noreferrer noopener"> API目的地</a>配置使用一个包含授权秘密的<a href="https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Connection.html" target="_blank" rel="noreferrer noopener">连接</a>和一个API。API包含目标URL、http方法和其他配置信息。</li><li>外部API接收事件。这个例子使用Slack，但是目标URL可以是任何REST API或webhook。</li></ol><p>要开始，你需要安装<a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html" target="_blank" rel="noreferrer noopener"> AWS CLI </a>和<a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html" target="_blank" rel="noreferrer noopener"> AWS SAM </a>。你还需要<a href="https://slack.com/get-started" target="_blank" rel="noreferrer noopener">一个备用账户</a>，但这里显示的一切都可以使用免费账户完成。</p><h2 id="h-how-the-api-destinations-feature-works">API目的地功能如何工作</h2><p>EventBridge规则将匹配的消息路由到目标，API目的地是一种目标。它由包含认证信息的<em>连接</em>和<em> API </em>配置组成。连接中提供的凭证安全地存储在<a href="https://aws.amazon.com/secrets-manager/" target="_blank" rel="noreferrer noopener"> AWS秘密管理器</a>中。一个连接代表一个目标服务，一个连接可以被多个API和规则使用。</p><p>虽然您可以使用Lambda函数调用外部REST API，但是API Destinations提供了额外的管理和配置选项，否则您将使用自定义代码编写这些选项。您可以配置一个每秒<em>调用速率</em>，这可以保护API免受突发流量高峰的影响，并有助于减少繁忙系统中的调用数量。</p><p>在内部，EventBridge使用一个队列来保存超过此速率的请求。它可以缓冲这些消息长达24小时。API目标的最大超时是5秒，服务将重试任何超过此超时的调用。</p><hr class="wp-block-separator"/><p class="has-text-align-center"><a href="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar"> <strong>自动化AWS成本优化</strong> </a> <br/> AWS为您的企业提供了前所未有的价值，但经济高效地使用它可能是一项挑战。在这个<a href="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar">免费点播的网络研讨会</a>中，您将了解AWS成本优化工具和策略的概况。</p><hr class="wp-block-separator"/><h2 id="h-testing-the-api-destinations-feature">测试API目的地功能</h2><p>Webhook.site 是一个有用的调试工具，可以回应任何传入的请求，帮助查看API调用中发送了什么。在创建Slack集成之前，首先部署一个EventBridge规则，该规则带有一个路由到Webhook.site的API目的地。</p><p>要部署此解决方案:</p><ol type="1"><li>导航到<a href="https://webhook.site/" target="_blank" rel="noreferrer noopener">https://webhook.site/</a>并复制唯一的webhook URL。<br/></li><li>克隆代码回购:<br/> <code>git clone https://github.com/aws-samples/serverless-patterns</code> <br/></li><li>更改目录:<br/> <code>cd ./eventbridge-api-destinations/1-webhook-site</code> <br/></li><li>部署AWS SAM模板:<br/> <code>sam deploy --guided</code> <br/></li><li>当提示输入<em> MyWebhookURL </em>时，输入步骤1中的URL。</li></ol><p>要测试应用程序:</p><ol type="1"><li>将目录改为主代码库:<br/> <code>cd ..</code> <br/></li><li>向EventBridge发送测试事件:<br/> <code>aws events put-events --entries file://testEvent.json</code> <br/></li><li>API调用到达Webhook.site，在这里您可以看到有效负载和头:</li></ol><p>这个示例应用程序将整个事件负载传递给API端点。testEvent.json中的测试事件出现在Webhook.site的<em>原始内容</em>字段中。</p><h2 id="h-understanding-the-aws-sam-template">了解AWS SAM模板</h2><p>该模板部署多个AWS资源。首先，它创建了一个新的事件总线:</p><pre class="wp-block-code"><code>  MyEventBus:
+    Type: AWS::Events::EventBus
+    Properties:
+      Name: "MyEventBus"
+</code></pre><p>API目的地由一个连接和一个API组成。由于这是一个开放的API，所以授权被定义为API_KEY，并由Webhook.site注销:</p><pre class="wp-block-code"><code>  MyConnection:
+    Type: AWS::Events::Connection
+    Properties:
+      AuthorizationType: API_KEY
+      Description: 'My connection with an API key'
+      AuthParameters:
+        ApiKeyAuthParameters:
+          ApiKeyName: MyWebhook
+          ApiKeyValue: MyAPIkey
+</code></pre><p>API将调用端点设置为在部署期间作为参数提供的URL。它将HTTP方法配置为<em> POST </em>，并将消息限制为每秒10条:</p><pre class="wp-block-code"><code>MyApiDestination:
+    Type: AWS::Events::ApiDestination
+    Properties:
+      Name: 'MyWebhookTest'
+      ConnectionArn: !GetAtt MyConnection.Arn
+      InvocationEndpoint: !Ref MyWebhookURL
+      HttpMethod: POST
+      InvocationRateLimitPerSecond: 10
+</code></pre><p>最后，模板定义了一个规则，该规则确定一个事件模式，然后将目标设置为新的API目的地:</p><pre class="wp-block-code"><code>  EventRule: 
+    Type: AWS::Events::Rule
+    Properties: 
+      Description: "EventRule"
+      State: "ENABLED"
+      EventBusName: !Ref MyEventBus
+      EventPattern: 
+        source:
+          - "MyTestApp"
+        detail-type:
+          - "MyTestMessage"       
+      Targets: 
+        - Arn: !GetAtt MyApiDestination.Arn
+          RoleArn: !GetAtt EventBridgeTargetRole.Arn
+          Id: "MyAPIdestination"
+</code></pre><p>EventBridge服务也需要调用API目的地的权限，因此<a href="https://github.com/aws-samples/serverless-patterns/blob/main/eventbridge-api-destinations/1-webhook-site/template.yaml" target="_blank" rel="noreferrer noopener"> IAM角色</a>授予了这种访问权限。</p><hr class="wp-block-separator"/><p class="has-text-align-center"><a href="https://get.acloudguru.com/cloud-dictionary-of-pain"> <strong>获得痛苦的云词典</strong> </a> <br/>说云不一定要努力。我们分析了数以百万计的回复，找出了最容易让人犯错的概念。抓住这个<a href="https://get.acloudguru.com/cloud-dictionary-of-pain" target="_blank" rel="noreferrer noopener">云指南</a>获取一些最痛苦的云术语<a>的简洁定义。</a></p><hr class="wp-block-separator"/><h2 id="h-setting-up-slack-as-an-api-destination">将Slack设置为API目标</h2><p>首先，您必须配置对Slack帐户的bot访问。为此，请按照<a href="https://slack.com/help/articles/115005265703-Create-a-bot-for-your-workspace" target="_blank" rel="noreferrer noopener"> <em>中的说明为您的工作区</em> </a>创建一个bot，并记下bot的令牌(该代码以<em> xoxb </em>开头)和通道ID。您需要这两个值来部署此解决方案。</p><p>API目的地支持三种不同类型的授权:基本用户名和密码、OAuth和API密钥。Slack bot使用OAuth方法，在Authorization头中作为载体令牌传递。这个令牌随每个API请求一起传递，使Slack能够验证发送者。</p><p>要部署松弛示例，请执行以下操作:</p><ol type="1"><li>从终端，改变目录:<br/> <code>cd ../2-slack</code> <br/></li><li>部署AWS SAM模板:<br/> <code>sam deploy --guided</code> <br/></li><li>系统会提示您输入三个参数:<ol><li>MySlackToken:从Slack配置中输入bot令牌(这个从<em> xoxb </em>开始)。</li></ol><ol><li>MySlackChannel:输入Slack中的频道ID。</li></ol><ol><li>MyEventBusName:接受默认值<em> MyEventBus </em>，因为该模板使用第一个示例中部署的相同事件总线。</li></ol></li></ol><p>要测试松弛集成，请执行以下操作:</p><ol type="1"><li>将目录改为主代码库:<br/> <code>cd ..</code> <br/></li><li>向EventBridge发送测试事件:<br/> <code>aws events put-events --entries file://testEvent.json</code> <br/></li><li>该消息出现在松弛频道中:</li></ol><h2 id="h-understanding-the-aws-sam-template-1">了解AWS SAM模板</h2><p>这个模板中使用的<em>连接</em>资源配置一个在API请求的授权头中传递的令牌。它在松弛令牌前添加“承载”关键字:</p><pre class="wp-block-code"><code>    Type: AWS::Events::Connection
+    Properties:
+      AuthorizationType: API_KEY
+      Description: 'My connection with an API key'
+      AuthParameters:
+        ApiKeyAuthParameters:
+          ApiKeyName: 'Authorization'
+          ApiKeyValue: !Sub 'Bearer ${MySlackToken}'
+</code></pre><p>API配置使用Slack的<em> Post Message </em> API，并将调用速率限制为每秒10条消息:</p><pre class="wp-block-code"><code>  MyApiDestination:
+    Type: AWS::Events::ApiDestination
+    Properties:
+      Name: 'MySlackNotifier'
+      ConnectionArn: !GetAtt MyConnection.Arn
+      InvocationEndpoint: 'https://slack.com/api/chat.postMessage'
+      HttpMethod: POST
+      InvocationRateLimitPerSecond: 10
+</code></pre><p>该规则使用与前面定义的相同的事件模式，过滤源为<em> MyTestApp </em>和细节类型为<em> MyTestMessage </em>的所有事件:</p><pre class="wp-block-code"><code>  EventRule: 
+    Type: AWS::Events::Rule
+    Properties: 
+      Description: "EventRule"
+      State: "ENABLED"
+      EventBusName: !Ref MyEventBusName
+      EventPattern: 
+        source:
+          - "MyTestApp"
+        detail-type:
+          - "MyTestMessage"       
+      Targets: 
+        - Arn: !GetAtt MyApiDestination.Arn
+          RoleArn: !GetAtt EventBridgeTargetRole.Arn
+          Id: "MyAPIdestination"
+          InputTransformer:
+            InputPathsMap:
+              text: $.detail.event
+            InputTemplate: !Sub &gt;
+              {
+                "channel": "${MySlackChannel}",
+                "text": &lt;text&gt;
+              }
+</code></pre><p>在第一个示例中，整个事件负载被传递给目标。然而，Slack需要特定的JSON属性，所以它使用一个<a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-transforming-target-input.html" target="_blank" rel="noreferrer noopener">输入转换器</a>从有效负载中提取这些属性。<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html" target="_blank" rel="noreferrer noopener">输入路径映射</a>部分定义了有效载荷的变量，而<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html" target="_blank" rel="noreferrer noopener">输入模板</a>嵌入了AWS SAM参数和输入路径变量。结果是您可以配置一个有效负载来匹配API的特定需求。</p><h2 id="h-conclusion">结论</h2><p>使用API目的地，您可以使用EventBridge调用第三方API，而无需编写任何业务逻辑。该服务提供可配置的节流和安全的密钥管理，同时为超过此限制的消息缓冲长达24小时的消息。</p><p>通过过滤由AWS服务或定制应用程序生成的事件，您可以使用这种集成来扩展工作负载的功能。API Destinations构建于现有的EventBridge功能之上，引入了<em>连接</em>和<em> API </em>资源来帮助配置凭证和定义API端点。</p><p>在这些例子中，您将消息发送到webhook调试服务和Slack。使用所示的方法，您可以修改模板和有效负载格式来过滤不同的事件，并与几乎任何外部REST API端点集成。</p><p>要部署这些模式和其他模式，请参阅无服务器世界中新的<a href="https://serverlessland.com/patterns" target="_blank" rel="noreferrer noopener">无服务器模式集合</a>。想了解更多无服务器提示和技巧吗？查看我们的<a href="https://acloudguru.com/blog/engineering/6-things-i-wish-i-had-known-before-going-serverless"> 6款最受欢迎的工具，让无服务器过渡</a>变得轻而易举！</p><hr class="wp-block-separator"/><h2 class="has-text-align-center" id="h-get-the-skills-you-need-for-a-better-career">获得更好职业所需的技能。</h2><p class="has-text-align-center">掌握现代技术技能，获得认证，提升您的职业生涯。无论您是新手还是经验丰富的专业人士，您都可以通过实践来学习，并在ACG的帮助下推进您的云计算职业生涯。</p></div></div>    
+</body>
+</html>
