@@ -1,4 +1,4 @@
-# 如何在云专家 Azure |上运行无服务器 PHP
+# 如何在Azure 上运行无服务器 PHP
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-run-serverless-php-on-azure>
 

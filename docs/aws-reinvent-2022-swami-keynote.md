@@ -1,4 +1,4 @@
-# AWS re:发明日 2 |主题演讲的第一印象
+# AWS re:Invent 2022 Sawmi 主题演讲
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2022-swami-keynote>
 

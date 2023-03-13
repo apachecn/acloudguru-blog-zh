@@ -1,4 +1,4 @@
-# 云计算专家 CloudFormation |支持物联网设备管理
+# CloudFormation 支持物联网设备管理
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-app-runner-supports-cdk-cloudformation-supports-iot-device-management>
 

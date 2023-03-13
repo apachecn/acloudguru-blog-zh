@@ -1,4 +1,4 @@
-# AWS EC2 控制台获取全局视图；云计算专家 QuickSight Q in GA | A
+# AWS EC2 控制台获取全局视图；QuickSight Q in GA
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-ec2-console-gets-global-view-quicksight-q-in-ga-amazon-connect-updated>
 

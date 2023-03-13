@@ -1,4 +1,4 @@
-# SageMaker Clarify 是云专家 re:Invent 2020 |最重要的公告
+# SageMaker Clarify  re:Invent 2020 最重要的公告
 
 > 原文：<https://acloudguru.com/blog/engineering/sagemaker-clarify-is-the-most-important-reinvent-announcement-of-the-year>
 

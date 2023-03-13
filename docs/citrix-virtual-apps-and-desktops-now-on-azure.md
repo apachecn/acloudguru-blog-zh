@@ -1,4 +1,4 @@
-# 云专家 Azure |上的 Citrix 虚拟应用和桌面
+# Azure 上的 Citrix 虚拟应用和桌面
 
 > 原文：<https://acloudguru.com/blog/engineering/citrix-virtual-apps-and-desktops-now-on-azure>
 
