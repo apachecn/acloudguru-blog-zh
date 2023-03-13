@@ -1,4 +1,4 @@
-# 我的 5 大 Azure 网络技巧|云专家
+# 我的 5 大 Azure 网络技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/my-top-5-azure-networking-tips>
 

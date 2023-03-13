@@ -1,4 +1,4 @@
-# 准备下一代云认证考试|云专家
+# 准备下一代云认证考试
 
 > 原文：<https://acloudguru.com/blog/news/prepare-for-the-next-generation-of-cloud-certification-exams>
 

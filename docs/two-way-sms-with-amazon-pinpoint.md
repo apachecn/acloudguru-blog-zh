@@ -1,4 +1,4 @@
-# Amazon Pinpoint:接触用户并提高参与度|云专家
+# Amazon Pinpoint:接触用户并提高参与度
 
 > 原文：<https://acloudguru.com/blog/engineering/two-way-sms-with-amazon-pinpoint>
 

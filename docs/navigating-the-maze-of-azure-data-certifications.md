@@ -1,4 +1,4 @@
-# 在 Azure 数据认证的迷宫中导航|云专家
+# 在 Azure 数据认证的迷宫中导航
 
 > 原文：<https://acloudguru.com/blog/engineering/navigating-the-maze-of-azure-data-certifications>
 

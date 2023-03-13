@@ -1,4 +1,4 @@
-# 学习 AWS 安全基础知识的动手实验室|云专家
+# 学习 AWS 安全基础知识的动手实验室
 
 > 原文：<https://acloudguru.com/blog/engineering/hands-on-labs-for-learning-aws-security-essentials>
 

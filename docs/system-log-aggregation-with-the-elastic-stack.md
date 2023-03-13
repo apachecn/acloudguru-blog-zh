@@ -1,4 +1,4 @@
-# 使用弹性堆栈的系统日志聚合|云专家
+# 使用弹性堆栈的系统日志聚合
 
 > 原文：<https://acloudguru.com/blog/engineering/system-log-aggregation-with-the-elastic-stack>
 

@@ -1,4 +1,4 @@
-# Kubernetes 认证:我该走哪条路？|云专家
+# Kubernetes 认证:我该走哪条路？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-kubernetes-certification-path-should-i-take>
 

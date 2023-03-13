@@ -1,4 +1,4 @@
-# 如何审计和保护 AWS 帐户|云专家
+# 如何审计和保护 AWS 帐户
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-audit-and-secure-an-aws-account>
 

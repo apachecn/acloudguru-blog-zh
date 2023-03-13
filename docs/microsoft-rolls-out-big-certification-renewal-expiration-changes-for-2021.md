@@ -1,4 +1,4 @@
-# Azure 认证有效性:续订和到期|云专家
+# Azure 认证有效性:续订和到期
 
 > 原文：<https://acloudguru.com/blog/engineering/microsoft-rolls-out-big-certification-renewal-expiration-changes-for-2021>
 

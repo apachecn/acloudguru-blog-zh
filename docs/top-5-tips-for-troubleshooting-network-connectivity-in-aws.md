@@ -1,4 +1,4 @@
-# AWS 网络连接故障排除的 5 大技巧|云专家
+# AWS 网络连接故障排除的 5 大技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/top-5-tips-for-troubleshooting-network-connectivity-in-aws>
 

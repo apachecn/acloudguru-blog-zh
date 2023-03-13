@@ -1,4 +1,4 @@
-# Ansible vs Puppet:哪个适合你？|云专家
+# Ansible vs Puppet:哪个适合你？
 
 > 原文：<https://acloudguru.com/blog/engineering/ansible-vs-puppet-which-is-right-for-you>
 

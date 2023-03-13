@@ -1,4 +1,4 @@
-# 如何使用微软 Azure |云专家入门人工智能
+# 如何使用微软 Azure 入门人工智能
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-get-started-with-ai-using-microsoft-azure>
 

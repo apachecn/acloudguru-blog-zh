@@ -1,4 +1,4 @@
-# 测验-哪一项最能描述 IAM 角色？|云专家
+# 测验-哪一项最能描述 IAM 角色？
 
 > 原文：<https://acloudguru.com/blog/engineering/quiz-what-best-describes-an-iam-role>
 

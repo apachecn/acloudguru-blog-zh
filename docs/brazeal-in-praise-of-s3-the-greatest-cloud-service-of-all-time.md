@@ -1,4 +1,4 @@
-# 赞美 S3，有史以来最伟大的云服务|云专家
+# 赞美 S3，有史以来最伟大的云服务
 
 > 原文：<https://acloudguru.com/blog/engineering/brazeal-in-praise-of-s3-the-greatest-cloud-service-of-all-time>
 

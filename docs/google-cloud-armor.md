@@ -1,4 +1,4 @@
-# 谷歌云甲是做什么的？|云专家
+# 谷歌云甲是做什么的？
 
 > 原文：<https://acloudguru.com/blog/engineering/google-cloud-armor>
 

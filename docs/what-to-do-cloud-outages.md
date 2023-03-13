@@ -1,4 +1,4 @@
-# 云崩溃时要采取的 5 个步骤|云专家
+# 云崩溃时要采取的 5 个步骤
 
 > 原文：<https://acloudguru.com/blog/engineering/what-to-do-cloud-outages>
 

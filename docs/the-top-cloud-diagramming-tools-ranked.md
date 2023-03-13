@@ -1,4 +1,4 @@
-# 顶级云图表工具，排名|云专家
+# 顶级云图表工具，排名
 
 > 原文：<https://acloudguru.com/blog/engineering/the-top-cloud-diagramming-tools-ranked>
 

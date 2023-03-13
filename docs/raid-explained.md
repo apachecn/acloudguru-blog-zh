@@ -1,4 +1,4 @@
-# RAID 解释|云专家
+# RAID 解释
 
 > 原文：<https://acloudguru.com/blog/engineering/raid-explained>
 

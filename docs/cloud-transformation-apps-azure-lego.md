@@ -1,4 +1,4 @@
-# 云转型、云应用，还有……乐高？|云专家
+# 云转型、云应用，还有……乐高？
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-transformation-apps-azure-lego>
 

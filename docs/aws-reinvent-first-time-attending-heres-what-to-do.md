@@ -1,4 +1,4 @@
-# AWS re:Invent:第一次参加？下面是要做的事情！|云专家
+# AWS re:Invent:第一次参加？下面是要做的事情！
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-first-time-attending-heres-what-to-do>
 

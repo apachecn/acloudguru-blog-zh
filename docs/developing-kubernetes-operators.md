@@ -1,4 +1,4 @@
-# 从头开始开发 Kubernetes 运营商|云专家
+# 从头开始开发 Kubernetes 运营商
 
 > 原文：<https://acloudguru.com/blog/engineering/developing-kubernetes-operators>
 

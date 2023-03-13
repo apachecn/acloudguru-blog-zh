@@ -1,4 +1,4 @@
-# AWS re:Invent 2022 roundup |云专家
+# AWS re:Invent 2022 roundup 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2022>
 

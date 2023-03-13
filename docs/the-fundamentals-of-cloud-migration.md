@@ -1,4 +1,4 @@
-# 云迁移基础知识:数据、安全性、成本和培训|云专家
+# 云迁移基础知识:数据、安全性、成本和培训
 
 > 原文：<https://acloudguru.com/blog/business/the-fundamentals-of-cloud-migration>
 

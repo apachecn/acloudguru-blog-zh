@@ -1,4 +1,4 @@
-# Azure 虚拟广域网、Azure 功能获取更新|云专家
+# Azure 虚拟广域网、Azure 功能获取更新
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-virtual-wan-azure-functions-get-updates>
 

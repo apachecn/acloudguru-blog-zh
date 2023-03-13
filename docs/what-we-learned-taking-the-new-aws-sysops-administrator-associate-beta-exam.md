@@ -1,4 +1,4 @@
-# 参加新的 AWS SysOps 管理员助理测试我们学到了什么|云专家
+# 参加新的 AWS SysOps 管理员助理测试我们学到了什么
 
 > 原文：<https://acloudguru.com/blog/engineering/what-we-learned-taking-the-new-aws-sysops-administrator-associate-beta-exam>
 

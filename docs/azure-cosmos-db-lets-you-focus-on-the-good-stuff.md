@@ -1,4 +1,4 @@
-# Azure Cosmos DB 是什么？|云专家
+# Azure Cosmos DB 是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-cosmos-db-lets-you-focus-on-the-good-stuff>
 

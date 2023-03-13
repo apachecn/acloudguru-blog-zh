@@ -1,4 +1,4 @@
-# 计算比较:AWS vs Azure vs GCP |云专家
+# 计算比较:AWS vs Azure vs GCP 
 
 > 原文：<https://acloudguru.com/blog/engineering/compute-compared-aws-vs-azure-vs-gcp>
 

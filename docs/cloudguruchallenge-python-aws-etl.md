@@ -1,4 +1,4 @@
-# # CloudGuruChallenge-AWS 上的事件驱动 Python |云专家
+# # CloudGuruChallenge-AWS 上的事件驱动 Python 
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl>
 

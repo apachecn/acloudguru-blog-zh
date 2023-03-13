@@ -1,4 +1,4 @@
-# 哪项谷歌云(GCP)认证最适合我|云专家
+# 哪项谷歌云(GCP)认证最适合我
 
 > 原文：<https://acloudguru.com/blog/engineering/which-google-cloud-certification-is-best-for-me>
 

@@ -1,4 +1,4 @@
-# 为什么要为 DevOps 选择木偶？|云专家
+# 为什么要为 DevOps 选择木偶？
 
 > 原文：<https://acloudguru.com/blog/engineering/why-choose-puppet-for-devops>
 

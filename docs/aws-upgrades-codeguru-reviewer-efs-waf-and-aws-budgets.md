@@ -1,4 +1,4 @@
-# AWS 升级 CodeGuru Reviewer |一位云专家
+# AWS 升级 CodeGuru Reviewer 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-upgrades-codeguru-reviewer-efs-waf-and-aws-budgets>
 

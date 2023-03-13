@@ -1,4 +1,4 @@
-# Docker Compose |云专家入门
+# Docker Compose 入门
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-started-with-docker-compose>
 

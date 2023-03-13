@@ -1,4 +1,4 @@
-# 技术技能日云跟踪 2022:学习和热爱|云大师
+# 技术技能日云跟踪 2022:学习和热爱
 
 > 原文：<https://acloudguru.com/blog/engineering/tech-skills-day-cloud-track-2022>
 

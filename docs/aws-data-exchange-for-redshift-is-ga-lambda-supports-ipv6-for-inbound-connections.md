@@ -1,4 +1,4 @@
-# 自动气象站红移数据交换:Lambda 支持 IPv6 |云专家
+# 自动气象站红移数据交换:Lambda 支持 IPv6 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-data-exchange-for-redshift-is-ga-lambda-supports-ipv6-for-inbound-connections>
 

@@ -1,4 +1,4 @@
-# 云在防止数据泄露中的作用|云专家
+# 云在防止数据泄露中的作用
 
 > 原文：<https://acloudguru.com/blog/engineering/the-role-of-the-cloud-in-preventing-data-breaches>
 

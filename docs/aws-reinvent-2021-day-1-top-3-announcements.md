@@ -1,4 +1,4 @@
-# AWS re:Invent 2021 day 1: Top 3 公告|云专家
+# AWS re:Invent 2021 day 1: Top 3 公告
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2021-day-1-top-3-announcements>
 

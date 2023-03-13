@@ -1,4 +1,4 @@
-# 免费证书准备与云快乐:我应该选择什么课程？|云专家
+# 免费证书准备与云快乐:我应该选择什么课程？
 
 > 原文：<https://acloudguru.com/blog/engineering/choosing-free-cert-prep-cloudhappy>
 

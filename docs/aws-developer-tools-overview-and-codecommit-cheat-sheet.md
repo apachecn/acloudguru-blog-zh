@@ -1,4 +1,4 @@
-# AWS 开发人员工具概述和代码提交备忘单|云专家
+# AWS 开发人员工具概述和代码提交备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-developer-tools-overview-and-codecommit-cheat-sheet>
 

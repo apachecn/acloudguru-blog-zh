@@ -1,4 +1,4 @@
-# 使用 Telnet |云专家进行 TCP 连接测试
+# 使用 Telnet 进行 TCP 连接测试
 
 > 原文：<https://acloudguru.com/blog/engineering/tcp-connection-testing-with-telnet>
 

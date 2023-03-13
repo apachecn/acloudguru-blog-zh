@@ -1,4 +1,4 @@
-# 保护自己免受凭据填充|云专家
+# 保护自己免受凭据填充
 
 > 原文：<https://acloudguru.com/blog/engineering/protecting-yourself-against-credential-stuffing>
 

@@ -1,4 +1,4 @@
-# 剖析 Travis CI 文件|云专家
+# 剖析 Travis CI 文件
 
 > 原文：<https://acloudguru.com/blog/engineering/anatomy-of-a-travis-ci-file>
 

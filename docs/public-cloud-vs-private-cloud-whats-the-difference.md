@@ -1,4 +1,4 @@
-# 公共云 vs 私有云:有什么区别？|云专家
+# 公共云 vs 私有云:有什么区别？
 
 > 原文：<https://acloudguru.com/blog/business/public-cloud-vs-private-cloud-whats-the-difference>
 

@@ -1,4 +1,4 @@
-# 如何建立成功的云培训计划|云专家
+# 如何建立成功的云培训计划
 
 > 原文：<https://acloudguru.com/blog/business/build-a-cloud-training-program>
 

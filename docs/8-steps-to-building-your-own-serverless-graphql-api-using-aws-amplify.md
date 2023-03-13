@@ -1,4 +1,4 @@
-# 使用 AWS Amplify |云专家构建自己的无服务器 GraphQL API 的 8 个步骤
+# 使用 AWS Amplify 构建自己的无服务器 GraphQL API 的 8 个步骤
 
 > 原文：<https://acloudguru.com/blog/engineering/8-steps-to-building-your-own-serverless-graphql-api-using-aws-amplify>
 

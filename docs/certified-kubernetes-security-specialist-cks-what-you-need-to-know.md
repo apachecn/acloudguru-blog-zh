@@ -1,4 +1,4 @@
-# Kubernetes 安全 CKS 认证:你需要知道的|云专家
+# Kubernetes 安全 CKS 认证:你需要知道的
 
 > 原文：<https://acloudguru.com/blog/engineering/certified-kubernetes-security-specialist-cks-what-you-need-to-know>
 

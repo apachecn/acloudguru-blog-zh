@@ -1,4 +1,4 @@
-# 随着云应用的加速，一位云专家推出了新的旗舰云学习平台|一位云专家
+# 随着云应用的加速，一位云专家推出了新的旗舰云学习平台
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-launches-new-flagship-cloud-learning-platform-as-cloud-adoption-accelerates>
 

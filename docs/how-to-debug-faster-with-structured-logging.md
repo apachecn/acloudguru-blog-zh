@@ -1,4 +1,4 @@
-# 如何使用结构化日志更快地调试|云专家
+# 如何使用结构化日志更快地调试
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-debug-faster-with-structured-logging>
 

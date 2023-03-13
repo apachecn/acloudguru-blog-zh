@@ -1,4 +1,4 @@
-# 什么是 Terraform import，为什么你不应该使用它(但无论如何要如何做)|一个云专家
+# 什么是 Terraform import，为什么你不应该使用它(但无论如何要如何做)
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-terraform-import>
 

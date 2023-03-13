@@ -1,4 +1,4 @@
-# 商业云游乐场来到 ACG:动手学习|云专家
+# 商业云游乐场来到 ACG:动手学习
 
 > 原文：<https://acloudguru.com/blog/business/introducing-cloud-playground-for-business>
 

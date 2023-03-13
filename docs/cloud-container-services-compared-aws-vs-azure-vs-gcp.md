@@ -1,4 +1,4 @@
-# 云容器服务对比——AWS vs Azure vs GCP |云专家
+# 云容器服务对比——AWS vs Azure vs GCP 
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-container-services-compared-aws-vs-azure-vs-gcp>
 

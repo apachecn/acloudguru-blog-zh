@@ -1,4 +1,4 @@
-# 用多个 AWS 帐户启动您的组织的 5 个技巧|云专家
+# 用多个 AWS 帐户启动您的组织的 5 个技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/5-tips-for-starting-your-organization-with-multiple-aws-accounts>
 

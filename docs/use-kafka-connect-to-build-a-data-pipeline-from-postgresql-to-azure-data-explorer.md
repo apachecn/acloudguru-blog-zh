@@ -1,4 +1,4 @@
-# 使用 Azure、PostgreSQL 和 Kafka |云专家改变数据捕获
+# 使用 Azure、PostgreSQL 和 Kafka 改变数据捕获
 
 > 原文：<https://acloudguru.com/blog/engineering/use-kafka-connect-to-build-a-data-pipeline-from-postgresql-to-azure-data-explorer>
 

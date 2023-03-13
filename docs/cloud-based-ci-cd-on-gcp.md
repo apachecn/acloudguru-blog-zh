@@ -1,4 +1,4 @@
-# GCP 基于云的 CI/CD |云专家
+# GCP 基于云的 CI/CD 
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-based-ci-cd-on-gcp>
 

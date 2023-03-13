@@ -1,4 +1,4 @@
-# 如何通过 AWS 认证 DevOps 工程师-专业考试|云专家
+# 如何通过 AWS 认证 DevOps 工程师-专业考试
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-pass-the-aws-certified-devops-engineer-professional-exam>
 

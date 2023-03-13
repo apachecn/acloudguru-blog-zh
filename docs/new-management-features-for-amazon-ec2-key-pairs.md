@@ -1,4 +1,4 @@
-# Amazon EC2 密钥对的新管理功能|云专家%
+# Amazon EC2 密钥对的新管理功能%
 
 > 原文：<https://acloudguru.com/blog/engineering/new-management-features-for-amazon-ec2-key-pairs>
 

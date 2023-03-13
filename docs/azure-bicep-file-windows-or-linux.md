@@ -1,4 +1,4 @@
-# 面向 Windows 或 Linux 虚拟机的 Azure Bicep 文件部署|云专家
+# 面向 Windows 或 Linux 虚拟机的 Azure Bicep 文件部署
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-bicep-file-windows-or-linux>
 

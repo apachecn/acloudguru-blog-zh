@@ -1,4 +1,4 @@
-# 与 Amazon SageMaker 线性学习者|云专家一起动手
+# 与 Amazon SageMaker 线性学习者一起动手
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-hands-on-with-amazon-sagemaker-linear-learner>
 

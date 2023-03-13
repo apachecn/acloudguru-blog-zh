@@ -1,4 +1,4 @@
-# 云专家为即将毕业的大学毕业生开启云职业生涯的大门|云专家
+# 云专家为即将毕业的大学毕业生开启云职业生涯的大门
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-opens-doors-to-cloud-careers-for-upcoming-college-university-grads>
 

@@ -1,4 +1,4 @@
-# Azure 认证|云专家，你能得到的 Azure 工作
+# Azure 认证，你能得到的 Azure 工作
 
 > 原文：<https://acloudguru.com/blog/engineering/6-azure-jobs-you-can-get-with-an-azure-certification>
 

@@ -1,4 +1,4 @@
-# 库伯内特八岁生日快乐！|云专家
+# 库伯内特八岁生日快乐！
 
 > 原文：<https://acloudguru.com/blog/engineering/happy-8th-birthday-kubernetes>
 

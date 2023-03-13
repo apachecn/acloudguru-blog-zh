@@ -1,4 +1,4 @@
-# 我应该走自动气象站 SAA C01 还是 SAA C02？|云专家
+# 我应该走自动气象站 SAA C01 还是 SAA C02？
 
 > 原文：<https://acloudguru.com/blog/engineering/should-i-take-the-saa-c01-or-saa-c02>
 

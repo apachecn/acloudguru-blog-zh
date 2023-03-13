@@ -1,4 +1,4 @@
-# AWS 成本优化深度探讨|云专家
+# AWS 成本优化深度探讨
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-cost-optimization-deep-dive>
 

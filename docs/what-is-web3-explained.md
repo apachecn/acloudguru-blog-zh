@@ -1,4 +1,4 @@
-# Web3 解释道:这是什么，值得大惊小怪吗？|云专家
+# Web3 解释道:这是什么，值得大惊小怪吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-web3-explained>
 

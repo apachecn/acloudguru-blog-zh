@@ -1,4 +1,4 @@
-# Active Directory vs Azure AD:有什么区别？|云专家
+# Active Directory vs Azure AD:有什么区别？
 
 > 原文：<https://acloudguru.com/blog/engineering/active-directory-vs-azure-active-directory-whats-the-difference>
 

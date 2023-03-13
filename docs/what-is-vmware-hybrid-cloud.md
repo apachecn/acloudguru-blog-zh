@@ -1,4 +1,4 @@
-# 什么是 VMware 混合云？|云专家
+# 什么是 VMware 混合云？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-vmware-hybrid-cloud>
 

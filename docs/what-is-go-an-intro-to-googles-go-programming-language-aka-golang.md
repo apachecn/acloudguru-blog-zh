@@ -1,4 +1,4 @@
-# 围棋是什么？谷歌 Go 编程语言(又名 Golang)介绍|云专家
+# 围棋是什么？谷歌 Go 编程语言(又名 Golang)介绍
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-go-an-intro-to-googles-go-programming-language-aka-golang>
 

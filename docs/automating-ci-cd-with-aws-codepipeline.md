@@ -1,4 +1,4 @@
-# 利用 AWS 代码管道实现 CI/CD 自动化|云专家
+# 利用 AWS 代码管道实现 CI/CD 自动化
 
 > 原文：<https://acloudguru.com/blog/engineering/automating-ci-cd-with-aws-codepipeline>
 

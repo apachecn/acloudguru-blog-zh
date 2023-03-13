@@ -1,4 +1,4 @@
-# re:Invent 2018 —机器学习和无服务器改造|一位云计算大师
+# re:Invent 2018 —机器学习和无服务器改造
 
 > 原文：<https://acloudguru.com/blog/engineering/reinvent-2018-the-machine-learning-and-serverless-reinvent>
 

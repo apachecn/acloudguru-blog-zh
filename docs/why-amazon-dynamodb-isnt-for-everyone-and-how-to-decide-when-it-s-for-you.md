@@ -1,4 +1,4 @@
-# 为什么 Amazon DynamoDB 不适合所有人|云专家
+# 为什么 Amazon DynamoDB 不适合所有人
 
 > 原文：<https://acloudguru.com/blog/engineering/why-amazon-dynamodb-isnt-for-everyone-and-how-to-decide-when-it-s-for-you>
 

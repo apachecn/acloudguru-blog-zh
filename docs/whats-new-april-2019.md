@@ -1,4 +1,4 @@
-# 云专家的最新动态|四月|云专家
+# 云专家的最新动态|四月
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-april-2019>
 

@@ -1,4 +1,4 @@
-# 为定制的大规模云学习设计定制学习路径|云专家
+# 为定制的大规模云学习设计定制学习路径
 
 > 原文：<https://acloudguru.com/blog/news/designing-custom-learning-paths-for-tailored-cloud-learning-at-scale>
 

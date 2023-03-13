@@ -1,4 +1,4 @@
-# 在线云认证常见问题解答:如何在家获得认证|云专家
+# 在线云认证常见问题解答:如何在家获得认证
 
 > 原文：<https://acloudguru.com/blog/engineering/online-cloud-certification-faqs-how-to-earn-certs-from-home>
 

@@ -1,4 +1,4 @@
-# 要更新您的传统应用，首先不要以它们为耻|云专家
+# 要更新您的传统应用，首先不要以它们为耻
 
 > 原文：<https://acloudguru.com/blog/engineering/to-modernize-your-legacy-apps-first-stop-being-ashamed-of-them>
 

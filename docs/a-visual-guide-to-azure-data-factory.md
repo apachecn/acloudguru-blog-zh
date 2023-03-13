@@ -1,4 +1,4 @@
-# Azure 数据工厂可视化指南|云专家
+# Azure 数据工厂可视化指南
 
 > 原文：<https://acloudguru.com/blog/engineering/a-visual-guide-to-azure-data-factory>
 

@@ -1,4 +1,4 @@
-# AWS Lambda |云专家的重大改变
+# AWS Lambda 的重大改变
 
 > 原文：<https://acloudguru.com/blog/engineering/big-changes-to-aws-lambda>
 

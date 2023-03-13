@@ -1,4 +1,4 @@
-# 什么是云迁移？-策略和工具|云专家
+# 什么是云迁移？-策略和工具
 
 > 原文：<https://acloudguru.com/blog/business/what-is-cloud-migration>
 

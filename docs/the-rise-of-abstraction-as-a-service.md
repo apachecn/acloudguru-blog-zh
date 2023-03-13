@@ -1,4 +1,4 @@
-# 抽象即服务的兴起|云专家
+# 抽象即服务的兴起
 
 > 原文：<https://acloudguru.com/blog/engineering/the-rise-of-abstraction-as-a-service>
 

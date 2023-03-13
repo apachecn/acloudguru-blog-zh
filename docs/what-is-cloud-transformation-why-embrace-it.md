@@ -1,4 +1,4 @@
-# 什么是云转型&为什么您应该拥抱它？|云专家
+# 什么是云转型&为什么您应该拥抱它？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-cloud-transformation-why-embrace-it>
 

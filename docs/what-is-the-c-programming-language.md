@@ -1,4 +1,4 @@
-# C#编程语言是什么？|云专家
+# C#编程语言是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-the-c-programming-language>
 

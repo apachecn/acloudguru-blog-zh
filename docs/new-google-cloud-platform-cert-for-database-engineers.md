@@ -1,4 +1,4 @@
-# 面向数据库工程师的新谷歌云平台证书|云专家
+# 面向数据库工程师的新谷歌云平台证书
 
 > 原文：<https://acloudguru.com/blog/engineering/new-google-cloud-platform-cert-for-database-engineers>
 

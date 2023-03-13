@@ -1,4 +1,4 @@
-# MongoDB 适合我的应用吗？￼ |云计算大师
+# MongoDB 适合我的应用吗？￼ 
 
 > 原文：<https://acloudguru.com/blog/engineering/is-mongodb-right-for-my-application%ef%bf%bc>
 

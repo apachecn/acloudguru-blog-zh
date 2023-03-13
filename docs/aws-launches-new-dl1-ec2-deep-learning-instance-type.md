@@ -1,4 +1,4 @@
-# AWS 推出新的 DL1 EC2 实例类型|云专家
+# AWS 推出新的 DL1 EC2 实例类型
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-launches-new-dl1-ec2-deep-learning-instance-type>
 

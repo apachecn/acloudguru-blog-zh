@@ -1,4 +1,4 @@
-# 不仅仅是 IT:这 5 个非技术角色需要讲述云|云专家
+# 不仅仅是 IT:这 5 个非技术角色需要讲述云
 
 > 原文：<https://acloudguru.com/blog/business/not-just-for-it-these-5-non-technical-roles-need-to-speak-cloud>
 

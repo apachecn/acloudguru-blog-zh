@@ -1,4 +1,4 @@
-# AKS vs EKS vs GKE:托管的 Kubernetes 服务比较|一位云专家
+# AKS vs EKS vs GKE:托管的 Kubernetes 服务比较
 
 > 原文：<https://acloudguru.com/blog/engineering/aks-vs-eks-vs-gke-managed-kubernetes-services-compared>
 

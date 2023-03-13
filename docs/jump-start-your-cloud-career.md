@@ -1,4 +1,4 @@
-# 启动您的云计算工作和职业生涯|云计算专家
+# 启动您的云计算工作和职业生涯
 
 > 原文：<https://acloudguru.com/blog/engineering/jump-start-your-cloud-career>
 

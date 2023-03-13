@@ -1,4 +1,4 @@
-# Docker 认证助理-准备考试|云专家
+# Docker 认证助理-准备考试
 
 > 原文：<https://acloudguru.com/blog/engineering/docker-certified-associate-preparing-for-the-exam>
 

@@ -1,4 +1,4 @@
-# Angular |云专家入门
+# Angular 入门
 
 > 原文：<https://acloudguru.com/blog/engineering/expand-your-js-skills-with-angular>
 

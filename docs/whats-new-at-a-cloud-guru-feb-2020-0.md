@@ -1,4 +1,4 @@
-# 云专家的最新动态—2020 年 3 月|云专家
+# 云专家的最新动态—2020 年 3 月
 
 > 原文：<https://acloudguru.com/blog/news/whats-new-at-a-cloud-guru-feb-2020-0>
 

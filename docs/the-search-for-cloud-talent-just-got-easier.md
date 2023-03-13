@@ -1,4 +1,4 @@
-# 寻找云人才变得更加容易|云专家
+# 寻找云人才变得更加容易
 
 > 原文：<https://acloudguru.com/blog/business/the-search-for-cloud-talent-just-got-easier>
 

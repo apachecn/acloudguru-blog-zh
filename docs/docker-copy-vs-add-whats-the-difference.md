@@ -1,4 +1,4 @@
-# Docker 复制 vs 添加:有什么区别？|云专家
+# Docker 复制 vs 添加:有什么区别？
 
 > 原文：<https://acloudguru.com/blog/engineering/docker-copy-vs-add-whats-the-difference>
 

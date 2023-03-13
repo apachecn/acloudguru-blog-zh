@@ -1,4 +1,4 @@
-# EBS 快照生命周期|云专家
+# EBS 快照生命周期
 
 > 原文：<https://acloudguru.com/blog/engineering/ebs-snapshot-lifecycle>
 

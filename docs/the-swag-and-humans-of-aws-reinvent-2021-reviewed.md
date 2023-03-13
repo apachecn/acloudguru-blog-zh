@@ -1,4 +1,4 @@
-# AWS re:Invent 2021 Swag Review |一位云专家
+# AWS re:Invent 2021 Swag Review 
 
 > 原文：<https://acloudguru.com/blog/engineering/the-swag-and-humans-of-aws-reinvent-2021-reviewed>
 

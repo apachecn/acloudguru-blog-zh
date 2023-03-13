@@ -1,4 +1,4 @@
-# 解释的角色|备忘单|云专家
+# 解释的角色|备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/ansible-roles-explained>
 

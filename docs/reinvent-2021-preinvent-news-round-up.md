@@ -1,4 +1,4 @@
-# re:发明 2021: pre:发明新闻综述！|云专家
+# re:发明 2021: pre:发明新闻综述！
 
 > 原文：<https://acloudguru.com/blog/engineering/reinvent-2021-preinvent-news-round-up>
 

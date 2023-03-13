@@ -1,4 +1,4 @@
-# 来自微软 Build 2021 |云专家的三大趋势
+# 来自微软 Build 2021 的三大趋势
 
 > 原文：<https://acloudguru.com/blog/engineering/top-3-trends-from-microsoft-build-2021>
 

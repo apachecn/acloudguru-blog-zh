@@ -1,4 +1,4 @@
-# 什么是亚马逊 QuickSight？AWS BI 工具解释|云专家
+# 什么是亚马逊 QuickSight？AWS BI 工具解释
 
 > 原文：<https://acloudguru.com/blog/engineering/amazon-quicksight-how-to-put-eyes-on-your-data-with-this-aws-bi-tool>
 

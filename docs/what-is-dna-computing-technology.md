@@ -1,4 +1,4 @@
-# 什么是 DNA 计算技术？|云专家
+# 什么是 DNA 计算技术？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-dna-computing-technology>
 

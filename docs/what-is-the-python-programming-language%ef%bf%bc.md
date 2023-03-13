@@ -1,4 +1,4 @@
-# Python 编程语言是什么？|云专家
+# Python 编程语言是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-the-python-programming-language%ef%bf%bc>
 

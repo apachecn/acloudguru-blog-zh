@@ -1,4 +1,4 @@
-# AWS 认证安全专业考试备考指南|云专家
+# AWS 认证安全专业考试备考指南
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-certified-security-speciality-exam-prep-guide>
 

@@ -1,4 +1,4 @@
-# 这个黑色星期五，5 个理由让自己拥有云技能|云专家
+# 这个黑色星期五，5 个理由让自己拥有云技能
 
 > 原文：<https://acloudguru.com/blog/news/the-acg-black-friday-sale-is-on>
 

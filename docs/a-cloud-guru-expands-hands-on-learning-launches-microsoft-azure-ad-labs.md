@@ -1,4 +1,4 @@
-# 一位云专家扩展了实践学习；推出微软 Azure 广告实验室|云专家
+# 一位云专家扩展了实践学习；推出微软 Azure 广告实验室
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-expands-hands-on-learning-launches-microsoft-azure-ad-labs>
 

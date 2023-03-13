@@ -1,4 +1,4 @@
-# 是的，沃纳·威格尔知道 AWS 有很多服务|一个云专家
+# 是的，沃纳·威格尔知道 AWS 有很多服务
 
 > 原文：<https://acloudguru.com/blog/engineering/yes-werner-vogels-knows-aws-has-a-lot-of-services-highlights-from-reinvent-day-4>
 

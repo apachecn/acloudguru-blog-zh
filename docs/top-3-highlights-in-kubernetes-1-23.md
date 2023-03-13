@@ -1,4 +1,4 @@
-# Kubernetes 1.23 中的三大亮点|云专家
+# Kubernetes 1.23 中的三大亮点
 
 > 原文：<https://acloudguru.com/blog/engineering/top-3-highlights-in-kubernetes-1-23>
 

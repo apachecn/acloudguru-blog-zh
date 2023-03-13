@@ -1,4 +1,4 @@
-# AWS 补充无代码堆:是工程师的末日吗？|云专家
+# AWS 补充无代码堆:是工程师的末日吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-adds-to-the-no-code-pile-is-it-the-end-of-the-engineer>
 

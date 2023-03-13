@@ -1,4 +1,4 @@
-# 容器，满足无服务器:谷歌云运行入门|云专家
+# 容器，满足无服务器:谷歌云运行入门
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-meets-containers-with-google-cloud-run>
 

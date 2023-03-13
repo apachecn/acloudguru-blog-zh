@@ -1,4 +1,4 @@
-# 如何使用 AWS |云专家跟踪、分析和可视化数据
+# 如何使用 AWS 跟踪、分析和可视化数据
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-track-analyze-and-visualize-user-group-data-using-aws>
 

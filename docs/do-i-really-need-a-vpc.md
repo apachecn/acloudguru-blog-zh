@@ -1,4 +1,4 @@
-# 我真的需要 VPC 吗？|云专家
+# 我真的需要 VPC 吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/do-i-really-need-a-vpc>
 

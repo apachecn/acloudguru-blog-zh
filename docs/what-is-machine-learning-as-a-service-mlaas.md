@@ -1,4 +1,4 @@
-# 什么是机器学习即服务(MLaaS)？|云专家
+# 什么是机器学习即服务(MLaaS)？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-machine-learning-as-a-service-mlaas>
 

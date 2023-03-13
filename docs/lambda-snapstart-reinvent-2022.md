@@ -1,4 +1,4 @@
-# Lambda SnapStart:我们从 re:Invent 2022 |一位云专家那里了解到了什么
+# Lambda SnapStart:我们从 re:Invent 2022 那里了解到了什么
 
 > 原文：<https://acloudguru.com/blog/business/lambda-snapstart-reinvent-2022>
 

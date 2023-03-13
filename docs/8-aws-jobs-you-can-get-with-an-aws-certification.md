@@ -1,4 +1,4 @@
-# 您可以通过认证获得的 AWS 工作|云专家
+# 您可以通过认证获得的 AWS 工作
 
 > 原文：<https://acloudguru.com/blog/engineering/8-aws-jobs-you-can-get-with-an-aws-certification>
 

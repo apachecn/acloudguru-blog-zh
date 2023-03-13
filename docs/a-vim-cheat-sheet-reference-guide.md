@@ -1,4 +1,4 @@
-# Vim 备忘单:终极命令指南|云专家
+# Vim 备忘单:终极命令指南
 
 > 原文：<https://acloudguru.com/blog/engineering/a-vim-cheat-sheet-reference-guide>
 

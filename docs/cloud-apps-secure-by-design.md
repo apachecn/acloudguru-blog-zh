@@ -1,4 +1,4 @@
-# 云安全风险:为什么您应该通过设计确保应用程序安全|云专家
+# 云安全风险:为什么您应该通过设计确保应用程序安全
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-apps-secure-by-design>
 

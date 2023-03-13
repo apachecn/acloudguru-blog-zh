@@ -1,4 +1,4 @@
-# 微软在云竞争对手领导层改组中击败 AWS 高管|一位云专家
+# 微软在云竞争对手领导层改组中击败 AWS 高管
 
 > 原文：<https://acloudguru.com/blog/engineering/microsoft-nabs-aws-exec-in-cloud-rivals-leadership-shakeup>
 

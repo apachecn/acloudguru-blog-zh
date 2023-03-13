@@ -1,4 +1,4 @@
-# 免费云培训- AWS、Azure、谷歌云等|云专家
+# 免费云培训- AWS、Azure、谷歌云等
 
 > 原文：<https://acloudguru.com/blog/news/whats-free-at-acg>
 

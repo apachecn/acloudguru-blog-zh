@@ -1,4 +1,4 @@
-# 微软 Azure 的 AD 和 DNS 宕机是怎么回事？|云专家
+# 微软 Azure 的 AD 和 DNS 宕机是怎么回事？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-happened-with-microsoft-azures-active-directory-and-dns-outages>
 

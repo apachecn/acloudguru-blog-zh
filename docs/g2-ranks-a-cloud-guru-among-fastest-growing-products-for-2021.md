@@ -1,4 +1,4 @@
-# G2 将云专家列为 2021 年增长最快的产品|云专家
+# G2 将云专家列为 2021 年增长最快的产品
 
 > 原文：<https://acloudguru.com/blog/news/g2-ranks-a-cloud-guru-among-fastest-growing-products-for-2021>
 

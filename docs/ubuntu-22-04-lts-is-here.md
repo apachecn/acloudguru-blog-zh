@@ -1,4 +1,4 @@
-# Ubuntu 22.04 LTS 来了！|云专家
+# Ubuntu 22.04 LTS 来了！
 
 > 原文：<https://acloudguru.com/blog/engineering/ubuntu-22-04-lts-is-here>
 

@@ -1,4 +1,4 @@
-# 我如何在 AWS |云专家上把我的静态网站扩展到全球市场
+# 我如何在 AWS 上把我的静态网站扩展到全球市场
 
 > 原文：<https://acloudguru.com/blog/engineering/scaling-your-static-site-to-a-global-market-for-a-fraction-of-the-cost-on-aws>
 

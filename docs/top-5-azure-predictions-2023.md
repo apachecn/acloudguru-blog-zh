@@ -1,4 +1,4 @@
-# 2023 年 5 大 Azure 预测|云专家
+# 2023 年 5 大 Azure 预测
 
 > 原文：<https://acloudguru.com/blog/engineering/top-5-azure-predictions-2023>
 

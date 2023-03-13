@@ -1,4 +1,4 @@
-# Ubuntu 12.04 LTS 对 14.04 LTS:快速变化回顾|一位云专家
+# Ubuntu 12.04 LTS 对 14.04 LTS:快速变化回顾
 
 > 原文：<https://acloudguru.com/blog/engineering/ubuntu-12-04-lts-vs-14-04-lts-quick-change-review>
 

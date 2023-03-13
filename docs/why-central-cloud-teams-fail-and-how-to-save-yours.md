@@ -1,4 +1,4 @@
-# 为什么“中央云团队”会失败(以及如何拯救你的团队)|一位云专家
+# 为什么“中央云团队”会失败(以及如何拯救你的团队)
 
 > 原文：<https://acloudguru.com/blog/engineering/why-central-cloud-teams-fail-and-how-to-save-yours>
 

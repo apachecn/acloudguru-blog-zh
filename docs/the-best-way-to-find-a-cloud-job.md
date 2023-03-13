@@ -1,4 +1,4 @@
-# 寻找云工作的最佳方式|云专家
+# 寻找云工作的最佳方式
 
 > 原文：<https://acloudguru.com/blog/engineering/the-best-way-to-find-a-cloud-job>
 

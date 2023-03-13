@@ -1,4 +1,4 @@
-# 向上移动堆栈:ACG 和洛杉矶开发者体验|云专家
+# 向上移动堆栈:ACG 和洛杉矶开发者体验
 
 > 原文：<https://acloudguru.com/blog/engineering/moving-up-the-stack-acg-la-developer-experience>
 

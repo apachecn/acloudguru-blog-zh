@@ -1,4 +1,4 @@
-# 云中心走向卓越的 3 个阶段|云专家
+# 云中心走向卓越的 3 个阶段
 
 > 原文：<https://acloudguru.com/blog/business/design-cloud-center-of-excellence-for-evolution>
 

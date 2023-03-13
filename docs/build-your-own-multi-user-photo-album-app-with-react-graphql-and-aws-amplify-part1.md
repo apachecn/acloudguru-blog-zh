@@ -1,4 +1,4 @@
-# 使用 React、GraphQL 和 AWS Amplify 构建您自己的多用户相册应用程序—第 1 部分，共 3 部分|云专家
+# 使用 React、GraphQL 和 AWS Amplify 构建您自己的多用户相册应用程序—第 1 部分，共 3 部分
 
 > 原文：<https://acloudguru.com/blog/engineering/build-your-own-multi-user-photo-album-app-with-react-graphql-and-aws-amplify-part1>
 

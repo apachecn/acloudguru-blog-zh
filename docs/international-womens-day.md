@@ -1,4 +1,4 @@
-# 国际妇女节|云专家
+# 国际妇女节
 
 > 原文：<https://acloudguru.com/blog/news/international-womens-day>
 

@@ -1,4 +1,4 @@
-# 使用 Azure AD 应用程序代理|云专家远程访问内部应用程序
+# 使用 Azure AD 应用程序代理远程访问内部应用程序
 
 > 原文：<https://acloudguru.com/blog/engineering/remotely-access-on-premises-apps-with-azure-ad-app-proxy>
 

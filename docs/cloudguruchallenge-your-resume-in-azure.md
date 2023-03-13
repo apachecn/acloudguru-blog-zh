@@ -1,4 +1,4 @@
-# #CloudGuruChallenge:你在 Azure 的简历|一位云专家
+# #CloudGuruChallenge:你在 Azure 的简历
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure>
 

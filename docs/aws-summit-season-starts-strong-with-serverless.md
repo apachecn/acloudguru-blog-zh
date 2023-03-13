@@ -1,4 +1,4 @@
-# AWS 峰会季强势开场，所有东西无服务器|云专家
+# AWS 峰会季强势开场，所有东西无服务器
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-summit-season-starts-strong-with-serverless>
 

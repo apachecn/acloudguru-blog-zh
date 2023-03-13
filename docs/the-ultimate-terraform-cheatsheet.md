@@ -1,4 +1,4 @@
-# 终极 Terraform 命令行备忘单|云专家
+# 终极 Terraform 命令行备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/the-ultimate-terraform-cheatsheet>
 

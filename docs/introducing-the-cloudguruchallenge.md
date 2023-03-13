@@ -1,4 +1,4 @@
-# 介绍#CloudGuruChallenge |云专家
+# 介绍#CloudGuruChallenge 
 
 > 原文：<https://acloudguru.com/blog/news/introducing-the-cloudguruchallenge>
 

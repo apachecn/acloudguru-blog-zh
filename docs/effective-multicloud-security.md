@@ -1,4 +1,4 @@
-# 有效的多云安全解决方案的 4 个关键步骤|云专家
+# 有效的多云安全解决方案的 4 个关键步骤
 
 > 原文：<https://acloudguru.com/blog/engineering/effective-multicloud-security>
 

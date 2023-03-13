@@ -1,4 +1,4 @@
-# Lars 的云播放列表:Azure 基础实践实验室|云专家
+# Lars 的云播放列表:Azure 基础实践实验室
 
 > 原文：<https://acloudguru.com/blog/engineering/lars-cloud-playlist-hands-on-labs-for-azure-fundamentals>
 

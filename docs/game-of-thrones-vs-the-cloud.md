@@ -1,4 +1,4 @@
-# 《权力的游戏》对《云》|《云大师》
+# 《权力的游戏》对《云》
 
 > 原文：<https://acloudguru.com/blog/engineering/game-of-thrones-vs-the-cloud>
 

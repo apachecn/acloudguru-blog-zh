@@ -1,4 +1,4 @@
-# 。NET 6 deep dive:有什么新特性，对开发者有什么意义？|云专家
+# 。NET 6 deep dive:有什么新特性，对开发者有什么意义？
 
 > 原文：<https://acloudguru.com/blog/engineering/net-6-deep-dive-whats-new-and-whats-it-mean-for-developers>
 

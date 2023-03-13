@@ -1,4 +1,4 @@
-# 使用和声明 Terraform 输出-输入指南|云专家
+# 使用和声明 Terraform 输出-输入指南
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-use-terraform-inputs-and-outputs>
 

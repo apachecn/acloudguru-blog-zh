@@ -1,4 +1,4 @@
-# 云中的 DevOps 工具——亚马逊网络服务|云专家
+# 云中的 DevOps 工具——亚马逊网络服务
 
 > 原文：<https://acloudguru.com/blog/engineering/devops-tools-cloud-amazon-web-services>
 

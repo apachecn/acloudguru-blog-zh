@@ -1,4 +1,4 @@
-# 存储服务对比:AWS vs Azure vs GCP |云专家
+# 存储服务对比:AWS vs Azure vs GCP 
 
 > 原文：<https://acloudguru.com/blog/engineering/storage-showdown-aws-vs-azure-vs-gcp-cloud-comparison>
 

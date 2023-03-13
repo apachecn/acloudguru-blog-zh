@@ -1,4 +1,4 @@
-# Azure PowerShell 初学者指南|云专家
+# Azure PowerShell 初学者指南
 
 > 原文：<https://acloudguru.com/blog/engineering/one-shell-to-rule-them-all-5-reasons-to-use-powershell-for-cloud-management>
 

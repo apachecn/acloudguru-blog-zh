@@ -1,4 +1,4 @@
-# 云计算的价值主张|通过 AWS 最大化商业价值|云专家
+# 云计算的价值主张|通过 AWS 最大化商业价值
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-computings-value-proposition-maximizing-business-value-with-aws>
 

@@ -1,4 +1,4 @@
-# 无服务器正在吞噬堆栈，人们都吓坏了，他们应该是|云专家
+# 无服务器正在吞噬堆栈，人们都吓坏了，他们应该是
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-is-eating-the-stack-and-people-are-freaking-out-and-they-should-be>
 

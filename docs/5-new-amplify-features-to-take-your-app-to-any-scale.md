@@ -1,4 +1,4 @@
-# 5 项新的增强功能，可将您的应用扩展到任何规模|云专家
+# 5 项新的增强功能，可将您的应用扩展到任何规模
 
 > 原文：<https://acloudguru.com/blog/engineering/5-new-amplify-features-to-take-your-app-to-any-scale>
 

@@ -1,4 +1,4 @@
-# 如何建造自动驾驶机器人赛车|云专家
+# 如何建造自动驾驶机器人赛车
 
 > 原文：<https://acloudguru.com/blog/engineering/how-i-built-an-autonomous-car-to-drive-awareness-for-women-who-code>
 
@@ -208,7 +208,7 @@ python manage.py drive — model ~/d2/models/myPilotName
 
 在参加了黑客马拉松和会议之后，前进的道路看起来非常清晰。那些在技术领域代表性不足的人需要更多像 Robocar 拉力赛这样的机会——获得培训、会议和黑客马拉松的机会，这些机会提供了克服职业进入和发展障碍所需的高级技能。
 
-[We Power Tech |一位云专家——一位云专家正在与 AWS We Power Tech 合作，希望看到一个各种肤色、性别、信仰、起源的技术未来…——info . A Cloud . Guru](https://acloudguru.com/blog)
+[We Power Tech ——一位云专家正在与 AWS We Power Tech 合作，希望看到一个各种肤色、性别、信仰、起源的技术未来…——info . A Cloud . Guru](https://acloudguru.com/blog)
 
 AWS re:invent 大会是一个与众多引领云计算未来的女性联系、交流和学习的绝佳机会。我很幸运能在像威瑞森这样的公司工作，领导们积极支持技术的多样性和包容性——看到这么多其他公司加入对话令人鼓舞。
 

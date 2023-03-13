@@ -1,4 +1,4 @@
-# 以持续的弹性拥抱失败|云专家
+# 以持续的弹性拥抱失败
 
 > 原文：<https://acloudguru.com/blog/engineering/embracing-failure-with-continuous-resilience>
 

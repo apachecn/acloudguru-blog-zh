@@ -1,4 +1,4 @@
-# 我有多少代码？DevSecOps 故事|云专家
+# 我有多少代码？DevSecOps 故事
 
 > 原文：<https://acloudguru.com/blog/engineering/how-much-code-do-i-have-a-devsecops-story>
 

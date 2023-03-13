@@ -1,4 +1,4 @@
-# 了解你在 ACG 的招聘人员:汉娜·金|云计算专家
+# 了解你在 ACG 的招聘人员:汉娜·金
 
 > 原文：<https://acloudguru.com/blog/news/get-to-know-your-acg-recruiter-hanna-kim>
 

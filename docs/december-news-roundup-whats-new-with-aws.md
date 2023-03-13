@@ -1,4 +1,4 @@
-# 12 月新闻综述:AWS 有什么新功能？|云专家
+# 12 月新闻综述:AWS 有什么新功能？
 
 > 原文：<https://acloudguru.com/blog/engineering/december-news-roundup-whats-new-with-aws>
 

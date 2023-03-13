@@ -1,4 +1,4 @@
-# Azure 认证和路线图|云专家
+# Azure 认证和路线图
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-certifications-and-roadmap>
 

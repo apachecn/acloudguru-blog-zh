@@ -1,4 +1,4 @@
-# 为客户体验衡量您的云成功|云专家
+# 为客户体验衡量您的云成功
 
 > 原文：<https://acloudguru.com/blog/business/measuring-cloud-success>
 

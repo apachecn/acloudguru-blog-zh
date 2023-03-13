@@ -1,4 +1,4 @@
-# 如何让您的 AWS Lambda 功能保持温暖|云专家
+# 如何让您的 AWS Lambda 功能保持温暖
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-keep-your-lambda-functions-warm>
 

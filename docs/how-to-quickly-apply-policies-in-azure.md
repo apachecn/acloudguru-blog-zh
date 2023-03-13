@@ -1,4 +1,4 @@
-# 如何在 Azure |云专家中快速应用策略
+# 如何在 Azure 中快速应用策略
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-quickly-apply-policies-in-azure>
 

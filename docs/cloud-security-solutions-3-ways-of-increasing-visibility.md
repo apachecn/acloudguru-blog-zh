@@ -1,4 +1,4 @@
-# 云安全解决方案:提高可见性的 3 种方法|云专家
+# 云安全解决方案:提高可见性的 3 种方法
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-security-solutions-3-ways-of-increasing-visibility>
 

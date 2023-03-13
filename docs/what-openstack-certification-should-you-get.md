@@ -1,4 +1,4 @@
-# 应该获得哪些 OpenStack 认证？|云专家
+# 应该获得哪些 OpenStack 认证？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-openstack-certification-should-you-get>
 

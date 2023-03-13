@@ -1,4 +1,4 @@
-# 云女性& ACG 合作伙伴云实践日|云专家
+# 云女性& ACG 合作伙伴云实践日
 
 > 原文：<https://acloudguru.com/blog/news/women-in-cloud-and-acg-partner-for-hands-on-cloud-day>
 

@@ -1,4 +1,4 @@
-# DevOps vs 敏捷:有什么区别？|云专家
+# DevOps vs 敏捷:有什么区别？
 
 > 原文：<https://acloudguru.com/blog/engineering/devops-vs-agile-whats-the-difference>
 

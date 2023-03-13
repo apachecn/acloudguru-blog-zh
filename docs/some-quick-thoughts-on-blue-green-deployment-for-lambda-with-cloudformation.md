@@ -1,4 +1,4 @@
-# AWS Lambda 和 CloudFormation 上的蓝绿色部署|云专家
+# AWS Lambda 和 CloudFormation 上的蓝绿色部署
 
 > 原文：<https://acloudguru.com/blog/engineering/some-quick-thoughts-on-blue-green-deployment-for-lambda-with-cloudformation>
 

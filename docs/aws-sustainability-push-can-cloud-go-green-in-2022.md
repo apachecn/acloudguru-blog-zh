@@ -1,4 +1,4 @@
-# AWS 可持续发展推动:云能在 2022 年走向绿色吗？|云专家
+# AWS 可持续发展推动:云能在 2022 年走向绿色吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-sustainability-push-can-cloud-go-green-in-2022>
 

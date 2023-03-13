@@ -1,4 +1,4 @@
-# 云专家的最新消息:2019 年 5 月|云专家
+# 云专家的最新消息:2019 年 5 月
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-at-a-cloud-guru-may-2019>
 

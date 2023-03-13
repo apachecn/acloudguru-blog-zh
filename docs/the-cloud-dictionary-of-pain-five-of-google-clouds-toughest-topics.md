@@ -1,4 +1,4 @@
-# 谷歌云最棘手的五个话题——痛苦的云词典|云专家
+# 谷歌云最棘手的五个话题——痛苦的云词典
 
 > 原文：<https://acloudguru.com/blog/engineering/the-cloud-dictionary-of-pain-five-of-google-clouds-toughest-topics>
 

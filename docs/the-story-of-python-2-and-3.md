@@ -1,4 +1,4 @@
-# Python 2 和 3 的故事|云专家
+# Python 2 和 3 的故事
 
 > 原文：<https://acloudguru.com/blog/engineering/the-story-of-python-2-and-3>
 

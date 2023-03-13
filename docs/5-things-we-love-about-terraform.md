@@ -1,4 +1,4 @@
-# 我们喜欢 Terraform |云专家的 5 点
+# 我们喜欢 Terraform 的 5 点
 
 > 原文：<https://acloudguru.com/blog/engineering/5-things-we-love-about-terraform>
 

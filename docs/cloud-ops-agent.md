@@ -1,4 +1,4 @@
-# 在 Google 计算引擎实例中使用云操作代理|云专家
+# 在 Google 计算引擎实例中使用云操作代理
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-ops-agent>
 

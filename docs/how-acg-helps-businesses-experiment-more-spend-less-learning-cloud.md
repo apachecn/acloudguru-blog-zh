@@ -1,4 +1,4 @@
-# 多做实验，少花时间学习云|云专家
+# 多做实验，少花时间学习云
 
 > 原文：<https://acloudguru.com/blog/business/how-acg-helps-businesses-experiment-more-spend-less-learning-cloud>
 

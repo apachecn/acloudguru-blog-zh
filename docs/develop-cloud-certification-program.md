@@ -1,4 +1,4 @@
-# 云认证如何解决技能差距|云专家
+# 云认证如何解决技能差距
 
 > 原文：<https://acloudguru.com/blog/business/develop-cloud-certification-program>
 

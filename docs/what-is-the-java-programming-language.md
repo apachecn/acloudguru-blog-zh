@@ -1,4 +1,4 @@
-# Java 编程语言是什么？|云专家
+# Java 编程语言是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-the-java-programming-language>
 

@@ -1,4 +1,4 @@
-# 云计算职业常见问题:如何开始云计算职业|云计算专家
+# 云计算职业常见问题:如何开始云计算职业
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-begin-your-cloud-career>
 

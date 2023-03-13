@@ -1,4 +1,4 @@
-# 什么是 Azure 数据工厂？ADF 初学者指南|云专家
+# 什么是 Azure 数据工厂？ADF 初学者指南
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-azure-data-factory-a-beginners-guide-to-adf>
 

@@ -1,4 +1,4 @@
-# 领英 2020 年最佳创业公司名单上公认的云专家|云专家
+# 领英 2020 年最佳创业公司名单上公认的云专家
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-recognized-on-linkedins-2020-top-startups-list>
 

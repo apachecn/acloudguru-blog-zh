@@ -1,4 +1,4 @@
-# 2022 年我们的专家喜爱的 10 篇科技文章|云专家
+# 2022 年我们的专家喜爱的 10 篇科技文章
 
 > 原文：<https://acloudguru.com/blog/engineering/10-tech-articles-2022>
 

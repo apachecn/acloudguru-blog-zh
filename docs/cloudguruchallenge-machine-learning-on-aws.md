@@ -1,4 +1,4 @@
-# # CloudGuruChallenge——AWS 上的机器学习|云专家
+# # CloudGuruChallenge——AWS 上的机器学习
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-machine-learning-on-aws>
 

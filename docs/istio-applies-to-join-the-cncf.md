@@ -1,4 +1,4 @@
-# Istio 申请加入 CNCF |云大师
+# Istio 申请加入 CNCF 
 
 > 原文：<https://acloudguru.com/blog/engineering/istio-applies-to-join-the-cncf>
 

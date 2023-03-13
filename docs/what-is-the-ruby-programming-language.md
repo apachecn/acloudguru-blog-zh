@@ -1,4 +1,4 @@
-# 什么是 Ruby 编程语言？|云专家
+# 什么是 Ruby 编程语言？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-the-ruby-programming-language>
 

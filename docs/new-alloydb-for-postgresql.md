@@ -1,4 +1,4 @@
-# 面向 PostgreSQL 的全新 AlloyDB 和可靠的开源软件服务|云专家
+# 面向 PostgreSQL 的全新 AlloyDB 和可靠的开源软件服务
 
 > 原文：<https://acloudguru.com/blog/engineering/new-alloydb-for-postgresql>
 

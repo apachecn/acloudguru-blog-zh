@@ -1,4 +1,4 @@
-# Linux 5.14、Debian 11、Predator-OS 和 Linux Mint 的新外观|云专家
+# Linux 5.14、Debian 11、Predator-OS 和 Linux Mint 的新外观
 
 > 原文：<https://acloudguru.com/blog/engineering/exploring-linux-5-14-debian-11-predator-os-and-linux-mints-new-look>
 

@@ -1,4 +1,4 @@
-# Ansible vs. Terraform:战斗！|云专家
+# Ansible vs. Terraform:战斗！
 
 > 原文：<https://acloudguru.com/blog/engineering/ansible-vs-terraform-fight>
 

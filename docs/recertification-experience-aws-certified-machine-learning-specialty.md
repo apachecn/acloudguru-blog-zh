@@ -1,4 +1,4 @@
-# 重新认证重新发布:AWS 认证机器学习-专业|云专家
+# 重新认证重新发布:AWS 认证机器学习-专业
 
 > 原文：<https://acloudguru.com/blog/engineering/recertification-experience-aws-certified-machine-learning-specialty>
 

@@ -1,4 +1,4 @@
-# 什么是微软 Azure 云平台？|云专家
+# 什么是微软 Azure 云平台？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-microsoft-azure>
 

@@ -1,4 +1,4 @@
-# 观察:如何构建云优先战略|云专家
+# 观察:如何构建云优先战略
 
 > 原文：<https://acloudguru.com/blog/business/how-to-build-a-cloud-first-strategy>
 

@@ -1,4 +1,4 @@
-# 如何在 Azure |云专家中创建站点到站点的 VPN 网关
+# 如何在 Azure 中创建站点到站点的 VPN 网关
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-create-a-site-to-site-vpn-gateway-in-azure>
 

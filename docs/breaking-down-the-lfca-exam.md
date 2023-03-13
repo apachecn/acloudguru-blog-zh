@@ -1,4 +1,4 @@
-# 打破 LFCA 考试|云专家
+# 打破 LFCA 考试
 
 > 原文：<https://acloudguru.com/blog/engineering/breaking-down-the-lfca-exam>
 

@@ -1,4 +1,4 @@
-# 世界需要在巨变时期保持敏捷|一位云计算大师
+# 世界需要在巨变时期保持敏捷
 
 > 原文：<https://acloudguru.com/blog/news/the-world-needs-agility-in-a-time-of-great-change>
 

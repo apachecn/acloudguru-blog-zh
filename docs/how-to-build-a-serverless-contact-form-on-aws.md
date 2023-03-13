@@ -1,4 +1,4 @@
-# 如何在 AWS |云专家上构建无服务器联系表单
+# 如何在 AWS 上构建无服务器联系表单
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-build-a-serverless-contact-form-on-aws>
 

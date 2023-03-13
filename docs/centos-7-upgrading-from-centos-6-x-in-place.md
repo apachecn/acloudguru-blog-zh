@@ -1,4 +1,4 @@
-# CentOS 7:从 CentOS 6.x 就地升级|云专家
+# CentOS 7:从 CentOS 6.x 就地升级
 
 > 原文：<https://acloudguru.com/blog/engineering/centos-7-upgrading-from-centos-6-x-in-place>
 

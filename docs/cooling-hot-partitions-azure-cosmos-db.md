@@ -1,4 +1,4 @@
-# 冷却 Azure Cosmos DB |云专家中的热分区
+# 冷却 Azure Cosmos DB 中的热分区
 
 > 原文：<https://acloudguru.com/blog/engineering/cooling-hot-partitions-azure-cosmos-db>
 

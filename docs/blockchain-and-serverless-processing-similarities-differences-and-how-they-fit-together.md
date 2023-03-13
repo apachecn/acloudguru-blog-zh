@@ -1,4 +1,4 @@
-# 事件驱动架构:无服务器处理和区块链二重奏|云专家
+# 事件驱动架构:无服务器处理和区块链二重奏
 
 > 原文：<https://acloudguru.com/blog/engineering/blockchain-and-serverless-processing-similarities-differences-and-how-they-fit-together>
 

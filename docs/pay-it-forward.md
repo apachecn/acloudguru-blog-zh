@@ -1,4 +1,4 @@
-# 向前支付:帮助我们赠送 1，000 份 ACG 订阅|云专家
+# 向前支付:帮助我们赠送 1，000 份 ACG 订阅
 
 > 原文：<https://acloudguru.com/blog/news/pay-it-forward>
 

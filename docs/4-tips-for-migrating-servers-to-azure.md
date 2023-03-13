@@ -1,4 +1,4 @@
-# 将服务器迁移到 Azure |云专家的 4 个技巧
+# 将服务器迁移到 Azure 的 4 个技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/4-tips-for-migrating-servers-to-azure>
 

@@ -1,4 +1,4 @@
-# Azure SQL 超大规模、站点恢复和流量管理器获得更新|云专家
+# Azure SQL 超大规模、站点恢复和流量管理器获得更新
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-sql-hyperscale-site-recovery-and-traffic-manager-get-updates>
 

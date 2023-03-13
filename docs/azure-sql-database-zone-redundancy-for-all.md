@@ -1,4 +1,4 @@
-# Azure SQL 数据库区域全部冗余！|云专家
+# Azure SQL 数据库区域全部冗余！
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-sql-database-zone-redundancy-for-all>
 

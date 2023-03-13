@@ -1,4 +1,4 @@
-# AWS 中的轻松视频转码|云专家
+# AWS 中的轻松视频转码
 
 > 原文：<https://acloudguru.com/blog/engineering/easy-video-transcoding-in-aws>
 

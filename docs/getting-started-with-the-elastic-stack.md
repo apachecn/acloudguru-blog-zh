@@ -1,4 +1,4 @@
-# 弹性堆栈入门|云专家
+# 弹性堆栈入门
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-started-with-the-elastic-stack>
 

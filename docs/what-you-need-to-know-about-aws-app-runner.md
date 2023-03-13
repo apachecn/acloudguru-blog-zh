@@ -1,4 +1,4 @@
-# 魔法豆茎？关于 AWS App Runner |云专家，您需要了解的内容
+# 魔法豆茎？关于 AWS App Runner ，您需要了解的内容
 
 > 原文：<https://acloudguru.com/blog/engineering/what-you-need-to-know-about-aws-app-runner>
 

@@ -1,4 +1,4 @@
-# 每个客户都应该拥有的 12 条 AWS 配置规则|云专家
+# 每个客户都应该拥有的 12 条 AWS 配置规则
 
 > 原文：<https://acloudguru.com/blog/engineering/12-aws-config-rules-that-every-account-should-have>
 

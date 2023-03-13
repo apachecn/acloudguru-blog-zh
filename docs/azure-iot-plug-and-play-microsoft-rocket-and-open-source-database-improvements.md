@@ -1,4 +1,4 @@
-# Azure 物联网即插即用、微软火箭和开源数据库改进|云专家
+# Azure 物联网即插即用、微软火箭和开源数据库改进
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-iot-plug-and-play-microsoft-rocket-and-open-source-database-improvements>
 

@@ -1,4 +1,4 @@
-# Amazon Aurora 无服务器数据 API 入门|云专家
+# Amazon Aurora 无服务器数据 API 入门
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-started-with-the-amazon-aurora-serverless-data-api>
 

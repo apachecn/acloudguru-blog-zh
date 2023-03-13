@@ -1,4 +1,4 @@
-# 流浪记小抄+流浪记入门|一个云宗师
+# 流浪记小抄+流浪记入门
 
 > 原文：<https://acloudguru.com/blog/engineering/vagrant-cheat-sheet-get-started-with-vagrant>
 

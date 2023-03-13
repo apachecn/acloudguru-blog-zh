@@ -1,4 +1,4 @@
-# 大数据、NoSQL、谷歌与 AWS |云专家
+# 大数据、NoSQL、谷歌与 AWS 
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-superheroes-lynn-langit-on-big-data-nosql-and-google-versus-aws>
 

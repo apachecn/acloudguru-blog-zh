@@ -1,4 +1,4 @@
-# AZ-400 学习指南:免费 Azure 考试演练|云专家
+# AZ-400 学习指南:免费 Azure 考试演练
 
 > 原文：<https://acloudguru.com/blog/engineering/prep-for-the-az-400-for-free-join-our-live-azure-exam-walkthrough>
 

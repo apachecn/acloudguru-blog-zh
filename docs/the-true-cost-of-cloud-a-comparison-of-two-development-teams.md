@@ -1,4 +1,4 @@
-# 云计算的成本|云专家
+# 云计算的成本
 
 > 原文：<https://acloudguru.com/blog/engineering/the-true-cost-of-cloud-a-comparison-of-two-development-teams>
 

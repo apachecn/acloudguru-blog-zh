@@ -1,4 +1,4 @@
-# AWS 停机发生了什么？|云专家
+# AWS 停机发生了什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-happened-with-the-aws-outage>
 

@@ -1,4 +1,4 @@
-# 面向 AWS Systems Manager |云专家的出站 webhooks
+# 面向 AWS Systems Manager 的出站 webhooks
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-systems-manager-gets-outbound-webhooks>
 

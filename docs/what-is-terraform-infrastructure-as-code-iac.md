@@ -1,4 +1,4 @@
-# 什么是 Terraform &基础设施即代码(IaC)？|云专家
+# 什么是 Terraform &基础设施即代码(IaC)？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-terraform-infrastructure-as-code-iac>
 

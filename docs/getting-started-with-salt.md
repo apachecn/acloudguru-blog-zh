@@ -1,4 +1,4 @@
-# Salt 入门|云专家
+# Salt 入门
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-started-with-salt>
 

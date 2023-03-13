@@ -1,4 +1,4 @@
-# AWS 最终指南:发明 2022 |云专家
+# AWS 最终指南:发明 2022 
 
 > 原文：<https://acloudguru.com/blog/business/the-ultimate-guide-to-aws-reinvent-2022>
 

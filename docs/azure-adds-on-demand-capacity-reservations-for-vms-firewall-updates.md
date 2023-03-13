@@ -1,4 +1,4 @@
-# Azure 为虚拟机、防火墙更新添加按需容量预留|云专家
+# Azure 为虚拟机、防火墙更新添加按需容量预留
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-adds-on-demand-capacity-reservations-for-vms-firewall-updates>
 

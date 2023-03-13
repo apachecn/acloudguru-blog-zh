@@ -1,4 +1,4 @@
-# 了解 Keystone 端点|云专家
+# 了解 Keystone 端点
 
 > 原文：<https://acloudguru.com/blog/engineering/understanding-keystone-endpoints>
 

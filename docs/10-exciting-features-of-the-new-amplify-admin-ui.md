@@ -1,4 +1,4 @@
-# 放大管理用户界面:开发人员的 10 个激动人心的特性|云专家
+# 放大管理用户界面:开发人员的 10 个激动人心的特性
 
 > 原文：<https://acloudguru.com/blog/engineering/10-exciting-features-of-the-new-amplify-admin-ui>
 

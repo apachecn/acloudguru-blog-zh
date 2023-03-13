@@ -1,4 +1,4 @@
-# AWS Lambda 版本和别名|云专家
+# AWS Lambda 版本和别名
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-lambda-versioning-and-aliases>
 

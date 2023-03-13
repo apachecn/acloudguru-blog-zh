@@ -1,4 +1,4 @@
-# AWS re:Invent 2022:周三的顶级外卖|一位云专家
+# AWS re:Invent 2022:周三的顶级外卖
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2022-wednesdays-top-takeaways>
 

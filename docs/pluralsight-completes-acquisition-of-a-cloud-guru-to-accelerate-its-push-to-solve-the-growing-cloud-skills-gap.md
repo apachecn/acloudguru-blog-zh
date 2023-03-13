@@ -1,4 +1,4 @@
-# Pluralsight 完成对一家云专家的收购，以加速其解决日益扩大的云技能缺口|一家云专家
+# Pluralsight 完成对一家云专家的收购，以加速其解决日益扩大的云技能缺口
 
 > 原文：<https://acloudguru.com/blog/news/pluralsight-completes-acquisition-of-a-cloud-guru-to-accelerate-its-push-to-solve-the-growing-cloud-skills-gap>
 

@@ -1,4 +1,4 @@
-# 什么是云架构师:角色、技能和学习途径|云专家
+# 什么是云架构师:角色、技能和学习途径
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-a-cloud-architect-and-how-do-you-become-one>
 

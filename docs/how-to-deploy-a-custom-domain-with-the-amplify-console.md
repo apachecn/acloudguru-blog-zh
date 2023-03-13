@@ -1,4 +1,4 @@
-# 如何使用 Amplify 控制台|云专家部署自定义域
+# 如何使用 Amplify 控制台部署自定义域
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-deploy-a-custom-domain-with-the-amplify-console>
 

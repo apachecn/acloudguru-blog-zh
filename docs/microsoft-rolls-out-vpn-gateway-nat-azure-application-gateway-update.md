@@ -1,4 +1,4 @@
-# 微软推出 VPN 网关 NAT，Azure 应用程序网关更新|云专家
+# 微软推出 VPN 网关 NAT，Azure 应用程序网关更新
 
 > 原文：<https://acloudguru.com/blog/engineering/microsoft-rolls-out-vpn-gateway-nat-azure-application-gateway-update>
 

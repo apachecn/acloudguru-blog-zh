@@ -1,4 +1,4 @@
-# 什么是 Oracle 云，为什么要使用它？|云专家
+# 什么是 Oracle 云，为什么要使用它？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-oracle-cloud-and-why-should-you-use-it>
 

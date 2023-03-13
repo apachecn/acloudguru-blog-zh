@@ -1,4 +1,4 @@
-# AZ-104 vs AZ-103:微软 Azure 管理员助理变更说明|云专家
+# AZ-104 vs AZ-103:微软 Azure 管理员助理变更说明
 
 > 原文：<https://acloudguru.com/blog/engineering/az-104-vs-az-103-microsoft-azure-administrator-associate-changes-explained>
 

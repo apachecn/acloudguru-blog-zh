@@ -1,4 +1,4 @@
-# 云专家|云专家的新功能
+# 云专家的新功能
 
 > 原文：<https://acloudguru.com/blog/news/new-features-on-a-cloud-guru>
 

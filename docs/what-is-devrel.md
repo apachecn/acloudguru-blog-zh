@@ -1,4 +1,4 @@
-# 什么是 DevRel？|云专家
+# 什么是 DevRel？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-devrel>
 

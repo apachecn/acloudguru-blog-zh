@@ -1,4 +1,4 @@
-# AWS 解决方案架构师助理考试蓝图:需要掌握的 6 个领域|云专家
+# AWS 解决方案架构师助理考试蓝图:需要掌握的 6 个领域
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-solutions-architect-associate-exam-blueprint-6-areas-to-master>
 

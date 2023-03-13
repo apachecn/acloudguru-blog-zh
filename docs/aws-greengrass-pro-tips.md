@@ -1,4 +1,4 @@
-# AWS 物联网 Greengrass 提示-部署和故障排除|云专家
+# AWS 物联网 Greengrass 提示-部署和故障排除
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-greengrass-pro-tips>
 

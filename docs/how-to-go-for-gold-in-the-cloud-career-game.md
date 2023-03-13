@@ -1,4 +1,4 @@
-# 如何在云职业生涯游戏中获得金牌|云专家
+# 如何在云职业生涯游戏中获得金牌
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-go-for-gold-in-the-cloud-career-game>
 

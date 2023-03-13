@@ -1,4 +1,4 @@
-# 6 不要错过 AWS re:Invent 2021 sessions |一位云专家
+# 6 不要错过 AWS re:Invent 2021 sessions 
 
 > 原文：<https://acloudguru.com/blog/engineering/6-dont-miss-aws-reinvent-2021-sessions>
 

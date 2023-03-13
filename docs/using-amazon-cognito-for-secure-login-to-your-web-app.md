@@ -1,4 +1,4 @@
-# 使用 Amazon Cognito 安全登录您的 web 应用|云专家
+# 使用 Amazon Cognito 安全登录您的 web 应用
 
 > 原文：<https://acloudguru.com/blog/engineering/using-amazon-cognito-for-secure-login-to-your-web-app>
 

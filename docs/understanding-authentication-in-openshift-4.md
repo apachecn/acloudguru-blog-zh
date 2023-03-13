@@ -1,4 +1,4 @@
-# 了解 OpenShift 4 |云专家中的身份验证
+# 了解 OpenShift 4 中的身份验证
 
 > 原文：<https://acloudguru.com/blog/engineering/understanding-authentication-in-openshift-4>
 

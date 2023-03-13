@@ -1,4 +1,4 @@
-# Kubernetes 中的十二要素应用|云专家
+# Kubernetes 中的十二要素应用
 
 > 原文：<https://acloudguru.com/blog/engineering/twelve-factor-apps-in-kubernetes>
 

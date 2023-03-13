@@ -1,4 +1,4 @@
-# 使用 async |云专家 AWS Lambda 节省时间和资金
+# 使用 async  AWS Lambda 节省时间和资金
 
 > 原文：<https://acloudguru.com/blog/engineering/save-time-and-money-with-aws-lambda-using-asynchronous-programming>
 

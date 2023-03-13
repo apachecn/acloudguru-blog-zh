@@ -1,4 +1,4 @@
-# 使用 Diff 和 Patch 的介绍|云专家
+# 使用 Diff 和 Patch 的介绍
 
 > 原文：<https://acloudguru.com/blog/engineering/introduction-using-diff-and-patch>
 

@@ -1,4 +1,4 @@
-# 教育行业如何使用云技术？|云专家
+# 教育行业如何使用云技术？
 
 > 原文：<https://acloudguru.com/blog/business/how-is-the-education-industry-using-cloud-technologies>
 

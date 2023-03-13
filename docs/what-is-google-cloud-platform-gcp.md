@@ -1,4 +1,4 @@
-# 什么是谷歌云平台(GCP)？|云专家
+# 什么是谷歌云平台(GCP)？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-google-cloud-platform-gcp>
 

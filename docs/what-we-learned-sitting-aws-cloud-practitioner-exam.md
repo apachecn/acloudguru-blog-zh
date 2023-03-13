@@ -1,4 +1,4 @@
-# AWS 认证云从业者考试:我们从|云专家那里学到了什么
+# AWS 认证云从业者考试:我们从那里学到了什么
 
 > 原文：<https://acloudguru.com/blog/engineering/what-we-learned-sitting-aws-cloud-practitioner-exam>
 

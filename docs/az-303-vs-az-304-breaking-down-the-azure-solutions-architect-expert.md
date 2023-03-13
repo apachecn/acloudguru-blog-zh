@@ -1,4 +1,4 @@
-# AZ-303 vs AZ-304:打破 Azure 解决方案架构专家|云专家
+# AZ-303 vs AZ-304:打破 Azure 解决方案架构专家
 
 > 原文：<https://acloudguru.com/blog/engineering/az-303-vs-az-304-breaking-down-the-azure-solutions-architect-expert>
 

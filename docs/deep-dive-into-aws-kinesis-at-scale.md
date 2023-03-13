@@ -1,4 +1,4 @@
-# 深度潜水:亚马逊 Kinesis 大规模流|云专家
+# 深度潜水:亚马逊 Kinesis 大规模流
 
 > 原文：<https://acloudguru.com/blog/engineering/deep-dive-into-aws-kinesis-at-scale>
 

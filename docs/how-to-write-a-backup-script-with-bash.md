@@ -1,4 +1,4 @@
-# 如何使用 Bash |云专家编写备份脚本
+# 如何使用 Bash 编写备份脚本
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-write-a-backup-script-with-bash>
 

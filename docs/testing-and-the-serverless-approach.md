@@ -1,4 +1,4 @@
-# 无服务器测试方法与众不同，实际上可能更容易|云专家
+# 无服务器测试方法与众不同，实际上可能更容易
 
 > 原文：<https://acloudguru.com/blog/engineering/testing-and-the-serverless-approach>
 

@@ -1,4 +1,4 @@
-# 将 Flask App 从 Elastic Beanstalk 迁移到 AWS Lambda |云专家
+# 将 Flask App 从 Elastic Beanstalk 迁移到 AWS Lambda 
 
 > 原文：<https://acloudguru.com/blog/engineering/adventures-in-migrating-to-serverless>
 

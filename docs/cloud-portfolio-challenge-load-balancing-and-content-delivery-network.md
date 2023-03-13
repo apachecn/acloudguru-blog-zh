@@ -1,4 +1,4 @@
-# 云产品组合挑战:负载平衡和内容交付网络|云专家
+# 云产品组合挑战:负载平衡和内容交付网络
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-portfolio-challenge-load-balancing-and-content-delivery-network>
 

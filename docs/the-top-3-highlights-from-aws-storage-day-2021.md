@@ -1,4 +1,4 @@
-# 2021 年 AWS 存储日:主要亮点|云专家
+# 2021 年 AWS 存储日:主要亮点
 
 > 原文：<https://acloudguru.com/blog/engineering/the-top-3-highlights-from-aws-storage-day-2021>
 

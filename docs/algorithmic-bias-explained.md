@@ -1,4 +1,4 @@
-# 算法偏差:它是什么，如何处理？|云专家
+# 算法偏差:它是什么，如何处理？
 
 > 原文：<https://acloudguru.com/blog/engineering/algorithmic-bias-explained>
 

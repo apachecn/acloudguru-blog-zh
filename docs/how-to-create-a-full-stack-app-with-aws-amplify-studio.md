@@ -1,4 +1,4 @@
-# 如何使用 AWS Amplify Studio |云专家创建全栈应用
+# 如何使用 AWS Amplify Studio 创建全栈应用
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-create-a-full-stack-app-with-aws-amplify-studio>
 

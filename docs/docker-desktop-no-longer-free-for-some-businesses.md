@@ -1,4 +1,4 @@
-# Docker 桌面不再对“大型”企业免费|云专家
+# Docker 桌面不再对“大型”企业免费
 
 > 原文：<https://acloudguru.com/blog/engineering/docker-desktop-no-longer-free-for-some-businesses>
 

@@ -1,4 +1,4 @@
-# 生日快乐，谷歌！技术服务 24 岁|云专家
+# 生日快乐，谷歌！技术服务 24 岁
 
 > 原文：<https://acloudguru.com/blog/engineering/happy-birthday-google-tech-service-turns-24>
 

@@ -1,4 +1,4 @@
-# 我的五大 Azure 混合云技术|云专家
+# 我的五大 Azure 混合云技术
 
 > 原文：<https://acloudguru.com/blog/engineering/my-top-5-azure-hybrid-cloud-technologies>
 

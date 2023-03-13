@@ -1,4 +1,4 @@
-# 你可以通过 AWS Marketplace |云专家做五件令人惊讶的事情
+# 你可以通过 AWS Marketplace 做五件令人惊讶的事情
 
 > 原文：<https://acloudguru.com/blog/business/five-surprising-things-you-can-do-with-the-aws-marketplace>
 

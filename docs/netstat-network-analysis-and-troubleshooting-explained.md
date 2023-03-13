@@ -1,4 +1,4 @@
-# Linux netstat 命令:分析和故障排除讲解 Linux netstat 命令:分析和故障排除讲解|云专家
+# Linux netstat 命令:分析和故障排除讲解 Linux netstat 命令:分析和故障排除讲解
 
 > 原文：<https://acloudguru.com/blog/engineering/netstat-network-analysis-and-troubleshooting-explained>
 

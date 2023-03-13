@@ -1,4 +1,4 @@
-# 云专家在 G2 排名中获得最高分|云专家
+# 云专家在 G2 排名中获得最高分
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-earns-top-marks-in-g2-rankings>
 

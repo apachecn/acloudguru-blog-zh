@@ -1,4 +1,4 @@
-# 微软 Ignite 2022 综述:基础设施|云专家
+# 微软 Ignite 2022 综述:基础设施
 
 > 原文：<https://acloudguru.com/blog/engineering/microsoft-ignite-2022-roundup-infrastructure>
 

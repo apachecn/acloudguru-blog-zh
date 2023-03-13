@@ -1,4 +1,4 @@
-# 我近乎灾难的 AWS 在线监考体验|云专家
+# 我近乎灾难的 AWS 在线监考体验
 
 > 原文：<https://acloudguru.com/blog/engineering/my-near-disaster-aws-solutions-architect-professional-recertification-experience>
 

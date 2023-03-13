@@ -1,4 +1,4 @@
-# Ubuntu - Samba 客户端设置和持久共享|云专家
+# Ubuntu - Samba 客户端设置和持久共享
 
 > 原文：<https://acloudguru.com/blog/engineering/ubuntu-samba-client-setup-and-persistent-shares>
 

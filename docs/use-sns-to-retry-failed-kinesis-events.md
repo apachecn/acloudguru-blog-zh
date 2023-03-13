@@ -1,4 +1,4 @@
-# 使用 Lambda 死信队列重试失败的 Kinesis |云专家
+# 使用 Lambda 死信队列重试失败的 Kinesis 
 
 > 原文：<https://acloudguru.com/blog/engineering/use-sns-to-retry-failed-kinesis-events>
 

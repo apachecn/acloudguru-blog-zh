@@ -1,4 +1,4 @@
-# 一位云专家在 G2 的网格报告|云专家中被评为顶级在线课程和技术技能提供商
+# 一位云专家在 G2 的网格报告中被评为顶级在线课程和技术技能提供商
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-ranks-as-top-online-course-and-technical-skills-provider-on-g2s-grid-report>
 

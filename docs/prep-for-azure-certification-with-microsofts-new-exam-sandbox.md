@@ -1,4 +1,4 @@
-# 使用微软新的考试沙箱|云专家，准备 Azure 认证
+# 使用微软新的考试沙箱，准备 Azure 认证
 
 > 原文：<https://acloudguru.com/blog/engineering/prep-for-azure-certification-with-microsofts-new-exam-sandbox>
 

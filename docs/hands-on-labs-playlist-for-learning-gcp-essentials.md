@@ -1,4 +1,4 @@
-# 学习 GCP 基础知识的动手实验播放列表|云专家
+# 学习 GCP 基础知识的动手实验播放列表
 
 > 原文：<https://acloudguru.com/blog/engineering/hands-on-labs-playlist-for-learning-gcp-essentials>
 

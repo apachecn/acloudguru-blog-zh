@@ -1,4 +1,4 @@
-# 阶跃函数的 SDK 访问，更新的 SQS Lambda 触发器|云专家
+# 阶跃函数的 SDK 访问，更新的 SQS Lambda 触发器
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-sdk-steps-up-step-functions-plus-updated-sqs-lambda-triggers>
 

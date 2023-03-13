@@ -1,4 +1,4 @@
-# 从项目管理到 AWS 培训架构师|云专家
+# 从项目管理到 AWS 培训架构师
 
 > 原文：<https://acloudguru.com/blog/engineering/interview-craig-arcuri>
 

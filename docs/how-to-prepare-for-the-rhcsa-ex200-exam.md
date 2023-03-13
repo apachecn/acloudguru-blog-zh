@@ -1,4 +1,4 @@
-# 如何准备 RHCSA EX200 考试|云专家
+# 如何准备 RHCSA EX200 考试
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-prepare-for-the-rhcsa-ex200-exam>
 

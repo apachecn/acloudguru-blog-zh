@@ -1,4 +1,4 @@
-# 学生从课堂走向云职业的 4 个步骤|云专家
+# 学生从课堂走向云职业的 4 个步骤
 
 > 原文：<https://acloudguru.com/blog/engineering/4-steps-for-students-to-get-from-the-classroom-to-a-cloud-career>
 

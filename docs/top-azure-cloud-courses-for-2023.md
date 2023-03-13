@@ -1,4 +1,4 @@
-# 2023 年十大 Azure 云课程|云专家
+# 2023 年十大 Azure 云课程
 
 > 原文：<https://acloudguru.com/blog/engineering/top-azure-cloud-courses-for-2023>
 

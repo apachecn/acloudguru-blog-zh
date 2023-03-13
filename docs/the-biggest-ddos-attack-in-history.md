@@ -1,4 +1,4 @@
-# 史上最大的 DDoS 攻击？|云专家
+# 史上最大的 DDoS 攻击？
 
 > 原文：<https://acloudguru.com/blog/engineering/the-biggest-ddos-attack-in-history>
 

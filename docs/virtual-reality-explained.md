@@ -1,4 +1,4 @@
-# 虚拟现实，真实的可能性:它是什么，有什么大惊小怪的？|云专家
+# 虚拟现实，真实的可能性:它是什么，有什么大惊小怪的？
 
 > 原文：<https://acloudguru.com/blog/engineering/virtual-reality-explained>
 

@@ -1,4 +1,4 @@
-# 本月 GCP:新的云存储功能，新增的云功能支持，新的多伦多地区|云专家
+# 本月 GCP:新的云存储功能，新增的云功能支持，新的多伦多地区
 
 > 原文：<https://acloudguru.com/blog/engineering/gcp-this-month-new-cloud-storage-features-added-cloud-functions-support-new-toronto-region>
 

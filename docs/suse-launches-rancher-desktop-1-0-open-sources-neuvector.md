@@ -1,4 +1,4 @@
-# SUSE 推出 Rancher Desktop 1.0，开源的 NeuVector |云专家
+# SUSE 推出 Rancher Desktop 1.0，开源的 NeuVector 
 
 > 原文：<https://acloudguru.com/blog/engineering/suse-launches-rancher-desktop-1-0-open-sources-neuvector>
 

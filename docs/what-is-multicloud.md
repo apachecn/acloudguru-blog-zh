@@ -1,4 +1,4 @@
-# 什么是多云:了解多云策略|云专家
+# 什么是多云:了解多云策略
 
 > 原文：<https://acloudguru.com/blog/business/what-is-multicloud>
 

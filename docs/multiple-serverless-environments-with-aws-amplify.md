@@ -1,4 +1,4 @@
-# AWS 放大和多个无服务器环境|云专家
+# AWS 放大和多个无服务器环境
 
 > 原文：<https://acloudguru.com/blog/engineering/multiple-serverless-environments-with-aws-amplify>
 

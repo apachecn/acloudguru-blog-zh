@@ -1,4 +1,4 @@
-# Azure Stream Analytics 没有代码编辑器和 NGINX Plus，现在是 Azure native |云专家
+# Azure Stream Analytics 没有代码编辑器和 NGINX Plus，现在是 Azure native 
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-stream-analytics-no-code-editor>
 

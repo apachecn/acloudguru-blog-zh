@@ -1,4 +1,4 @@
-# 无服务器调度程序(SNS) |云专家
+# 无服务器调度程序(SNS) 
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-scheduler>
 

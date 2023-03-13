@@ -1,4 +1,4 @@
-# 准备 Microsoft Azure 认证考试的技巧|云专家
+# 准备 Microsoft Azure 认证考试的技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/tips-to-prepare-for-your-microsoft-azure-certification-exam>
 

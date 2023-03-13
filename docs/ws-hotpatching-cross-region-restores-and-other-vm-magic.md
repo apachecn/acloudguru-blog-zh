@@ -1,4 +1,4 @@
-# Windows 服务器热修补不再需要烦人的重启|云专家
+# Windows 服务器热修补不再需要烦人的重启
 
 > 原文：<https://acloudguru.com/blog/engineering/ws-hotpatching-cross-region-restores-and-other-vm-magic>
 

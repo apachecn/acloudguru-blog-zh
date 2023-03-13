@@ -1,4 +1,4 @@
-# 什么是 AWS？-亚马逊网络服务概述|云专家
+# 什么是 AWS？-亚马逊网络服务概述
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-amazon-web-services-aws>
 

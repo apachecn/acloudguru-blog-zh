@@ -1,4 +1,4 @@
-# 微软简化物联网，更新 Azure 站点恢复|云专家
+# 微软简化物联网，更新 Azure 站点恢复
 
 > 原文：<https://acloudguru.com/blog/engineering/microsoft-simplifies-iot-updates-azure-site-recovery>
 

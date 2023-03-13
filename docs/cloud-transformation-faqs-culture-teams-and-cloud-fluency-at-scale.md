@@ -1,4 +1,4 @@
-# 云优先数字化转型:战略和常见问题|云专家
+# 云优先数字化转型:战略和常见问题
 
 > 原文：<https://acloudguru.com/blog/business/cloud-transformation-faqs-culture-teams-and-cloud-fluency-at-scale>
 

@@ -1,4 +1,4 @@
-# 初次接触 Azure，经验丰富。网？试试这 5 种 Azure 服务|云专家
+# 初次接触 Azure，经验丰富。网？试试这 5 种 Azure 服务
 
 > 原文：<https://acloudguru.com/blog/engineering/new-to-azure-and-experienced-with-net-try-these-5-azure-services>
 

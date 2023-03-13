@@ -1,4 +1,4 @@
-# 什么是提升和转移云迁移？|云专家
+# 什么是提升和转移云迁移？
 
 > 原文：<https://acloudguru.com/blog/business/what-is-lift-and-shift-cloud-migration>
 

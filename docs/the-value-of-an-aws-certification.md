@@ -1,4 +1,4 @@
-# AWS 认证的价值|云专家
+# AWS 认证的价值
 
 > 原文：<https://acloudguru.com/blog/engineering/the-value-of-an-aws-certification>
 

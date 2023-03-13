@@ -1,4 +1,4 @@
-# 为 AZ-140 考试做准备的 17 个动手实验|云专家
+# 为 AZ-140 考试做准备的 17 个动手实验
 
 > 原文：<https://acloudguru.com/blog/engineering/17-hands-on-labs-to-prepare-you-for-the-az-140-exam>
 

@@ -1,4 +1,4 @@
-# 面向有抱负的数据工程师的数据库介绍|云专家
+# 面向有抱负的数据工程师的数据库介绍
 
 > 原文：<https://acloudguru.com/blog/engineering/intro-to-databases-on-azure-basics-for-aspiring-data-engineers>
 

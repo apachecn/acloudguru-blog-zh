@@ -1,4 +1,4 @@
-# 我可以将我的 SQL 语言技能从本地迁移到 Azure 吗？|云专家
+# 我可以将我的 SQL 语言技能从本地迁移到 Azure 吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/can-i-shift-my-sql-language-skills-from-on-prem-to-azure>
 

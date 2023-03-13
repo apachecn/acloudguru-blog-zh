@@ -1,4 +1,4 @@
-# 布拉泽尔:升降镜头时钟|云专家
+# 布拉泽尔:升降镜头时钟
 
 > 原文：<https://acloudguru.com/blog/engineering/the-lift-and-shift-shot-clock-cloud-migration>
 

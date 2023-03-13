@@ -1,4 +1,4 @@
-# AWS 的又一次中断:你应该运行其他云吗？|云专家
+# AWS 的又一次中断:你应该运行其他云吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/another-aws-outage-should-you-run-for-other-clouds>
 

@@ -1,4 +1,4 @@
-# 为什么 Azure 考试名字这么混乱？|云专家
+# 为什么 Azure 考试名字这么混乱？
 
 > 原文：<https://acloudguru.com/blog/engineering/why-are-azure-exam-names-so-confusing>
 

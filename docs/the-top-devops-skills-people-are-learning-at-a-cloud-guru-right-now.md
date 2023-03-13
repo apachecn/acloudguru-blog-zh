@@ -1,4 +1,4 @@
-# 2021 年人们正在学习的关键开发运维技能|云专家
+# 2021 年人们正在学习的关键开发运维技能
 
 > 原文：<https://acloudguru.com/blog/engineering/the-top-devops-skills-people-are-learning-at-a-cloud-guru-right-now>
 

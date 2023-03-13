@@ -1,4 +1,4 @@
-# 十月新闻综述:AWS 有什么新功能？|云专家
+# 十月新闻综述:AWS 有什么新功能？
 
 > 原文：<https://acloudguru.com/blog/engineering/october-2022-aws-news>
 

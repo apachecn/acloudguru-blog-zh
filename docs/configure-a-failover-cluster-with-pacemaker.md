@@ -1,4 +1,4 @@
-# 使用 Pacemaker |云专家配置故障转移集群
+# 使用 Pacemaker 配置故障转移集群
 
 > 原文：<https://acloudguru.com/blog/engineering/configure-a-failover-cluster-with-pacemaker>
 

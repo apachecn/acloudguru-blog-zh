@@ -1,4 +1,4 @@
-# 一位云专家欢迎新的工程副总裁|一位云专家
+# 一位云专家欢迎新的工程副总裁
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-welcomes-new-vp-of-engineering>
 

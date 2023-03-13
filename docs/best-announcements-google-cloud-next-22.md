@@ -1,4 +1,4 @@
-# 来自 Google Cloud Next’22 |云专家的最佳公告
+# 来自 Google Cloud Next’22 的最佳公告
 
 > 原文：<https://acloudguru.com/blog/engineering/best-announcements-google-cloud-next-22>
 

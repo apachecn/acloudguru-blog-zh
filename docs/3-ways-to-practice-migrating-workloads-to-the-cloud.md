@@ -1,4 +1,4 @@
-# 练习将工作负载迁移到云的 3 种方法|云专家
+# 练习将工作负载迁移到云的 3 种方法
 
 > 原文：<https://acloudguru.com/blog/engineering/3-ways-to-practice-migrating-workloads-to-the-cloud>
 

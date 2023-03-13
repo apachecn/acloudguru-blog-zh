@@ -1,4 +1,4 @@
-# re:Invent: AWS 让机器学习变得可访问、包容|一位云计算大师
+# re:Invent: AWS 让机器学习变得可访问、包容
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-pushes-to-make-machine-learning-accessible-inclusive>
 

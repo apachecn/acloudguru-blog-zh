@@ -1,4 +1,4 @@
-# 你方便的谷歌云平台(GCP)备忘单|云专家
+# 你方便的谷歌云平台(GCP)备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/your-handy-gcp-cheat-sheet>
 

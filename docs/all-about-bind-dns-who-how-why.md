@@ -1,4 +1,4 @@
-# 关于绑定 DNS:谁、如何和为什么|云专家
+# 关于绑定 DNS:谁、如何和为什么
 
 > 原文：<https://acloudguru.com/blog/engineering/all-about-bind-dns-who-how-why>
 

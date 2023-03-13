@@ -1,4 +1,4 @@
-# 数据准备的 5 个常见 Python 陷阱|云专家
+# 数据准备的 5 个常见 Python 陷阱
 
 > 原文：<https://acloudguru.com/blog/engineering/5-common-python-pitfalls-for-data-preparation>
 

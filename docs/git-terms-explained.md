@@ -1,4 +1,4 @@
-# Git 定义和术语备忘单|云专家
+# Git 定义和术语备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/git-terms-explained>
 

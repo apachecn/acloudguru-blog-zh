@@ -1,4 +1,4 @@
-# 谷歌云宣布 Firestore Key Visualizer |云专家
+# 谷歌云宣布 Firestore Key Visualizer 
 
 > 原文：<https://acloudguru.com/blog/engineering/google-cloud-rolls-out-new-firestore-key-visualizer-partner-program-changes>
 

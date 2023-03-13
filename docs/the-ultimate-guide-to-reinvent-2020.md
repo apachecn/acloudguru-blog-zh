@@ -1,4 +1,4 @@
-# 重新发明 2020 的终极指南|云专家
+# 重新发明 2020 的终极指南
 
 > 原文：<https://acloudguru.com/blog/engineering/the-ultimate-guide-to-reinvent-2020>
 

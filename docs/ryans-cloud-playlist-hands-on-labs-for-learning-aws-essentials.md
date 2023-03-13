@@ -1,4 +1,4 @@
-# Ryan 的云播放列表:学习 AWS 基础知识的动手实验室|云专家
+# Ryan 的云播放列表:学习 AWS 基础知识的动手实验室
 
 > 原文：<https://acloudguru.com/blog/engineering/ryans-cloud-playlist-hands-on-labs-for-learning-aws-essentials>
 

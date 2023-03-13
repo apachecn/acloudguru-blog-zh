@@ -1,4 +1,4 @@
-# 什么是 Scrum 大师？云支持的关键角色|云专家
+# 什么是 Scrum 大师？云支持的关键角色
 
 > 原文：<https://acloudguru.com/blog/business/what-is-a-scrum-master>
 

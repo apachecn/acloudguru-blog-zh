@@ -1,4 +1,4 @@
-# 我在使用无服务器|云专家的前 6 个月学到的 6 件事
+# 我在使用无服务器的前 6 个月学到的 6 件事
 
 > 原文：<https://acloudguru.com/blog/engineering/six-months-of-serverless-lessons-learned>
 

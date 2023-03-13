@@ -1,4 +1,4 @@
-# 无服务器——软件架构的未来？|云专家
+# 无服务器——软件架构的未来？
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-the-future-of-software-architecture>
 

@@ -1,4 +1,4 @@
-# AWS SysOps 管理员助理 SOA-C02 证书考试准备|云专家
+# AWS SysOps 管理员助理 SOA-C02 证书考试准备
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-sysops-administrator-associate-soa-c02-sample-exam-questions-tips-faqs>
 

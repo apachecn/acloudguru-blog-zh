@@ -1,4 +1,4 @@
-# MSK 无服务器和新 EC2 I4i 实例类型|云专家
+# MSK 无服务器和新 EC2 I4i 实例类型
 
 > 原文：<https://acloudguru.com/blog/engineering/msk-serverless-new-i4i-ec2-instance-types>
 

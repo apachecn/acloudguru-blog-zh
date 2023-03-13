@@ -1,4 +1,4 @@
-# 什么是无服务器？|云专家
+# 什么是无服务器？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-serverless>
 

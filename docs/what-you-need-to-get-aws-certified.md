@@ -1,4 +1,4 @@
-# 如何培训和准备 AWS 认证|云专家
+# 如何培训和准备 AWS 认证
 
 > 原文：<https://acloudguru.com/blog/engineering/what-you-need-to-get-aws-certified>
 

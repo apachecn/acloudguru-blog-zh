@@ -1,4 +1,4 @@
-# 云专家连续第四个季度荣登 G2 网格报告榜首|云专家
+# 云专家连续第四个季度荣登 G2 网格报告榜首
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-tops-g2-grid-reports-for-fourth-consecutive-quarter>
 

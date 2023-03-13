@@ -1,4 +1,4 @@
-# 谷歌专业云开发者认证指南|云专家
+# 谷歌专业云开发者认证指南
 
 > 原文：<https://acloudguru.com/blog/engineering/a-guide-to-googles-professional-cloud-developer-certification>
 

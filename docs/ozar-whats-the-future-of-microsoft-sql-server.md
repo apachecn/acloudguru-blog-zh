@@ -1,4 +1,4 @@
-# Brent Ozar:微软 SQL Server 的未来是什么？|云专家
+# Brent Ozar:微软 SQL Server 的未来是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/ozar-whats-the-future-of-microsoft-sql-server>
 

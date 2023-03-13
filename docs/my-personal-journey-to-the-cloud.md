@@ -1,4 +1,4 @@
-# 成为云专家的旅程|云专家
+# 成为云专家的旅程
 
 > 原文：<https://acloudguru.com/blog/engineering/my-personal-journey-to-the-cloud>
 

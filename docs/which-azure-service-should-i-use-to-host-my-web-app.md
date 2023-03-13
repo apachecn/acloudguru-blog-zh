@@ -1,4 +1,4 @@
-# 我应该使用哪个 Azure 服务来托管我的 Web 应用程序？|云专家
+# 我应该使用哪个 Azure 服务来托管我的 Web 应用程序？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-azure-service-should-i-use-to-host-my-web-app>
 

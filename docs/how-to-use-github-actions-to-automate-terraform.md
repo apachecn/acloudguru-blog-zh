@@ -1,4 +1,4 @@
-# 如何使用 GitHub 操作来自动化 Terraform |云专家
+# 如何使用 GitHub 操作来自动化 Terraform 
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-use-github-actions-to-automate-terraform>
 

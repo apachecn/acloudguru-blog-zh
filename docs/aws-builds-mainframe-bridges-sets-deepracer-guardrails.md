@@ -1,4 +1,4 @@
-# AWS 建立大型机桥，设置 DeepRacer 护栏|云专家
+# AWS 建立大型机桥，设置 DeepRacer 护栏
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-builds-mainframe-bridges-sets-deepracer-guardrails>
 

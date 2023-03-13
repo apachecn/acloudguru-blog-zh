@@ -1,4 +1,4 @@
-# AWS Greengrass API 教程和手册|云专家
+# AWS Greengrass API 教程和手册
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-greengrass-the-missing-manual>
 

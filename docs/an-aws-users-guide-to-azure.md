@@ -1,4 +1,4 @@
-# Azure AWS 用户指南|云专家
+# Azure AWS 用户指南
 
 > 原文：<https://acloudguru.com/blog/engineering/an-aws-users-guide-to-azure>
 

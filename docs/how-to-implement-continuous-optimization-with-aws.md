@@ -1,4 +1,4 @@
-# 如何使用 AWS |云专家实现持续优化
+# 如何使用 AWS 实现持续优化
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-implement-continuous-optimization-with-aws>
 

@@ -1,4 +1,4 @@
-# 痛苦的云词典:AWS 最棘手的五个云话题|云专家
+# 痛苦的云词典:AWS 最棘手的五个云话题
 
 > 原文：<https://acloudguru.com/blog/engineering/the-cloud-dictionary-of-pain-five-of-awss-toughest-cloud-topics>
 

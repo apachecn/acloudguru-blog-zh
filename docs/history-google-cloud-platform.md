@@ -1,4 +1,4 @@
-# 谷歌云平台的历史|云专家
+# 谷歌云平台的历史
 
 > 原文：<https://acloudguru.com/blog/engineering/history-google-cloud-platform>
 

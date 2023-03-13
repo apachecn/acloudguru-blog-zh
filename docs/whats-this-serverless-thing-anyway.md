@@ -1,4 +1,4 @@
-# 这个无服务器的东西到底是什么？|云专家
+# 这个无服务器的东西到底是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-this-serverless-thing-anyway>
 

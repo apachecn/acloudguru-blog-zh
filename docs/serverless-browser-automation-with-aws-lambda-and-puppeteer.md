@@ -1,4 +1,4 @@
-# 借助 AWS Lambda 和 Puppeteer 实现无服务器浏览器自动化|云专家
+# 借助 AWS Lambda 和 Puppeteer 实现无服务器浏览器自动化
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-browser-automation-with-aws-lambda-and-puppeteer>
 

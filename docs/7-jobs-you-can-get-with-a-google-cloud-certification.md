@@ -1,4 +1,4 @@
-# 通过谷歌云认证|云专家，你可以找到 7 份工作
+# 通过谷歌云认证，你可以找到 7 份工作
 
 > 原文：<https://acloudguru.com/blog/engineering/7-jobs-you-can-get-with-a-google-cloud-certification>
 

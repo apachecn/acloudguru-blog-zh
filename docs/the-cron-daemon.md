@@ -1,4 +1,4 @@
-# Cron 守护进程|云专家
+# Cron 守护进程
 
 > 原文：<https://acloudguru.com/blog/engineering/the-cron-daemon>
 

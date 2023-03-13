@@ -1,4 +1,4 @@
-# 容器技术的历史|云专家
+# 容器技术的历史
 
 > 原文：<https://acloudguru.com/blog/engineering/history-of-container-technology>
 

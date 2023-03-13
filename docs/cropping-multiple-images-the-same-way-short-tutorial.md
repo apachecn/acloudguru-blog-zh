@@ -1,4 +1,4 @@
-# 以同样的方式裁剪多个图像(简短教程)|云专家
+# 以同样的方式裁剪多个图像(简短教程)
 
 > 原文：<https://acloudguru.com/blog/engineering/cropping-multiple-images-the-same-way-short-tutorial>
 

@@ -1,4 +1,4 @@
-# 寻求云可用性|云专家
+# 寻求云可用性
 
 > 原文：<https://acloudguru.com/blog/engineering/the-quest-for-availability>
 

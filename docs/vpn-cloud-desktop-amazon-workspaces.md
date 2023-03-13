@@ -1,4 +1,4 @@
-# 随着 VPN 的围攻，云桌面得到了他们的特写|一个云大师
+# 随着 VPN 的围攻，云桌面得到了他们的特写
 
 > 原文：<https://acloudguru.com/blog/engineering/vpn-cloud-desktop-amazon-workspaces>
 

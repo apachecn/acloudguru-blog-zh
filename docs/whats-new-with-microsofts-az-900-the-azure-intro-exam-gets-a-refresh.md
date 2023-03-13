@@ -1,4 +1,4 @@
-# 微软 AZ-900 更新:Azure Intro 考试刷新|云专家
+# 微软 AZ-900 更新:Azure Intro 考试刷新
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-with-microsofts-az-900-the-azure-intro-exam-gets-a-refresh>
 

@@ -1,4 +1,4 @@
-# Fedora 36、RHEL 9 和 Alma Linux 9 现在都正式发布了！|云专家
+# Fedora 36、RHEL 9 和 Alma Linux 9 现在都正式发布了！
 
 > 原文：<https://acloudguru.com/blog/engineering/fedora-36-now-ga>
 

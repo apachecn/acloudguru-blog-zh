@@ -1,4 +1,4 @@
-# 学习 AWS 的 10 个有趣的动手项目|云专家
+# 学习 AWS 的 10 个有趣的动手项目
 
 > 原文：<https://acloudguru.com/blog/engineering/10-fun-hands-on-projects-to-learn-aws>
 

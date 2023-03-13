@@ -1,4 +1,4 @@
-# 您现在可以获得一分钟的 Azure Monitor 警报|云专家
+# 您现在可以获得一分钟的 Azure Monitor 警报
 
 > 原文：<https://acloudguru.com/blog/engineering/you-can-now-get-one-minute-azure-monitor-alerts>
 

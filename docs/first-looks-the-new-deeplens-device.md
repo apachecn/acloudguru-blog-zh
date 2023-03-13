@@ -1,4 +1,4 @@
-# AWS DeepLens 为每一位开发者带来视频人工智能|云大师
+# AWS DeepLens 为每一位开发者带来视频人工智能
 
 > 原文：<https://acloudguru.com/blog/engineering/first-looks-the-new-deeplens-device>
 

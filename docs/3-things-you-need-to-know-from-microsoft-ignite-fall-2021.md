@@ -1,4 +1,4 @@
-# 微软 Ignite 2021 秋季版|云专家，你需要知道的 3 件事
+# 微软 Ignite 2021 秋季版，你需要知道的 3 件事
 
 > 原文：<https://acloudguru.com/blog/engineering/3-things-you-need-to-know-from-microsoft-ignite-fall-2021>
 

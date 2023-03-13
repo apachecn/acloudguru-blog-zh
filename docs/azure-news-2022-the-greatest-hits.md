@@ -1,4 +1,4 @@
-# 蔚蓝新闻 2022 -最伟大的点击！|云专家
+# 蔚蓝新闻 2022 -最伟大的点击！
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-news-2022-the-greatest-hits>
 

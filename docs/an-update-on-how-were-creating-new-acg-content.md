@@ -1,4 +1,4 @@
-# 关于我们如何创建新 ACG 内容的更新|云专家
+# 关于我们如何创建新 ACG 内容的更新
 
 > 原文：<https://acloudguru.com/blog/news/an-update-on-how-were-creating-new-acg-content>
 

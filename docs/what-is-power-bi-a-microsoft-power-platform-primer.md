@@ -1,4 +1,4 @@
-# 什么是 Power BI？微软 Power 平台入门|云专家
+# 什么是 Power BI？微软 Power 平台入门
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-power-bi-a-microsoft-power-platform-primer>
 

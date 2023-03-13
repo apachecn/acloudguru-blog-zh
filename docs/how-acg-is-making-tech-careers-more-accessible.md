@@ -1,4 +1,4 @@
-# 在 ACG 提高各级云技术技能和职业发展|云专家
+# 在 ACG 提高各级云技术技能和职业发展
 
 > 原文：<https://acloudguru.com/blog/news/how-acg-is-making-tech-careers-more-accessible>
 

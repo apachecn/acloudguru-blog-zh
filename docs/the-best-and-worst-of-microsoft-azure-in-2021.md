@@ -1,4 +1,4 @@
-# 2021 年最好和最差的微软 Azure |云专家
+# 2021 年最好和最差的微软 Azure 
 
 > 原文：<https://acloudguru.com/blog/engineering/the-best-and-worst-of-microsoft-azure-in-2021>
 

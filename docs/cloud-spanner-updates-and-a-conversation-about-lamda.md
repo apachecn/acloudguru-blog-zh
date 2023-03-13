@@ -1,4 +1,4 @@
-# 云扳手更新和关于 LaMDA |云大师的对话
+# 云扳手更新和关于 LaMDA 的对话
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-spanner-updates-and-a-conversation-about-lamda>
 

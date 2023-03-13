@@ -1,4 +1,4 @@
-# 云专家挑战:AWS 机器学习|云专家
+# 云专家挑战:AWS 机器学习
 
 > 原文：<https://acloudguru.com/blog/engineering/the-cloud-guru-challenge-aws-machine-learning>
 

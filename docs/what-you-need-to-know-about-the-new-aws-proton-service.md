@@ -1,4 +1,4 @@
-# 关于新的 AWS 质子服务|云专家，你需要知道什么
+# 关于新的 AWS 质子服务，你需要知道什么
 
 > 原文：<https://acloudguru.com/blog/engineering/what-you-need-to-know-about-the-new-aws-proton-service>
 

@@ -1,4 +1,4 @@
-# Azure Arc 对私有端点的支持&聚焦 Azure 安全！|云专家
+# Azure Arc 对私有端点的支持&聚焦 Azure 安全！
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-arc-support-for-private-endpoints>
 

@@ -1,4 +1,4 @@
-# 10 倍的真相|云专家
+# 10 倍的真相
 
 > 原文：<https://acloudguru.com/blog/engineering/the-truth-of-10x>
 

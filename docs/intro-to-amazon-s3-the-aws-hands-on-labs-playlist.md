@@ -1,4 +1,4 @@
-# 亚马逊 S3 简介:AWS 动手实验室播放列表|云专家
+# 亚马逊 S3 简介:AWS 动手实验室播放列表
 
 > 原文：<https://acloudguru.com/blog/engineering/intro-to-amazon-s3-the-aws-hands-on-labs-playlist>
 

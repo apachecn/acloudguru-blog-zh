@@ -1,4 +1,4 @@
-# 区块链云对比:什么是区块链即服务(BaaS)？|云专家
+# 区块链云对比:什么是区块链即服务(BaaS)？
 
 > 原文：<https://acloudguru.com/blog/engineering/blockchain-cloud-comparison-what-is-blockchain-as-a-service-baas>
 

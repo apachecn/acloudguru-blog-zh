@@ -1,4 +1,4 @@
-# 在 AWS 中采用 GitHub Kubernetes 的技巧|云专家
+# 在 AWS 中采用 GitHub Kubernetes 的技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/adopting-gitops-for-kubernetes-on-aws>
 

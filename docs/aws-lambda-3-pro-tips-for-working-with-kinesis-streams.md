@@ -1,4 +1,4 @@
-# 3 AWS Lambda 提示 Kinesis 流|云专家
+# 3 AWS Lambda 提示 Kinesis 流
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-lambda-3-pro-tips-for-working-with-kinesis-streams>
 

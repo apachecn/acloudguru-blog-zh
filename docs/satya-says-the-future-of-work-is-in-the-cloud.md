@@ -1,4 +1,4 @@
-# #MSIgnite 主题演讲摘要:工作的未来在云端|云端专家
+# #MSIgnite 主题演讲摘要:工作的未来在云端
 
 > 原文：<https://acloudguru.com/blog/business/satya-says-the-future-of-work-is-in-the-cloud>
 

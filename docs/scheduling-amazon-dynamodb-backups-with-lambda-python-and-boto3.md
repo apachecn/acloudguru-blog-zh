@@ -1,4 +1,4 @@
-# 使用 Lambda、Python 和 Boto3 |云专家安排 Amazon DynamoDB 备份
+# 使用 Lambda、Python 和 Boto3 安排 Amazon DynamoDB 备份
 
 > 原文：<https://acloudguru.com/blog/engineering/scheduling-amazon-dynamodb-backups-with-lambda-python-and-boto3>
 

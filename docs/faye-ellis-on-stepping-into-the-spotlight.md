@@ -1,4 +1,4 @@
-# 法耶·埃利斯走进聚光灯下|云大师
+# 法耶·埃利斯走进聚光灯下
 
 > 原文：<https://acloudguru.com/blog/engineering/faye-ellis-on-stepping-into-the-spotlight>
 

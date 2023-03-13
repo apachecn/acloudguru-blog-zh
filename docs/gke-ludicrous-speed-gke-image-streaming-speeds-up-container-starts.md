@@ -1,4 +1,4 @@
-# GKE 图像流加速容器启动|云专家
+# GKE 图像流加速容器启动
 
 > 原文：<https://acloudguru.com/blog/engineering/gke-ludicrous-speed-gke-image-streaming-speeds-up-container-starts>
 

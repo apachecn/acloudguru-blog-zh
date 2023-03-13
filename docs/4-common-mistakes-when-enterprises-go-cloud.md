@@ -1,4 +1,4 @@
-# 当企业走向云:4 个常见错误|云专家
+# 当企业走向云:4 个常见错误
 
 > 原文：<https://acloudguru.com/blog/business/4-common-mistakes-when-enterprises-go-cloud>
 

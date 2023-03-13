@@ -1,4 +1,4 @@
-# 在冷启动之前，AWS Lambda 会将您的闲置功能保留多长时间？|云专家
+# 在冷启动之前，AWS Lambda 会将您的闲置功能保留多长时间？
 
 > 原文：<https://acloudguru.com/blog/engineering/how-long-does-aws-lambda-keep-your-idle-functions-around-before-a-cold-start>
 

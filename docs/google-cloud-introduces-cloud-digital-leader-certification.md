@@ -1,4 +1,4 @@
-# 谷歌云推出云数字领袖认证|云专家
+# 谷歌云推出云数字领袖认证
 
 > 原文：<https://acloudguru.com/blog/engineering/google-cloud-introduces-cloud-digital-leader-certification>
 

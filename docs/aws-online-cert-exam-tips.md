@@ -1,4 +1,4 @@
-# 我们从在线 AWS 证书考试中学到了什么|云专家
+# 我们从在线 AWS 证书考试中学到了什么
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-online-cert-exam-tips>
 

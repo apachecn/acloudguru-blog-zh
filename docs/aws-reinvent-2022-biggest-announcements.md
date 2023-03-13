@@ -1,4 +1,4 @@
-# 终极 re:Invent 2022 发布阵容！|云专家
+# 终极 re:Invent 2022 发布阵容！
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2022-biggest-announcements>
 

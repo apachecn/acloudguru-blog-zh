@@ -1,4 +1,4 @@
-# Kubernetes 和云本地助理(朝鲜中央通讯社)认证考试印象|云专家
+# Kubernetes 和云本地助理(朝鲜中央通讯社)认证考试印象
 
 > 原文：<https://acloudguru.com/blog/engineering/impressions-of-the-kubernetes-and-cloud-native-associate-kcna-certification-exam>
 

@@ -1,4 +1,4 @@
-# 云认证常见问题:AWS vs Azure vs Google 云认证对比|云专家
+# 云认证常见问题:AWS vs Azure vs Google 云认证对比
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-certification-faqs-aws-vs-azure-vs-google-cloud-certs-compared>
 

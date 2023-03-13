@@ -1,4 +1,4 @@
-# KubeCon 2021:新 K8s 认证，Cilium 加入 CNCF |云专家
+# KubeCon 2021:新 K8s 认证，Cilium 加入 CNCF 
 
 > 原文：<https://acloudguru.com/blog/engineering/kubecon-2021-recap-a-new-k8s-certification-cilium-joins-the-cncf>
 

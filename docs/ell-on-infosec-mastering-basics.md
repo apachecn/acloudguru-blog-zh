@@ -1,4 +1,4 @@
-# Ell on Infosec -掌握基础知识|云专家
+# Ell on Infosec -掌握基础知识
 
 > 原文：<https://acloudguru.com/blog/engineering/ell-on-infosec-mastering-basics>
 

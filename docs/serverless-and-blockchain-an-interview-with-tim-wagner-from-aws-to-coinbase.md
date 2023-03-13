@@ -1,4 +1,4 @@
-# 作为技术的无服务器和区块链|云专家
+# 作为技术的无服务器和区块链
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-and-blockchain-an-interview-with-tim-wagner-from-aws-to-coinbase>
 

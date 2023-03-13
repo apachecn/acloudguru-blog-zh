@@ -1,4 +1,4 @@
-# AWS S3 和 CLI 命令备忘单|云专家
+# AWS S3 和 CLI 命令备忘单
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-s3-cheat-sheet>
 

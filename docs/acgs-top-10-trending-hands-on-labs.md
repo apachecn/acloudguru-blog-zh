@@ -1,4 +1,4 @@
-# ACG 十大趋势动手实验室|云专家
+# ACG 十大趋势动手实验室
 
 > 原文：<https://acloudguru.com/blog/business/acgs-top-10-trending-hands-on-labs>
 

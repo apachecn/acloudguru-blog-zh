@@ -1,4 +1,4 @@
-# 不迁移到 DevOps |云专家的 5 个理由
+# 不迁移到 DevOps 的 5 个理由
 
 > 原文：<https://acloudguru.com/blog/engineering/5-reasons-to-not-move-to-devops>
 

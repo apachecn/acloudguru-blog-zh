@@ -1,4 +1,4 @@
-# 新的 AWS 控制台主页有什么问题？|云专家
+# 新的 AWS 控制台主页有什么问题？
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-up-with-the-new-aws-console-home-page>
 

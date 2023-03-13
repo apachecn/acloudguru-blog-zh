@@ -1,4 +1,4 @@
-# Terraform 故障排除:5 个常见错误|云专家
+# Terraform 故障排除:5 个常见错误
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-troubleshoot-5-common-terraform-errors>
 

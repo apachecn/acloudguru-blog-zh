@@ -1,4 +1,4 @@
-# 对 PrivateLink、AppRunner 和欺诈检测器的更改|云专家
+# 对 PrivateLink、AppRunner 和欺诈检测器的更改
 
 > 原文：<https://acloudguru.com/blog/engineering/awesome-changes-to-privatelink-apprunner-and-fraud-detector>
 

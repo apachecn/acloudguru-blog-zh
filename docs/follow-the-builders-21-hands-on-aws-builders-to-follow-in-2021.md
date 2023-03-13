@@ -1,4 +1,4 @@
-# 跟随构建者:要跟随的实践 AWS 构建者|云专家
+# 跟随构建者:要跟随的实践 AWS 构建者
 
 > 原文：<https://acloudguru.com/blog/engineering/follow-the-builders-21-hands-on-aws-builders-to-follow-in-2021>
 

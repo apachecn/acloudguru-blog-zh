@@ -1,4 +1,4 @@
-# 云支持:如何构建云流畅度计划|云专家
+# 云支持:如何构建云流畅度计划
 
 > 原文：<https://acloudguru.com/blog/business/how-to-build-a-cloud-fluency-program-for-everyone>
 

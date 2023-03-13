@@ -1,4 +1,4 @@
-# 云专家采用服务器|云专家
+# 云专家采用服务器
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-adopts-a-server>
 

@@ -1,4 +1,4 @@
-# 从 Google Cloud Next 21 了解 10 件事|云专家
+# 从 Google Cloud Next 21 了解 10 件事
 
 > 原文：<https://acloudguru.com/blog/engineering/10-things-to-know-from-google-cloud-next-21>
 

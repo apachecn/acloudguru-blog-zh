@@ -1,4 +1,4 @@
-# Terraform 1.0 版本对您来说意味着什么？|云专家
+# Terraform 1.0 版本对您来说意味着什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-does-the-terraform-1-0-release-mean-for-you>
 

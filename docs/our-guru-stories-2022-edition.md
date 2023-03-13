@@ -1,4 +1,4 @@
-# 我们的大师故事:2022 版|云大师
+# 我们的大师故事:2022 版
 
 > 原文：<https://acloudguru.com/blog/engineering/our-guru-stories-2022-edition>
 

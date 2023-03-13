@@ -1,4 +1,4 @@
-# 打破 2022 年 GCP 定价的变化|云专家
+# 打破 2022 年 GCP 定价的变化
 
 > 原文：<https://acloudguru.com/blog/engineering/breaking-down-the-gcp-pricing-changes-for-2022>
 

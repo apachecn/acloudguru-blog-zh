@@ -1,4 +1,4 @@
-# 开发工件|云专家
+# 开发工件
 
 > 原文：<https://acloudguru.com/blog/engineering/development-artifacts>
 

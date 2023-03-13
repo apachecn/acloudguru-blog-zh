@@ -1,4 +1,4 @@
-# 13 大最被低估的微软 Azure 服务|云专家
+# 13 大最被低估的微软 Azure 服务
 
 > 原文：<https://acloudguru.com/blog/engineering/top-13-most-underrated-microsoft-azure-services>
 

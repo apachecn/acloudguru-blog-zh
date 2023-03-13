@@ -1,4 +1,4 @@
-# 用于 Web 浏览器的 Visual Studio 代码|云专家
+# 用于 Web 浏览器的 Visual Studio 代码
 
 > 原文：<https://acloudguru.com/blog/engineering/visual-studio-code-for-web-means-you-can-develop-on-your-ipad>
 

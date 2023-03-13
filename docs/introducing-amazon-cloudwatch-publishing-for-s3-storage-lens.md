@@ -1,4 +1,4 @@
-# 为 S3 存储镜头|云专家介绍 CloudWatch publishing
+# 为 S3 存储镜头介绍 CloudWatch publishing
 
 > 原文：<https://acloudguru.com/blog/engineering/introducing-amazon-cloudwatch-publishing-for-s3-storage-lens>
 

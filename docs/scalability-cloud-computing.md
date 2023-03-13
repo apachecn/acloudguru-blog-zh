@@ -1,4 +1,4 @@
-# 云计算中的可扩展性是什么？|云专家
+# 云计算中的可扩展性是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/scalability-cloud-computing>
 

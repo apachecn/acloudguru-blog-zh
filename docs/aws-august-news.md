@@ -1,4 +1,4 @@
-# 八月新闻综述:AWS 有什么新功能？|云专家
+# 八月新闻综述:AWS 有什么新功能？
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-august-news>
 

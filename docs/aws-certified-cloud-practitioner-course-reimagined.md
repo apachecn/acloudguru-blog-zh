@@ -1,4 +1,4 @@
-# 新的 AWS 云从业者考试课程|云专家
+# 新的 AWS 云从业者考试课程
 
 > 原文：<https://acloudguru.com/blog/news/aws-certified-cloud-practitioner-course-reimagined>
 

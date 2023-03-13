@@ -1,4 +1,4 @@
-# AWS 工作区与 Azure 虚拟桌面:选择您的 VDI 解决方案|云专家
+# AWS 工作区与 Azure 虚拟桌面:选择您的 VDI 解决方案
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-workspaces-vs-azure-virtual-desktop-choosing-your-vdi-solution>
 

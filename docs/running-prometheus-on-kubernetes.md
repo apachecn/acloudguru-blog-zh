@@ -1,4 +1,4 @@
-# 在 Kubernetes |云专家上运行普罗米修斯
+# 在 Kubernetes 上运行普罗米修斯
 
 > 原文：<https://acloudguru.com/blog/engineering/running-prometheus-on-kubernetes>
 

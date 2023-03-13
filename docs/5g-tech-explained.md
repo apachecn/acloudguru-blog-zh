@@ -1,4 +1,4 @@
-# 5G 技术:它是什么，有什么大惊小怪的？|云专家
+# 5G 技术:它是什么，有什么大惊小怪的？
 
 > 原文：<https://acloudguru.com/blog/engineering/5g-tech-explained>
 

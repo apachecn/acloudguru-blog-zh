@@ -1,4 +1,4 @@
-# 机器学习教给我的 4 堂课|一位云计算大师
+# 机器学习教给我的 4 堂课
 
 > 原文：<https://acloudguru.com/blog/engineering/4-lessons-machine-learning-taught-me>
 

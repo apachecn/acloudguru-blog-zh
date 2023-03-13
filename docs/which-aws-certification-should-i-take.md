@@ -1,4 +1,4 @@
-# 应该获得哪个 AWS 认证？|云专家
+# 应该获得哪个 AWS 认证？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-aws-certification-should-i-take>
 

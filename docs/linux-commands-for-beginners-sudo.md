@@ -1,4 +1,4 @@
-# 面向初学者的 Linux sudo 命令|云专家
+# 面向初学者的 Linux sudo 命令
 
 > 原文：<https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo>
 

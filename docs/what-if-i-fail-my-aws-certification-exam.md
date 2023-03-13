@@ -1,4 +1,4 @@
-# 如果我没有通过 AWS 认证考试怎么办？|云专家
+# 如果我没有通过 AWS 认证考试怎么办？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-if-i-fail-my-aws-certification-exam>
 

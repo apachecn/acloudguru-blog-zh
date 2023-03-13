@@ -1,4 +1,4 @@
-# 配置 AWS 命令行界面(CLI) |云专家
+# 配置 AWS 命令行界面(CLI) 
 
 > 原文：<https://acloudguru.com/blog/engineering/configuring-the-aws-command-line-interface>
 

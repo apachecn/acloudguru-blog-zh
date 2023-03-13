@@ -1,4 +1,4 @@
-# 添加 Jenkins 代理节点|云专家
+# 添加 Jenkins 代理节点
 
 > 原文：<https://acloudguru.com/blog/engineering/adding-a-jenkins-agent-node>
 

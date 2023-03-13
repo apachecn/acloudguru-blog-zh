@@ -1,4 +1,4 @@
-# AWS 开发人员必备:ACG 动手实验室播放列表|云专家
+# AWS 开发人员必备:ACG 动手实验室播放列表
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-developer-essentials-the-acg-hands-on-labs-playlist>
 

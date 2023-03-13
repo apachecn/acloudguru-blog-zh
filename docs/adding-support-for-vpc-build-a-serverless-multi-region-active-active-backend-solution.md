@@ -1,4 +1,4 @@
-# AWS VPC:部署无服务器多区域活动后端|云专家
+# AWS VPC:部署无服务器多区域活动后端
 
 > 原文：<https://acloudguru.com/blog/engineering/adding-support-for-vpc-build-a-serverless-multi-region-active-active-backend-solution>
 

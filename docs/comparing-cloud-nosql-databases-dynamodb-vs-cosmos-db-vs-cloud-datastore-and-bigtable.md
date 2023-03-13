@@ -1,4 +1,4 @@
-# NoSQL 比较:Cosmos DB vs dynamo DB vs Cloud Datastore 和 Bigtable |云专家
+# NoSQL 比较:Cosmos DB vs dynamo DB vs Cloud Datastore 和 Bigtable 
 
 > 原文：<https://acloudguru.com/blog/engineering/comparing-cloud-nosql-databases-dynamodb-vs-cosmos-db-vs-cloud-datastore-and-bigtable>
 

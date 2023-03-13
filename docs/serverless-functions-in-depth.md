@@ -1,4 +1,4 @@
-# 无服务器功能和应用基础|云专家
+# 无服务器功能和应用基础
 
 > 原文：<https://acloudguru.com/blog/engineering/serverless-functions-in-depth>
 

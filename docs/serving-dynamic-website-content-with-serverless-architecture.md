@@ -1,4 +1,4 @@
-# 使用无服务器架构提供动态网站内容|云专家
+# 使用无服务器架构提供动态网站内容
 
 > 原文：<https://acloudguru.com/blog/engineering/serving-dynamic-website-content-with-serverless-architecture>
 

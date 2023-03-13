@@ -1,4 +1,4 @@
-# 阅读云文档的艺术——提升你的技术|云专家
+# 阅读云文档的艺术——提升你的技术
 
 > 原文：<https://acloudguru.com/blog/engineering/the-career-changing-art-of-reading-the-docs>
 

@@ -1,4 +1,4 @@
-# Kubernetes 不同意 Docker 的观点:你需要知道的|云专家
+# Kubernetes 不同意 Docker 的观点:你需要知道的
 
 > 原文：<https://acloudguru.com/blog/engineering/kubernetes-is-deprecating-docker-what-you-need-to-know>
 

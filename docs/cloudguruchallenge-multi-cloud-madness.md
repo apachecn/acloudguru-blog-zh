@@ -1,4 +1,4 @@
-# #CloudGuruChallenge:多云疯狂|云专家
+# #CloudGuruChallenge:多云疯狂
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-multi-cloud-madness>
 

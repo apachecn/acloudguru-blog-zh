@@ -1,4 +1,4 @@
-# Azure 痛苦字典:Azure 最棘手的五个云话题|云专家
+# Azure 痛苦字典:Azure 最棘手的五个云话题
 
 > 原文：<https://acloudguru.com/blog/engineering/the-azure-dictionary-of-pain-five-of-azures-toughest-cloud-topics>
 

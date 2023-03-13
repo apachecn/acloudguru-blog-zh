@@ -1,4 +1,4 @@
-# 我们正通过新的投资|一位云专家开始下一阶段的增长
+# 我们正通过新的投资开始下一阶段的增长
 
 > 原文：<https://acloudguru.com/blog/news/series-b-funding>
 

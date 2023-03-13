@@ -1,4 +1,4 @@
-# 云架构师迁移指南:技巧和工具|云专家
+# 云架构师迁移指南:技巧和工具
 
 > 原文：<https://acloudguru.com/blog/engineering/the-cloud-architects-guide-to-cloud-migration>
 

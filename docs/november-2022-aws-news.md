@@ -1,4 +1,4 @@
-# 11 月新闻综述:AWS 有什么新功能？|云专家
+# 11 月新闻综述:AWS 有什么新功能？
 
 > 原文：<https://acloudguru.com/blog/engineering/november-2022-aws-news>
 

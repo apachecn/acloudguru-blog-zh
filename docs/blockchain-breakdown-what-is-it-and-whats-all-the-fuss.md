@@ -1,4 +1,4 @@
-# 区块链崩溃:是什么，有什么大惊小怪的？|云专家
+# 区块链崩溃:是什么，有什么大惊小怪的？
 
 > 原文：<https://acloudguru.com/blog/engineering/blockchain-breakdown-what-is-it-and-whats-all-the-fuss>
 

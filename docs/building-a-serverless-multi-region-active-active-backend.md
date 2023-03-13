@@ -1,4 +1,4 @@
-# 如何构建无服务器多区域后端|云专家
+# 如何构建无服务器多区域后端
 
 > 原文：<https://acloudguru.com/blog/engineering/building-a-serverless-multi-region-active-active-backend>
 

@@ -1,4 +1,4 @@
-# 9 月新闻综述:AWS 有什么新功能？|云专家
+# 9 月新闻综述:AWS 有什么新功能？
 
 > 原文：<https://acloudguru.com/blog/engineering/september-aws-news>
 

@@ -1,4 +1,4 @@
-# 您的云迁移梦想团队需要的 6 个人|云专家
+# 您的云迁移梦想团队需要的 6 个人
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-assemble-your-cloud-migration-dream-team>
 

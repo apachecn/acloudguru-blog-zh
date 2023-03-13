@@ -1,4 +1,4 @@
-# 哪种 S3 储物类适合您？|云专家
+# 哪种 S3 储物类适合您？
 
 > 原文：<https://acloudguru.com/blog/engineering/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me>
 

@@ -1,4 +1,4 @@
-# EKS Anywhere 现已正式上市，Elasticsearch 更名，面向流媒体的新 EC2 实例|云专家
+# EKS Anywhere 现已正式上市，Elasticsearch 更名，面向流媒体的新 EC2 实例
 
 > 原文：<https://acloudguru.com/blog/engineering/eks-anywhere-now-ga-elasticsearch-renamed-new-ec2-instance-for-streaming>
 

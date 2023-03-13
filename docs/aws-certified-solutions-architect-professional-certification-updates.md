@@ -1,4 +1,4 @@
-# AWS 认证解决方案架构师-专业认证更新|云专家
+# AWS 认证解决方案架构师-专业认证更新
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-certified-solutions-architect-professional-certification-updates>
 

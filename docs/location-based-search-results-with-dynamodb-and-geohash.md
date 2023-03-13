@@ -1,4 +1,4 @@
-# Geohash 和 DynamoDB 用于基于位置的搜索结果|云专家
+# Geohash 和 DynamoDB 用于基于位置的搜索结果
 
 > 原文：<https://acloudguru.com/blog/engineering/location-based-search-results-with-dynamodb-and-geohash>
 

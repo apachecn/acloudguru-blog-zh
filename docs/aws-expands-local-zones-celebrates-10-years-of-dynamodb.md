@@ -1,4 +1,4 @@
-# AWS 扩展本地区域，庆祝 DynamoDB |云专家 10 周年
+# AWS 扩展本地区域，庆祝 DynamoDB  10 周年
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-expands-local-zones-celebrates-10-years-of-dynamodb>
 

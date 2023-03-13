@@ -1,4 +1,4 @@
-# 学生云入门指南|云专家
+# 学生云入门指南
 
 > 原文：<https://acloudguru.com/blog/engineering/the-students-guide-to-getting-started-with-cloud>
 

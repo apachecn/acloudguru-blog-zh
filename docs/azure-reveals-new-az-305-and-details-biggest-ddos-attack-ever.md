@@ -1,4 +1,4 @@
-# Azure 揭示新的 AZ-305(和大规模 DDoS 攻击)|云专家
+# Azure 揭示新的 AZ-305(和大规模 DDoS 攻击)
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-reveals-new-az-305-and-details-biggest-ddos-attack-ever>
 

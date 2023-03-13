@@ -1,4 +1,4 @@
-# Azure 宣布新的 DP-420 Cosmos DB 认证|云专家
+# Azure 宣布新的 DP-420 Cosmos DB 认证
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-announces-new-dp-420-cosmos-db-certification>
 

@@ -1,4 +1,4 @@
-# 在 AWS re:Invent 2021 |云专家会议上亲身体验 QuickSight
+# 在 AWS re:Invent 2021 会议上亲身体验 QuickSight
 
 > 原文：<https://acloudguru.com/blog/engineering/getting-hands-on-with-quicksight-at-aws-reinvent-2021>
 

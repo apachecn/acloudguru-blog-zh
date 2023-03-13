@@ -1,4 +1,4 @@
-# 在 AWS 和 Kubernetes 上扩展最热门的技术应用|云专家
+# 在 AWS 和 Kubernetes 上扩展最热门的技术应用
 
 > 原文：<https://acloudguru.com/blog/engineering/scaling-the-hottest-app-in-tech-on-aws-and-kubernetes>
 

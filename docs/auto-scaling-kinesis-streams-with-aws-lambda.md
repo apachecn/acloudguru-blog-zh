@@ -1,4 +1,4 @@
-# Kinesis 数据流:使用 AWS Lambda 自动扩展|云专家
+# Kinesis 数据流:使用 AWS Lambda 自动扩展
 
 > 原文：<https://acloudguru.com/blog/engineering/auto-scaling-kinesis-streams-with-aws-lambda>
 

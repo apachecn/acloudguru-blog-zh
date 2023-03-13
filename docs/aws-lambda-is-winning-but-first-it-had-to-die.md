@@ -1,4 +1,4 @@
-# AWS Lambda 赢了，但首先它得死|一个云专家
+# AWS Lambda 赢了，但首先它得死
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-lambda-is-winning-but-first-it-had-to-die>
 

@@ -1,4 +1,4 @@
-# 最好的微软 Azure 认证途径是什么？|云专家
+# 最好的微软 Azure 认证途径是什么？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-azure-certification-is-right-for-me>
 

@@ -1,4 +1,4 @@
-# 立即实施 DevSecOps 的 5 种方法|云专家
+# 立即实施 DevSecOps 的 5 种方法
 
 > 原文：<https://acloudguru.com/blog/engineering/5-ways-to-implement-devsecops-right-now>
 

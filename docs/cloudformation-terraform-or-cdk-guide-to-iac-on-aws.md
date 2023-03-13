@@ -1,4 +1,4 @@
-# CDK vs Terraform vs Cloud formation |云专家
+# CDK vs Terraform vs Cloud formation 
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws>
 

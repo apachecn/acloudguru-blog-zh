@@ -1,4 +1,4 @@
-# Kubernetes 1.22:新特性和反对意见|云专家
+# Kubernetes 1.22:新特性和反对意见
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-with-kubernetes-1-22>
 

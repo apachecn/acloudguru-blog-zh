@@ -1,4 +1,4 @@
-# Windows 11 相对于 Linux 表现如何？|云专家
+# Windows 11 相对于 Linux 表现如何？
 
 > 原文：<https://acloudguru.com/blog/engineering/how-does-windows-11-perform-vs-linux>
 

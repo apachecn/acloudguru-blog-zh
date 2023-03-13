@@ -1,4 +1,4 @@
-# Lambda:构建经济高效的功能|云专家
+# Lambda:构建经济高效的功能
 
 > 原文：<https://acloudguru.com/blog/engineering/building-more-cost-effective-lambda-functions-with-1-ms-billing>
 

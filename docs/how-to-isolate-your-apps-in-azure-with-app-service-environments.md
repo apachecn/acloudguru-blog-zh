@@ -1,4 +1,4 @@
-# 通过应用服务环境在 Azure 中隔离您的应用|云专家
+# 通过应用服务环境在 Azure 中隔离您的应用
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-isolate-your-apps-in-azure-with-app-service-environments>
 

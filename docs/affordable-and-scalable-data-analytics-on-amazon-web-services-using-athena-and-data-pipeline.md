@@ -1,4 +1,4 @@
-# 借助 AWS 数据管道和 Athena |云专家扩展数据分析
+# 借助 AWS 数据管道和 Athena 扩展数据分析
 
 > 原文：<https://acloudguru.com/blog/engineering/affordable-and-scalable-data-analytics-on-amazon-web-services-using-athena-and-data-pipeline>
 

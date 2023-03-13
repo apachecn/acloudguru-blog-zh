@@ -1,4 +1,4 @@
-# 云技能发展:在线、讲师指导还是混合？|云专家
+# 云技能发展:在线、讲师指导还是混合？
 
 > 原文：<https://acloudguru.com/blog/business/skills-development-options-online-instructor-led-or-blend>
 

@@ -1,4 +1,4 @@
-# 来自 GCP 移动公司|云专家的 5 个云迁移建议
+# 来自 GCP 移动公司的 5 个云迁移建议
 
 > 原文：<https://acloudguru.com/blog/engineering/5-cloud-migration-recommendations-from-the-gcp-moving-company>
 

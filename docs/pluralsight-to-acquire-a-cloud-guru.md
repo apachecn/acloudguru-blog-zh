@@ -1,4 +1,4 @@
-# Pluralsight 将收购一位云专家，以加速解决当今 IT 领域的一个最大挑战:不断扩大的云技能缺口|一位云专家
+# Pluralsight 将收购一位云专家，以加速解决当今 IT 领域的一个最大挑战:不断扩大的云技能缺口
 
 > 原文：<https://acloudguru.com/blog/news/pluralsight-to-acquire-a-cloud-guru>
 

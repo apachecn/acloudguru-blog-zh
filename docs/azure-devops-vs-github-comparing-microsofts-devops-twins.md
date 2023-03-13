@@ -1,4 +1,4 @@
-# Azure DevOps vs GitHub:哪个 DevOps 工具更好？|云专家
+# Azure DevOps vs GitHub:哪个 DevOps 工具更好？
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-devops-vs-github-comparing-microsofts-devops-twins>
 

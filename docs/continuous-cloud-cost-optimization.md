@@ -1,4 +1,4 @@
-# 优化数百万美元的云账单|云专家
+# 优化数百万美元的云账单
 
 > 原文：<https://acloudguru.com/blog/engineering/continuous-cloud-cost-optimization>
 

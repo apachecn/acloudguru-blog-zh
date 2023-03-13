@@ -1,4 +1,4 @@
-# 为什么云迁移会停滞或失败|云专家
+# 为什么云迁移会停滞或失败
 
 > 原文：<https://acloudguru.com/blog/business/why-cloud-migrations-get-stuck>
 

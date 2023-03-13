@@ -1,4 +1,4 @@
-# 让我们得到#CloudyInJuly！|云专家
+# 让我们得到#CloudyInJuly！
 
 > 原文：<https://acloudguru.com/blog/news/lets-get-cloudyinjuly>
 

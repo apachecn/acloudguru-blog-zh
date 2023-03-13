@@ -1,4 +1,4 @@
-# 云如何帮助您成长|云专家
+# 云如何帮助您成长
 
 > 原文：<https://acloudguru.com/blog/business/how-the-cloud-helps-you-grow>
 

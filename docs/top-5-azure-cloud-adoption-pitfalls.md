@@ -1,4 +1,4 @@
-# 5 大 Azure 云采用陷阱|云专家
+# 5 大 Azure 云采用陷阱
 
 > 原文：<https://acloudguru.com/blog/business/top-5-azure-cloud-adoption-pitfalls>
 

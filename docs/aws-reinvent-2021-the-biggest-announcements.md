@@ -1,4 +1,4 @@
-# AWS re:Invent 2021:最大的公告|云专家
+# AWS re:Invent 2021:最大的公告
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2021-the-biggest-announcements>
 

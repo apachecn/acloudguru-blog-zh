@@ -1,4 +1,4 @@
-# 什么是 Azure 负载测试？|云专家
+# 什么是 Azure 负载测试？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-azure-load-testing>
 

@@ -1,4 +1,4 @@
-# 将数据从 MongoDB 迁移到 DocumentDB |云专家的 5 个技巧
+# 将数据从 MongoDB 迁移到 DocumentDB 的 5 个技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/migrating-data-mongodb-documentdb>
 

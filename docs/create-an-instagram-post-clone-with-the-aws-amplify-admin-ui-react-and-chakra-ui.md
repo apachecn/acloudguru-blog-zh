@@ -1,4 +1,4 @@
-# 使用 AWS Amplify Admin UI、React 和 Chakra UI |云专家创建 Instagram Post 克隆
+# 使用 AWS Amplify Admin UI、React 和 Chakra UI 创建 Instagram Post 克隆
 
 > 原文：<https://acloudguru.com/blog/engineering/create-an-instagram-post-clone-with-the-aws-amplify-admin-ui-react-and-chakra-ui>
 

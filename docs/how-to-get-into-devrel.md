@@ -1,4 +1,4 @@
-# 如何加入 DevRel |云专家
+# 如何加入 DevRel 
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-get-into-devrel>
 

@@ -1,4 +1,4 @@
-# EMR 无服务器，NoSQL 工作台更新和新 EC2 实例|云专家
+# EMR 无服务器，NoSQL 工作台更新和新 EC2 实例
 
 > 原文：<https://acloudguru.com/blog/engineering/emr-serverless-nosql-workbench-new-ec2-instances>
 

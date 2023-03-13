@@ -1,4 +1,4 @@
-# Redshift 的数据交换，新的 AWS 解决方案|云专家
+# Redshift 的数据交换，新的 AWS 解决方案
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-news-data-exchange-for-redshift-new-aws-solutions-ec2-launch-config-reminder>
 

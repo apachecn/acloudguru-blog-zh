@@ -1,4 +1,4 @@
-# 与 Alexa 冠军|云专家一起准备 AWS Alexa 专业认证
+# 与 Alexa 冠军一起准备 AWS Alexa 专业认证
 
 > 原文：<https://acloudguru.com/blog/engineering/alexa-champion-releases-prep-course-for-the-aws-certified-alexa-skill-builder-specialty-exam>
 

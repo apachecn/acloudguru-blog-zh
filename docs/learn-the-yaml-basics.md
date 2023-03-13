@@ -1,4 +1,4 @@
-# 了解 YAML 基础知识|云专家
+# 了解 YAML 基础知识
 
 > 原文：<https://acloudguru.com/blog/engineering/learn-the-yaml-basics>
 

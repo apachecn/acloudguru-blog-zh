@@ -1,4 +1,4 @@
-# 即使不参加考试也要学习云证书的 4 个理由|云专家
+# 即使不参加考试也要学习云证书的 4 个理由
 
 > 原文：<https://acloudguru.com/blog/engineering/study-cloud-cert-even-without-exam>
 

@@ -1,4 +1,4 @@
-# AWS 旨在减少云障碍，扩大行业特定的关注点|云专家
+# AWS 旨在减少云障碍，扩大行业特定的关注点
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-aims-to-reduce-cloud-barriers-expand-industry-specific-focus>
 

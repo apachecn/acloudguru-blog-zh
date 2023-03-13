@@ -1,4 +1,4 @@
-# 使用 K3s |云专家的 5 个理由
+# 使用 K3s 的 5 个理由
 
 > 原文：<https://acloudguru.com/blog/engineering/5-reasons-to-use-k3s>
 

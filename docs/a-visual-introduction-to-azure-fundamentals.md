@@ -1,4 +1,4 @@
-# Azure 基础知识的可视化介绍|云专家
+# Azure 基础知识的可视化介绍
 
 > 原文：<https://acloudguru.com/blog/engineering/a-visual-introduction-to-azure-fundamentals>
 

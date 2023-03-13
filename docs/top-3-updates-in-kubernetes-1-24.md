@@ -1,4 +1,4 @@
-# Kubernetes 1.24 中最重要的 3 个更新|云专家
+# Kubernetes 1.24 中最重要的 3 个更新
 
 > 原文：<https://acloudguru.com/blog/engineering/top-3-updates-in-kubernetes-1-24>
 

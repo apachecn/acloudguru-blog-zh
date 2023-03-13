@@ -1,4 +1,4 @@
-# 我如何找到时间学习？成功学习的 5 个关键|云专家
+# 我如何找到时间学习？成功学习的 5 个关键
 
 > 原文：<https://acloudguru.com/blog/engineering/how-do-i-find-time-to-study>
 

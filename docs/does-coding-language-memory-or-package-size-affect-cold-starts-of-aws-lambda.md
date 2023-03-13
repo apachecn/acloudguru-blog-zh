@@ -1,4 +1,4 @@
-# 语言、内存、封装尺寸如何影响 AWS Lambda 的冷启动？|云专家
+# 语言、内存、封装尺寸如何影响 AWS Lambda 的冷启动？
 
 > 原文：<https://acloudguru.com/blog/engineering/does-coding-language-memory-or-package-size-affect-cold-starts-of-aws-lambda>
 

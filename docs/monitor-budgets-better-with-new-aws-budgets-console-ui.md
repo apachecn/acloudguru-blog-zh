@@ -1,4 +1,4 @@
-# 借助新的 AWS 预算控制台 UI |云专家，更好地监控预算
+# 借助新的 AWS 预算控制台 UI ，更好地监控预算
 
 > 原文：<https://acloudguru.com/blog/engineering/monitor-budgets-better-with-new-aws-budgets-console-ui>
 

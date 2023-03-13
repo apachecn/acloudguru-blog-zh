@@ -1,4 +1,4 @@
-# Kubernetes 发行版:哪个适合你？|云专家
+# Kubernetes 发行版:哪个适合你？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-kubernetes-distribution-is-right-for-you>
 

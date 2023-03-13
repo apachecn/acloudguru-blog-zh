@@ -1,4 +1,4 @@
-# 知道 Azure 的话 AWS 好学吗？|云专家
+# 知道 Azure 的话 AWS 好学吗？
 
 > 原文：<https://acloudguru.com/blog/engineering/is-aws-easy-to-learn-if-you-know-azure>
 

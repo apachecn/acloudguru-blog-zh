@@ -1,4 +1,4 @@
-# 请教专家:10 大云迁移挑战(以及如何克服这些挑战)|云专家
+# 请教专家:10 大云迁移挑战(以及如何克服这些挑战)
 
 > 原文：<https://acloudguru.com/blog/engineering/ask-the-experts-10-cloud-migration-challenges>
 

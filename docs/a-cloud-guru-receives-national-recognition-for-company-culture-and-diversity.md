@@ -1,4 +1,4 @@
-# 云专家因公司文化和多样性获得国家认可|云专家
+# 云专家因公司文化和多样性获得国家认可
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-receives-national-recognition-for-company-culture-and-diversity>
 

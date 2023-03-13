@@ -1,4 +1,4 @@
-# 自动气象站云形成和 IOT 更新 2021 |云专家
+# 自动气象站云形成和 IOT 更新 2021 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-makes-cloudformation-do-overs-easier-cloudwatch-adds-custom-widgets>
 

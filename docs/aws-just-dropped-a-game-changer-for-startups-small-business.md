@@ -1,4 +1,4 @@
-# AWS 刚刚为初创公司、小型企业|云专家带来了一个游戏规则改变者
+# AWS 刚刚为初创公司、小型企业带来了一个游戏规则改变者
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-just-dropped-a-game-changer-for-startups-small-business>
 

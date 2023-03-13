@@ -1,4 +1,4 @@
-# 使用 Ansible Tower |云专家自动进行滚动服务器更新
+# 使用 Ansible Tower 自动进行滚动服务器更新
 
 > 原文：<https://acloudguru.com/blog/engineering/automating-rolling-server-updates-with-ansible-tower>
 

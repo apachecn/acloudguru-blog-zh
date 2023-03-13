@@ -1,4 +1,4 @@
-# 了解为什么区块链技术有潜力改变每个行业|云专家
+# 了解为什么区块链技术有潜力改变每个行业
 
 > 原文：<https://acloudguru.com/blog/engineering/the-blockchain-stack-get-ready-for-big-things-to-come>
 

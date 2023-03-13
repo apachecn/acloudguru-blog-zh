@@ -1,4 +1,4 @@
-# #CloudGuruChallenge:你在 GCP |一位云计算大师的简历
+# #CloudGuruChallenge:你在 GCP 的简历
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-on-gcp>
 

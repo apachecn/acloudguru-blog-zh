@@ -1,4 +1,4 @@
-# 云专家欢迎新的产品副总裁|云专家
+# 云专家欢迎新的产品副总裁
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-welcomes-new-vp-of-product>
 

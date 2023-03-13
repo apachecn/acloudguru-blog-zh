@@ -1,4 +1,4 @@
-# 要在 DevOps 职业生涯中取得成功，提升这些技能|云专家
+# 要在 DevOps 职业生涯中取得成功，提升这些技能
 
 > 原文：<https://acloudguru.com/blog/engineering/to-succeed-in-devops-careers-level-up-these-skills>
 

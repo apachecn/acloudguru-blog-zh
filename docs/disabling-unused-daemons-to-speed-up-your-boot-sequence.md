@@ -1,4 +1,4 @@
-# 禁用未使用的守护程序以加快您的启动顺序|云专家
+# 禁用未使用的守护程序以加快您的启动顺序
 
 > 原文：<https://acloudguru.com/blog/engineering/disabling-unused-daemons-to-speed-up-your-boot-sequence>
 

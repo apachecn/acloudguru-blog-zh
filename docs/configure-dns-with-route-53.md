@@ -1,4 +1,4 @@
-# 使用 Route 53 |云专家配置 DNS
+# 使用 Route 53 配置 DNS
 
 > 原文：<https://acloudguru.com/blog/engineering/configure-dns-with-route-53>
 

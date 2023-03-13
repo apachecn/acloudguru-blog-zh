@@ -1,4 +1,4 @@
-# 2022 年 ACG 十大动手实验室|云专家
+# 2022 年 ACG 十大动手实验室
 
 > 原文：<https://acloudguru.com/blog/engineering/top-10-acg-hands-on-labs-of-2022>
 

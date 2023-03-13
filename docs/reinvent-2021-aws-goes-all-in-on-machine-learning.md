@@ -1,4 +1,4 @@
-# re:Invent 2021: AWS 全力投入机器学习|云专家
+# re:Invent 2021: AWS 全力投入机器学习
 
 > 原文：<https://acloudguru.com/blog/engineering/reinvent-2021-aws-goes-all-in-on-machine-learning>
 

@@ -1,4 +1,4 @@
-# 学习 React |云专家的 5 个理由
+# 学习 React 的 5 个理由
 
 > 原文：<https://acloudguru.com/blog/engineering/5-reasons-to-learn-react>
 

@@ -1,4 +1,4 @@
-# 使用 EventBridge 集中 AWS 组织事件|云专家
+# 使用 EventBridge 集中 AWS 组织事件
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-use-eventbridge-to-centralize-aws-organizations-events>
 

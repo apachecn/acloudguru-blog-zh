@@ -1,4 +1,4 @@
-# 为云专家的动手实验室引入挑战模式|云专家
+# 为云专家的动手实验室引入挑战模式
 
 > 原文：<https://acloudguru.com/blog/news/introducing-challenge-mode-for-a-cloud-gurus-hands-on-labs>
 

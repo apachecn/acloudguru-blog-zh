@@ -1,4 +1,4 @@
-# 我们想听听你的大师故事|云大师
+# 我们想听听你的大师故事
 
 > 原文：<https://acloudguru.com/blog/news/guru-stories>
 

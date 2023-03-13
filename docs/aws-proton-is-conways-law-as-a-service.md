@@ -1,4 +1,4 @@
-# AWS 质子的奇怪案例:康威的法律即服务？|云专家
+# AWS 质子的奇怪案例:康威的法律即服务？
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-proton-is-conways-law-as-a-service>
 

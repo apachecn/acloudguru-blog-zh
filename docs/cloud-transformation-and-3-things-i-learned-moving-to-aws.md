@@ -1,4 +1,4 @@
-# 云转型和我在转向 AWS 时学到的 3 件事|云专家
+# 云转型和我在转向 AWS 时学到的 3 件事
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-transformation-and-3-things-i-learned-moving-to-aws>
 

@@ -1,4 +1,4 @@
-# 运营工作的未来|云专家
+# 运营工作的未来
 
 > 原文：<https://acloudguru.com/blog/engineering/the-future-of-ops-jobs>
 

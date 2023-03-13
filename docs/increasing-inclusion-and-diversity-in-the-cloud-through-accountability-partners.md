@@ -1,4 +1,4 @@
-# 通过责任合作伙伴提高云计算的包容性和多样性|云计算专家
+# 通过责任合作伙伴提高云计算的包容性和多样性
 
 > 原文：<https://acloudguru.com/blog/engineering/increasing-inclusion-and-diversity-in-the-cloud-through-accountability-partners>
 

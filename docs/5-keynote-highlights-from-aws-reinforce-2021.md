@@ -1,4 +1,4 @@
-# AWS re:Inforce 2021 |云专家的 5 个主题演讲要点
+# AWS re:Inforce 2021 的 5 个主题演讲要点
 
 > 原文：<https://acloudguru.com/blog/engineering/5-keynote-highlights-from-aws-reinforce-2021>
 

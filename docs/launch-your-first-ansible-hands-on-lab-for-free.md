@@ -1,4 +1,4 @@
-# 免费启动您的第一个 Ansible 动手实验室|云专家
+# 免费启动您的第一个 Ansible 动手实验室
 
 > 原文：<https://acloudguru.com/blog/engineering/launch-your-first-ansible-hands-on-lab-for-free>
 

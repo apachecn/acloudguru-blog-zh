@@ -1,4 +1,4 @@
-# 什么是 Kubernetes？|云专家
+# 什么是 Kubernetes？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-kubernetes>
 

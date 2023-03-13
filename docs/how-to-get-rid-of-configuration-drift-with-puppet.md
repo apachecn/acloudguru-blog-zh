@@ -1,4 +1,4 @@
-# 借助 Puppet |云专家，摆脱配置漂移的困扰
+# 借助 Puppet ，摆脱配置漂移的困扰
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-get-rid-of-configuration-drift-with-puppet>
 

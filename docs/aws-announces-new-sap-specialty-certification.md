@@ -1,4 +1,4 @@
-# AWS 宣布新的专业认证|云专家
+# AWS 宣布新的专业认证
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-announces-new-sap-specialty-certification>
 

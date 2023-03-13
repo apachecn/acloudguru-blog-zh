@@ -1,4 +1,4 @@
-# 云比较:AWS EC2 vs Azure 虚拟机 vs Google 计算引擎|云专家
+# 云比较:AWS EC2 vs Azure 虚拟机 vs Google 计算引擎
 
 > 原文：<https://acloudguru.com/blog/engineering/cloud-comparison-aws-ec2-vs-azure-virtual-machines-vs-google-compute-engine>
 

@@ -1,4 +1,4 @@
-# 我最喜欢的 Windows Linux 工具|云专家
+# 我最喜欢的 Windows Linux 工具
 
 > 原文：<https://acloudguru.com/blog/engineering/my-favorite-linux-tools-for-windows>
 

@@ -1,4 +1,4 @@
-# 将 AWS Lambda 打包成容器映像|云专家
+# 将 AWS Lambda 打包成容器映像
 
 > 原文：<https://acloudguru.com/blog/engineering/packaging-aws-lambda-functions-as-container-images>
 

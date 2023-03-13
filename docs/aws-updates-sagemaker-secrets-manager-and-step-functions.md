@@ -1,4 +1,4 @@
-# AWS 更新 Secrets Manager，Step Functions |云专家
+# AWS 更新 Secrets Manager，Step Functions 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-updates-sagemaker-secrets-manager-and-step-functions>
 

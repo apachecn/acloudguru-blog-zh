@@ -1,4 +1,4 @@
-# 业务逻辑的演变，从单片到微服务，再到功能|云专家
+# 业务逻辑的演变，从单片到微服务，再到功能
 
 > 原文：<https://acloudguru.com/blog/engineering/evolution-of-business-logic-from-monoliths-through-microservices-to-functions>
 

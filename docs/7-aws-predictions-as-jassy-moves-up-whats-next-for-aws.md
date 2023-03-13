@@ -1,4 +1,4 @@
-# 7 AWS 预测:随着 Jassy 的上升，AWS 的下一步是什么？|云专家
+# 7 AWS 预测:随着 Jassy 的上升，AWS 的下一步是什么？
 
 > 原文：<https://acloudguru.com/blog/business/7-aws-predictions-as-jassy-moves-up-whats-next-for-aws>
 

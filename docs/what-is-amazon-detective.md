@@ -1,4 +1,4 @@
-# 什么是亚马逊侦探？|云专家
+# 什么是亚马逊侦探？
 
 > 原文：<https://acloudguru.com/blog/engineering/what-is-amazon-detective>
 

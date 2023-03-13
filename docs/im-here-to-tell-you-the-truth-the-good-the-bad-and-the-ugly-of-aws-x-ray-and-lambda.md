@@ -1,4 +1,4 @@
-# 我在这里告诉你真相，好的，坏的和丑陋的 AWS X 射线和λ|一个云大师
+# 我在这里告诉你真相，好的，坏的和丑陋的 AWS X 射线和λ
 
 > 原文：<https://acloudguru.com/blog/engineering/im-here-to-tell-you-the-truth-the-good-the-bad-and-the-ugly-of-aws-x-ray-and-lambda>
 

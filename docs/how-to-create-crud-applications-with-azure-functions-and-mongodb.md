@@ -1,4 +1,4 @@
-# 如何用 Azure 函数和 MongoDB |一个云专家创建 CRUD 应用程序
+# 如何用 Azure 函数和 MongoDB 创建 CRUD 应用程序
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-create-crud-applications-with-azure-functions-and-mongodb>
 

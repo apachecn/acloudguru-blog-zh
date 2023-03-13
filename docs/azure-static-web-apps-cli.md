@@ -1,4 +1,4 @@
-# Azure 静态 Web 应用 CLI |云专家
+# Azure 静态 Web 应用 CLI 
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-static-web-apps-cli>
 

@@ -1,4 +1,4 @@
-# 使用瞭望塔让您的容器保持最新|云专家
+# 使用瞭望塔让您的容器保持最新
 
 > 原文：<https://acloudguru.com/blog/engineering/using-watchtower-to-keep-your-containers-up-to-date>
 

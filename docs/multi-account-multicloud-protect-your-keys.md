@@ -1,4 +1,4 @@
-# 多账号，多云，黑客要你的钥匙！|云专家
+# 多账号，多云，黑客要你的钥匙！
 
 > 原文：<https://acloudguru.com/blog/engineering/multi-account-multicloud-protect-your-keys>
 

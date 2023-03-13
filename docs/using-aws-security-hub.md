@@ -1,4 +1,4 @@
-# 如何借助 AWS 安全中心|云专家，掌控安全
+# 如何借助 AWS 安全中心，掌控安全
 
 > 原文：<https://acloudguru.com/blog/engineering/using-aws-security-hub>
 

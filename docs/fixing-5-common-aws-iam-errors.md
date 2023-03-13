@@ -1,4 +1,4 @@
-# 您需要解决的 5 大常见 AWS IAM 错误|云专家
+# 您需要解决的 5 大常见 AWS IAM 错误
 
 > 原文：<https://acloudguru.com/blog/engineering/fixing-5-common-aws-iam-errors>
 

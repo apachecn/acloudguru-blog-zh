@@ -1,4 +1,4 @@
-# 一月新闻综述:Azure 有什么新特性？|云专家
+# 一月新闻综述:Azure 有什么新特性？
 
 > 原文：<https://acloudguru.com/blog/engineering/january-news-roundup-whats-new-with-azure>
 

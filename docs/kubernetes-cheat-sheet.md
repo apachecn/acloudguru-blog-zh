@@ -1,4 +1,4 @@
-# Kubectl 备忘单- Kubernetes 命令|云专家
+# Kubectl 备忘单- Kubernetes 命令
 
 > 原文：<https://acloudguru.com/blog/engineering/kubernetes-cheat-sheet>
 

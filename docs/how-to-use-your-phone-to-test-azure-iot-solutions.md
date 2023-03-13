@@ -1,4 +1,4 @@
-# 如何使用手机测试 Azure 物联网解决方案|云专家
+# 如何使用手机测试 Azure 物联网解决方案
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-use-your-phone-to-test-azure-iot-solutions>
 

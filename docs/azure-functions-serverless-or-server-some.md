@@ -1,4 +1,4 @@
-# Azure Functions:真的没有服务器，还是只有一些服务器？|云专家
+# Azure Functions:真的没有服务器，还是只有一些服务器？
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-functions-serverless-or-server-some>
 

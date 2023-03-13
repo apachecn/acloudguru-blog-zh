@@ -1,4 +1,4 @@
-# TAR 命令| Bash 基础知识|云专家
+# TAR 命令| Bash 基础知识
 
 > 原文：<https://acloudguru.com/blog/engineering/the-tar-command-bash-basics>
 

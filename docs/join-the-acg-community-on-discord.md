@@ -1,4 +1,4 @@
-# ACG 不和有什么新消息？|云专家
+# ACG 不和有什么新消息？
 
 > 原文：<https://acloudguru.com/blog/news/join-the-acg-community-on-discord>
 

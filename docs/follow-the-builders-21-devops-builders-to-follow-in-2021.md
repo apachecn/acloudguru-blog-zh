@@ -1,4 +1,4 @@
-# 追随构建者:2021 年要追随的 21 位 DevOps 构建者|云专家
+# 追随构建者:2021 年要追随的 21 位 DevOps 构建者
 
 > 原文：<https://acloudguru.com/blog/engineering/follow-the-builders-21-devops-builders-to-follow-in-2021>
 

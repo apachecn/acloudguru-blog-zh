@@ -1,4 +1,4 @@
-# EC2 连接问题故障排除|云专家
+# EC2 连接问题故障排除
 
 > 原文：<https://acloudguru.com/blog/engineering/troubleshooting-ec2-connectivity-issues>
 

@@ -1,4 +1,4 @@
-# 构建三节点 Kubernetes 集群|快速指南|云专家
+# 构建三节点 Kubernetes 集群|快速指南
 
 > 原文：<https://acloudguru.com/blog/engineering/building-a-three-node-kubernetes-cluster-quick-guide>
 

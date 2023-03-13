@@ -1,4 +1,4 @@
-# 用 Python 3 |云专家创建一个 IRC 机器人
+# 用 Python 3 创建一个 IRC 机器人
 
 > 原文：<https://acloudguru.com/blog/engineering/creating-an-irc-bot-with-python3>
 

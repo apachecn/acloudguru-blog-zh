@@ -1,4 +1,4 @@
-# 引导加载程序|云专家
+# 引导加载程序
 
 > 原文：<https://acloudguru.com/blog/engineering/boot-loaders>
 

@@ -1,4 +1,4 @@
-# #CloudGuruChallenge:选择你的挑战大组合|云专家
+# #CloudGuruChallenge:选择你的挑战大组合
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-the-choose-your-challenge-mega-mix>
 

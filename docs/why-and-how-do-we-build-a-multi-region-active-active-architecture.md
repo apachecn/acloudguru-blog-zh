@@ -1,4 +1,4 @@
-# 如何在 AWS 上构建多区域主动-主动架构|云专家
+# 如何在 AWS 上构建多区域主动-主动架构
 
 > 原文：<https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture>
 

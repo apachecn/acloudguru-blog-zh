@@ -1,4 +1,4 @@
-# 顶级 Azure 开发者工具|云专家
+# 顶级 Azure 开发者工具
 
 > 原文：<https://acloudguru.com/blog/engineering/top-azure-developer-tools>
 

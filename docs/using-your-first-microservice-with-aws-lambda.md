@@ -1,4 +1,4 @@
-# 将您的首个微服务与 AWS Lambda |云专家一起使用
+# 将您的首个微服务与 AWS Lambda 一起使用
 
 > 原文：<https://acloudguru.com/blog/engineering/using-your-first-microservice-with-aws-lambda>
 

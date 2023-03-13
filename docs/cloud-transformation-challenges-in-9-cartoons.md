@@ -1,4 +1,4 @@
-# 云优先数字化转型:最常见的挑战|云专家
+# 云优先数字化转型:最常见的挑战
 
 > 原文：<https://acloudguru.com/blog/business/cloud-transformation-challenges-in-9-cartoons>
 

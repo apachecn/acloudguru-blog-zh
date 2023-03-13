@@ -1,4 +1,4 @@
-# 亚马逊雅典娜解释说:这是什么，我应该什么时候使用它？|云专家
+# 亚马逊雅典娜解释说:这是什么，我应该什么时候使用它？
 
 > 原文：<https://acloudguru.com/blog/engineering/amazon-athena-explained-what-is-it-and-when-should-i-use-it>
 

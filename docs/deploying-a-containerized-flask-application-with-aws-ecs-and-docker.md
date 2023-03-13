@@ -1,4 +1,4 @@
-# 使用 AWS ECS 和 Docker |云专家部署容器化 Flask 应用程序
+# 使用 AWS ECS 和 Docker 部署容器化 Flask 应用程序
 
 > 原文：<https://acloudguru.com/blog/engineering/deploying-a-containerized-flask-application-with-aws-ecs-and-docker>
 

@@ -1,4 +1,4 @@
-# CentOS 7:投身 SystemD |云专家
+# CentOS 7:投身 SystemD 
 
 > 原文：<https://acloudguru.com/blog/engineering/centos-7-take-the-plunge-into-systemd>
 

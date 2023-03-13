@@ -1,4 +1,4 @@
-# AWS 合规性和治理:3 个必须使用的工具|云专家
+# AWS 合规性和治理:3 个必须使用的工具
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-compliance-and-governance-3-lessons-learned-and-3-must-use-tools>
 

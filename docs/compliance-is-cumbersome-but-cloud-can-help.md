@@ -1,4 +1,4 @@
-# 合规很麻烦，但云可以帮助|云专家
+# 合规很麻烦，但云可以帮助
 
 > 原文：<https://acloudguru.com/blog/business/compliance-is-cumbersome-but-cloud-can-help>
 

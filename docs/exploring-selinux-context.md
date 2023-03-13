@@ -1,4 +1,4 @@
-# 探索 SELinux:环境|云专家
+# 探索 SELinux:环境
 
 > 原文：<https://acloudguru.com/blog/engineering/exploring-selinux-context>
 

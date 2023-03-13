@@ -1,4 +1,4 @@
-# 部署 Terraform Pipeline，将策略作为代码来保护您的多云|云专家
+# 部署 Terraform Pipeline，将策略作为代码来保护您的多云
 
 > 原文：<https://acloudguru.com/blog/engineering/securing-your-multi-cloud-terraform-pipelines-with-policy-as-code>
 

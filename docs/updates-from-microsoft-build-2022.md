@@ -1,4 +1,4 @@
-# 来自微软 Build 2022 |云专家的重大更新
+# 来自微软 Build 2022 的重大更新
 
 > 原文：<https://acloudguru.com/blog/engineering/updates-from-microsoft-build-2022>
 

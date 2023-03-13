@@ -1,4 +1,4 @@
-# 2022 年 ACG 十大云课程|云专家
+# 2022 年 ACG 十大云课程
 
 > 原文：<https://acloudguru.com/blog/engineering/top-10-acg-cloud-courses-of-2022>
 

@@ -1,4 +1,4 @@
-# AWS re:Invent 2022 Swag Review |一位云专家
+# AWS re:Invent 2022 Swag Review 
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-reinvent-2022-swag-review>
 

@@ -1,4 +1,4 @@
-# 我需要多少认证才能获得云工作？|云专家
+# 我需要多少认证才能获得云工作？
 
 > 原文：<https://acloudguru.com/blog/engineering/how-many-certifications-do-i-need-to-get-a-cloud-job>
 

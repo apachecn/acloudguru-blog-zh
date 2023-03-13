@@ -1,4 +1,4 @@
-# #CloudGuruChallenge:使用 Amazon ElastiCache |云专家提高应用程序性能
+# #CloudGuruChallenge:使用 Amazon ElastiCache 提高应用程序性能
 
 > 原文：<https://acloudguru.com/blog/engineering/cloudguruchallenge-improve-application-performance-using-amazon-elasticache>
 

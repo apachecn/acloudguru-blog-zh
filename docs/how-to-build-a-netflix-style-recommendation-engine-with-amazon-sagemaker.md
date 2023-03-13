@@ -1,4 +1,4 @@
-# 如何用 Amazon SageMaker |一个云专家建立一个网飞风格的推荐引擎
+# 如何用 Amazon SageMaker 建立一个网飞风格的推荐引擎
 
 > 原文：<https://acloudguru.com/blog/engineering/how-to-build-a-netflix-style-recommendation-engine-with-amazon-sagemaker>
 

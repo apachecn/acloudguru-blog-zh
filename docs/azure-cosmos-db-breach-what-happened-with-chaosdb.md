@@ -1,4 +1,4 @@
-# azure Cosmos DB breach:chaos DB 怎么了？|云专家
+# azure Cosmos DB breach:chaos DB 怎么了？
 
 > 原文：<https://acloudguru.com/blog/engineering/azure-cosmos-db-breach-what-happened-with-chaosdb>
 

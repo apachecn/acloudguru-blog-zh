@@ -1,4 +1,4 @@
-# 跨区域 OpenSearch 和新的 Amazon EC2 实例|云专家
+# 跨区域 OpenSearch 和新的 Amazon EC2 实例
 
 > 原文：<https://acloudguru.com/blog/engineering/cross-region-opensearch-and-new-amazon-ec2-instances>
 

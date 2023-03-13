@@ -1,4 +1,4 @@
-# 我们最喜欢的 AWS 公共部门峰会在线会议|云专家
+# 我们最喜欢的 AWS 公共部门峰会在线会议
 
 > 原文：<https://acloudguru.com/blog/engineering/our-favorite-sessions-from-the-aws-public-sector-summit-online>
 

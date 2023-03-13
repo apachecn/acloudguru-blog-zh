@@ -1,4 +1,4 @@
-# 哪个集装箱开发认证最适合我？|云专家
+# 哪个集装箱开发认证最适合我？
 
 > 原文：<https://acloudguru.com/blog/engineering/which-container-development-certification-is-best-for-me>
 

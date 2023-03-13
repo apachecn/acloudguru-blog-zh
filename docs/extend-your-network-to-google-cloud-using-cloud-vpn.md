@@ -1,4 +1,4 @@
-# 使用云 VPN |云专家将您的网络扩展到 Google Cloud
+# 使用云 VPN 将您的网络扩展到 Google Cloud
 
 > 原文：<https://acloudguru.com/blog/engineering/extend-your-network-to-google-cloud-using-cloud-vpn>
 

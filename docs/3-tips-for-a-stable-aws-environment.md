@@ -1,4 +1,4 @@
-# 更稳定的 AWS 环境的 3 大技巧|云专家
+# 更稳定的 AWS 环境的 3 大技巧
 
 > 原文：<https://acloudguru.com/blog/engineering/3-tips-for-a-stable-aws-environment>
 

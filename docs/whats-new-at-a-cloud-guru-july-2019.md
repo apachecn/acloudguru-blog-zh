@@ -1,4 +1,4 @@
-# 云专家 2019 年 7 月的新内容|云专家
+# 云专家 2019 年 7 月的新内容
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-at-a-cloud-guru-july-2019>
 

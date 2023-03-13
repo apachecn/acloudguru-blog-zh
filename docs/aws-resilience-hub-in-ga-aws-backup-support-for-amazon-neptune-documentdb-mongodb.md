@@ -1,4 +1,4 @@
-# 正式发布的 AWS 弹性中心；AWS 备份支持扩展|云专家
+# 正式发布的 AWS 弹性中心；AWS 备份支持扩展
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-resilience-hub-in-ga-aws-backup-support-for-amazon-neptune-documentdb-mongodb>
 

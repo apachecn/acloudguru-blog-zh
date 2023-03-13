@@ -1,4 +1,4 @@
-# CKAD 有什么新功能？Kubernetes 认证更新|云专家
+# CKAD 有什么新功能？Kubernetes 认证更新
 
 > 原文：<https://acloudguru.com/blog/engineering/whats-new-with-the-ckad-kubernetes-application-developer-curriculum-updates>
 

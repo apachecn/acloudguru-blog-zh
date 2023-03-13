@@ -1,4 +1,4 @@
-# AWS IAM:安全最佳实践|云专家
+# AWS IAM:安全最佳实践
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-iam-security-best-practices>
 

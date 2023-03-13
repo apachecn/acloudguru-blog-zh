@@ -1,4 +1,4 @@
-# ACG 关于云课程和培训的专题|云专家
+# ACG 关于云课程和培训的专题
 
 > 原文：<https://acloudguru.com/blog/news/a-cloud-guru-promos-aws-azure-and-google-cloud-course-discounts>
 

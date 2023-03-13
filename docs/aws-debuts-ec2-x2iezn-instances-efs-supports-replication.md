@@ -1,4 +1,4 @@
-# AWS 首次推出 EC2 X2iezn 实例；EFS 支持复制|云专家
+# AWS 首次推出 EC2 X2iezn 实例；EFS 支持复制
 
 > 原文：<https://acloudguru.com/blog/engineering/aws-debuts-ec2-x2iezn-instances-efs-supports-replication>
 

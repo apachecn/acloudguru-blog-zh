@@ -1,4 +1,4 @@
-# AWS Secrets Manager vs 参数存储|云专家
+# AWS Secrets Manager vs 参数存储
 
 > 原文：<https://acloudguru.com/blog/engineering/an-inside-look-at-aws-secrets-manager-vs-parameter-store>
 

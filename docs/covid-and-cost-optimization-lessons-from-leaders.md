@@ -1,4 +1,4 @@
-# COVID 和云成本优化-来自领导者的经验教训|云专家
+# COVID 和云成本优化-来自领导者的经验教训
 
 > 原文：<https://acloudguru.com/blog/engineering/covid-and-cost-optimization-lessons-from-leaders>
 

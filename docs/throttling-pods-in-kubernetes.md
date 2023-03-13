@@ -1,4 +1,4 @@
-# Kubernetes 中的节流豆荚|云专家
+# Kubernetes 中的节流豆荚
 
 > 原文：<https://acloudguru.com/blog/engineering/throttling-pods-in-kubernetes>
 

@@ -1,4 +1,4 @@
-# 亚马逊 SQS 和 AWS Lambda |云专家的事件驱动架构
+# 亚马逊 SQS 和 AWS Lambda 的事件驱动架构
 
 > 原文：<https://acloudguru.com/blog/engineering/event-driven-architecture-with-sqs-and-aws-lambda>
 
